@@ -1,0 +1,23 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Archivos temporales de LibreOffice
+.~lock.*#
+.~
+
+# Base clínica local
+Adolescentes.csv
+
+# Archivos pesados o reproducibles
+*.rds
+*.RData
+
+# Temporales y cachés
+.~lock.*#
+.~
+.Rhistory
+.Rproj.user/
+.quarto/
+*_cache/

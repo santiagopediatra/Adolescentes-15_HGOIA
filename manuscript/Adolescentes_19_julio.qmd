@@ -1,0 +1,450 @@
+-   <div>
+
+    ---
+    title: "Diferencias sociodemográficas, reproductivas y obstétricas entre adolescentes de 10–14 años y de 15–19 años en una población hospitalaria seleccionada por admisión neonatal: estudio transversal retrospectivo"
+    author: "Santiago Vasco et al."
+    format:
+      docx:
+        toc: false
+        number-sections: true
+    bibliography: referencias.bib
+    csl: rbsmi-vancouver-icmje.csl
+    ---
+
+    </div>
+
+\*Diferencias sociodemográficas, reproductivas y obstétricas entre adolescentes de 10--14 años y de 15--19 años en una población hospitalaria seleccionada por admisión neonatal: estudio transversal retrospectivo\*\*
+
+**Sociodemographic, reproductive, and obstetric differences between adolescents aged 10--14 and 15--19 years in a hospital population selected by neonatal admission: a retrospective cross-sectional study**
+
+**Adolescentes 10--14 vs 15--19 años: perfil sociodemográfico y obstétrico**
+
+Adolescents aged 10--14 vs 15--19 years: sociodemographic and obstetric profile
+
+Resumen
+
+**Objetivos: Comparar las características sociodemográficas, reproductivas, obstétricas y de atención prenatal entre adolescentes de 10--14 y 15--19 años cuyos recién nacidos fueron admitidos en Neonatología.**
+
+**Métodos: Estudio transversal retrospectivo basado en registros del Sistema de Información Perinatal del Hospital Gineco-Obstétrico Isidro Ayora, Quito, Ecuador, entre 2009 y 2024. Se analizaron 7.035 eventos obstétricos maternos desduplicados. Las características binarias se evaluaron mediante modelos bayesianos Bernoulli-logit, con estimación posterior de razones de prevalencia marginales. La adecuación prenatal se analizó mediante regresión ordinal y el número de consultas mediante modelos gaussianos ajustados por edad gestacional.**
+
+**Resultados: Se incluyeron 386 adolescentes de 10--14 años y 6.649 de 15--19 años. En el grupo de 10--14 años fueron menos frecuentes la pareja estable (RP=0,86; ICr95%: 0,77--0,95) y el embarazo planeado registrado (RP=0,62; ICr95%: 0,48--0,79), y más frecuente la pertenencia étnica minoritaria (RP=1,77; ICr95%: 1,24--2,44). El rezago escolar ajustado por edad fue más frecuente (RP=2,07; ICr95%: 1,78--2,41). También se observó menor adecuación prenatal (OR=0,69; ICr95%: 0,56--0,84) y 0,55 consultas menos después del ajuste por edad gestacional.**
+
+**Conclusiones: Las adolescentes de 10--14 años presentaron un perfil sociodemográfico, educativo y asistencial diferente. Los hallazgos se restringen a la muestra analizada y no son generalizables a todos los embarazos adolescentes.**
+
+**Palabras clave:** Embarazo en Adolescencia; Salud Reproductiva; Atención Prenatal; Factores Socioeconómicos; Características de la Población
+
+**Abstract\
+Objectives: To compare sociodemographic, reproductive, obstetric, and prenatal care characteristics between adolescents aged 10--14 and 15--19 years whose newborns were admitted to a neonatal unit.**
+
+**Methods: A retrospective cross-sectional study was conducted using records from the Perinatal Information System of Hospital Gineco-Obstétrico Isidro Ayora, Quito, Ecuador, from 2009 to 2024. A total of 7,035 deduplicated maternal obstetric events were analyzed. Binary characteristics were assessed using Bayesian Bernoulli-logit models with posterior estimation of marginal prevalence ratios. Prenatal care adequacy was assessed using ordinal regression, and the number of prenatal visits using Gaussian models adjusted for gestational age.**
+
+**Results: The study included 386 adolescents aged 10--14 years and 6,649 aged 15--19 years. Among those aged 10--14 years, stable partnership (PR=0.86; 95%CrI: 0.77--0.95) and recorded planned pregnancy (PR=0.62; 95%CrI: 0.48--0.79) were less frequent, whereas minority ethnic identification was more frequent (PR=1.77; 95%CrI: 1.24--2.44). Age-adjusted school delay was more frequent (PR=2.07; 95%CrI: 1.78--2.41). This group also showed lower prenatal care adequacy (OR=0.69; 95%CrI: 0.56--0.84) and 0.55 fewer visits after adjustment for gestational age.**
+
+**Conclusions: Adolescents aged 10--14 years showed a different sociodemographic, educational, and healthcare profile. Findings are restricted to the analyzed sample and cannot be generalized to all adolescent pregnancies.**
+
+**Keywords:** Pregnancy in Adolescence, Reproductive Health, Prenatal Care, Socioeconomic Factors, Population Characteristics
+
+# Introducción {#introducción .unnumbered}
+
+El embarazo en adolescentes constituye un problema persistente de salud pública, asociado con pobreza, desigualdad y riesgos clínicos y psicosociales.(1--4) La Organización Mundial de la Salud (OMS) define la adolescencia como el período comprendido entre los 10 y 19 años. Para identificar posibles diferencias dentro de este intervalo, resulta relevante analizar separadamente los grupos de 10--14 y 15--19 años.(5) Esta distinción es clínicamente relevante, ya que las adolescentes 10--14 años pueden estar expuestas a mayores desventajas sociales y reproductivas, trayectorias educativas más interrumpidas, menor autonomía reproductiva y mayor exposición a determinantes estructurales adversos, factores que pueden influir tanto en la ocurrencia del embarazo como en el acceso oportuno a la atención prenatal. (6)
+
+En los países de ingresos bajos y medianos se estimaron aproximadamente 21 millones de embarazos anuales entre adolescentes de 15--19 años.(7,8) América Latina se encuentra entre las regiones con mayor carga de embarazo adolescente, situación asociada a barreras persistentes en el acceso a educación sexual integral, métodos anticonceptivos y servicios de salud sexual y reproductiva.(9) En Ecuador, la tasa específica de fecundidad en adolescentes fue de 36,06 nacimientos por cada 1.000 adolescentes en 2017, mientras que en las niñas de 10-14 años se registraron 2,84 nacimientos por cada 1.000 habitantes del mismo grupo etario.(10) Estas cifras reflejan la magnitud del problema y respaldan la necesidad de analizar de manera diferenciada los distintos subgrupos etarios que conforman la población adolescente.
+
+Aunque existe una amplia literatura sobre el embarazo en adolescentes y sus implicaciones para la salud materna y perinatal,(2,3) gran parte de los estudios considera a las adolescentes como un grupo homogéneo de 10 a 19 años. Esta aproximación puede ocultar diferencias relevantes entre las adolescentes 10--14 años y aquellas de 15-19 años, particularmente en dimensiones sociodemográficas, reproductivas y relacionadas con la utilización de servicios de salud.(11) La identificación de estas diferencias resulta relevante para comprender la heterogeneidad del embarazo adolescente y orientar estrategias de atención adaptadas a las necesidades de los distintos grupos etarios.
+
+El Hospital Gineco-Obstétrico Isidro Ayora (HGOIA), en Quito, Ecuador, es un centro nacional de referencia en salud materno-infantil que atiende principalmente a mujeres de bajos y medianos ingresos procedentes de áreas urbanas y rurales, y mantiene desde 1988 un programa integral de atención para adolescentes.(12) En este contexto, el objetivo del presente estudio fue comparar las características sociodemográficas, reproductivas, obstétricas y de utilización de atención prenatal entre madres adolescentes de 10--14 años y de 15--19 años cuyos recién nacidos fueron admitidos en Neonatología en un hospital de referencia nacional de Ecuador
+
+**Materiales y métodos**
+
+Se realizó un estudio observacional transversal retrospectivo basado en registros secundarios del Sistema de Información Perinatal (SIP) de la Organización Panamericana de la Salud del Hospital Gineco-Obstétrico Isidro Ayora, Quito, Ecuador, entre enero de 2009 y junio de 2024. El SIP estandariza el registro clínico de la atención durante el embarazo, el parto y el período neonatal. Durante el período estudiado, la base institucional incluyó registros de madres cuyos recién nacidos fueron admitidos en Neonatología. El HGOIA es un hospital público de referencia nacional que atiende población urbana y rural. El diseño y el mecanismo de selección se presentan en la Figura 1.
+
+La unidad de análisis fue el evento obstétrico materno en adolescentes de 10--19 años. Los 7.202 registros iniciales podían incluir más de una fila materna cuando una gestación múltiple generaba registros neonatales separados. Se eliminaron 15 duplicados exactos y los registros de embarazos múltiples se consolidaron a nivel materno mediante una llave compuesta por 13 variables: año de atención, edad materna, escolaridad, pareja estable, etnia, gestas, partos y cesáreas previas, embarazo planeado, uso de anticonceptivos, número de consultas prenatales, tipo de parto y cesárea.
+
+Dentro de cada agrupamiento, una diferencia de edad gestacional de tres semanas o más se consideró indicativa de eventos obstétricos distintos; diferencias menores se conservaron como un único evento. La base analítica final incluyó 7.035 eventos obstétricos: 386 en adolescentes de 10--14 años y 6.649 en adolescentes de 15--19 años. La ausencia de un identificador único de parto o admisión impidió descartar errores residuales de clasificación. En las gestaciones múltiples se conservó una única observación para las variables maternas y obstétricas; los embarazos múltiples se consolidaron mediante una llave de 13 variables maternas más un criterio de edad gestacional, y la descripción neonatal se presentó en una submuestra de 6.790 nacimientos únicos, excluyendo 245 embarazos múltiples, para evitar dependencia intragestacional y decisiones arbitrarias entre hermanos. Esta submuestra neonatal corresponde a 381 nacimientos únicos en adolescentes de 10--14 años y 6.409 nacimientos únicos en adolescentes de 15--19 años.
+
+Las variables sociodemográficas incluyeron pareja estable, nivel educativo registrado y autoidentificación étnica. El nivel educativo se clasificó como ninguna o primaria frente a secundaria o superior, y la etnia como minoritaria frente a mestiza o blanca, debido a la baja frecuencia de algunas categorías.
+
+Los años de escolaridad esperados se calcularon como la edad materna menos seis, con un máximo de 12 años, correspondiente al sistema educativo ecuatoriano previo a 2011: nueve años de educación general básica y tres de bachillerato. El rezago escolar se definió como la diferencia entre los años esperados y aprobados, y se clasificó como ausente (0--1 año) o presente (≥2 años). Las adolescentes de 19 años que habían completado 12 años de escolaridad no se consideraron rezagadas. Dado que la base incluyó madres escolarizadas antes y después de la reforma educativa y no permitió identificar el sistema aplicable individualmente, este límite pudo subestimar los años esperados de las adolescentes más jóvenes y, en consecuencia, sobreestimar el rezago en este grupo.(13,14)
+
+Las variables reproductivas incluyeron gestas previas, embarazo planeado registrado y falla registrada del método anticonceptivo. Estas dos últimas correspondieron a campos dicotómicos del SIP y no se interpretaron como mediciones directas de autonomía reproductiva, intención prospectiva o uso correcto del método. La falla anticonceptiva se analizó entre todos los registros con información disponible, no exclusivamente entre adolescentes identificadas como usuarias de anticonceptivos.
+
+La utilización de atención prenatal se evaluó mediante el número de consultas registradas. Se construyó una medida operacional de adecuación como la proporción entre los contactos observados y los esperados para la edad gestacional alcanzada al parto, conforme al esquema de ocho contactos recomendado por la OMS. La adecuación se clasificó, para este estudio, como ausencia de controles, inadecuada (\<50 %), intermedia (50--79 %) o adecuada (≥80 %).(15)
+
+Las variables obstétricas incluyeron embarazo múltiple, infección urinaria, compromiso del bienestar fetal, trastorno hipertensivo del embarazo y vía de parto. La infección urinaria y el compromiso del bienestar fetal se analizaron según su registro dicotómico, debido a que la base no permitía reconstruir criterios diagnósticos, pruebas complementarias ni gravedad. El trastorno hipertensivo se definió por el registro de preeclampsia, eclampsia o hipertensión inducida por el embarazo. La vía de parto se clasificó como vaginal o cesárea.
+
+Las variables neonatales incluyeron edad gestacional, peso al nacer, prematuridad, Apgar menor de 7 al minuto 1 y al minuto 5, pequeño para la edad gestacional, macrosomía, ictericia, condición vital y lactancia exclusiva al egreso. La prematuridad se definió como edad gestacional menor de 37 semanas; pequeño para la edad gestacional, como peso inferior al percentil 10 de Fenton; y macrosomía, como peso al nacer ≥4.000 g. La condición vital correspondió al registro de vivo o fallecido al egreso, y la lactancia exclusiva al registro de alimentación únicamente con leche materna al egreso. Estas variables se presentaron con fines descriptivos, sin estimar asociaciones inferenciales según el grupo etario materno.
+
+Las variables categóricas se resumieron mediante frecuencias y porcentajes calculados sobre los registros con información disponible; las continuas, mediante mediana y rango intercuartílico. Las comparaciones fueron exploratorias y se priorizaron el nivel educativo y el rezago escolar, la pertenencia étnica, el embarazo planeado registrado y la utilización de atención prenatal.
+
+Para cada característica materna binaria se ajustó un modelo bayesiano independiente con distribución Bernoulli y enlace logit, utilizando el grupo etario como único predictor y las adolescentes de 15--19 años como referencia. Se especificaron priors Normal(0; 3) para el intercepto y Normal(0; 1,5) para el coeficiente del grupo etario, en escala logit. A partir de las predicciones posteriores se estimaron las prevalencias marginales, razones de prevalencia, diferencias de prevalencia e intervalos de credibilidad del 95 %. Estos modelos representaron comparaciones bivariadas no ajustadas y no se interpretaron como efectos causales.
+
+El rezago escolar y la adecuación prenatal se analizaron adicionalmente mediante modelos ordinales bayesianos con enlace logit acumulativo y puntos de corte flexibles, con un prior Normal(0; 1,5) para el coeficiente del grupo etario. En el modelo de rezago, una razón de momios superior a 1 indicó mayor probabilidad de pertenecer a una categoría de mayor severidad; en el modelo de adecuación prenatal, indicó mayor probabilidad de pertenecer a una categoría de mejor adecuación.
+
+El número de consultas prenatales se analizó mediante modelos lineales bayesianos gaussianos antes y después del ajuste por edad gestacional al parto. Se especificaron priors Normal(5; 3) para el intercepto, Normal(0; 1,5) para el grupo etario, Normal(0; 0,5) para la edad gestacional y exponencial(1) para sigma.
+
+Los modelos Bernoulli-logit y ordinales se estimaron con cuatro cadenas, 6.000 iteraciones por cadena y 3.000 de calentamiento; los modelos gaussianos utilizaron 4.000 iteraciones y 2.000 de calentamiento. La convergencia y la eficiencia del muestreo se evaluaron mediante R-hat, tamaños efectivos de muestra bulk y tail, transiciones divergentes, profundidad máxima del árbol y E-BFMI. Se realizaron verificaciones predictivas posteriores, análisis de sensibilidad con priors más amplios y análisis por los subperíodos 2009--2014, 2015--2019 y 2020--2024. Los datos faltantes se manejaron mediante análisis de casos disponibles.
+
+Los análisis se realizaron en R, versión 4.4.3, principalmente con los paquetes brms, posterior y dplyr.
+
+El estudio fue aprobado por el Comité de Ética en Investigación en Seres Humanos del Hospital General Docente de Calderón, Ecuador (CEISH-HGDC-2024-007; 19 de agosto de 2024), debido a que el HGOIA no dispone de un comité institucional. Por tratarse de un estudio retrospectivo basado en datos secundarios anonimizados, se eximió el consentimiento informado. La confidencialidad se garantizó mediante anonimización y acceso restringido a la base. El estudio siguió los principios de la Declaración de Helsinki y las recomendaciones de la guía STROBE.
+
+Resultados
+
+El proceso de selección se presenta en la Figura 2. De los 7.202 registros iniciales, se eliminaron 15 duplicados exactos y se consolidaron los registros correspondientes a embarazos múltiples. La muestra analítica final incluyó 7.035 adolescentes: 386 de 10--14 años y 6.649 de 15--19 años.
+
+Características sociodemográficas y reproductivas
+
+Las adolescentes de 10--14 años presentaron menor frecuencia de pareja estable y mayores frecuencias de menor nivel educativo registrado, rezago escolar y pertenencia a grupos étnicos minoritarios. En este grupo también fueron menos frecuentes las gestas previas, el embarazo planeado registrado y la falla registrada del método anticonceptivo (Tablas 1 y 2).
+
+Nivel educativo y rezago escolar
+
+La magnitud de la asociación disminuyó al sustituir el indicador crudo de escolaridad por el rezago escolar ajustado por edad. La RP se redujo de 4,33 a 2,07 y la diferencia de prevalencias de 0,50 a 0,18 (Tabla 2, Panel B).
+
+Atención prenatal
+
+Las adolescentes de 10--14 años registraron menor número de consultas prenatales y menor adecuación del control prenatal (Tabla 1). La diferencia en el número de consultas persistió después del ajuste por edad gestacional al parto (diferencia media ajustada: -0,55; ICr95 %: -0,83 a -0,27; Tabla S3).
+
+Condiciones obstétricas
+
+En el grupo de 10--14 años se observaron menores prevalencias registradas de infección urinaria, compromiso del bienestar fetal y trastorno hipertensivo del embarazo, y mayor frecuencia de parto vaginal (Tabla 2, Panel A).
+
+Las características neonatales se presentan de forma descriptiva en la Tabla 1, sin comparaciones inferenciales entre los grupos de edad materna.
+
+Análisis de sensibilidad
+
+Los análisis por subperíodos mostraron variación en la magnitud y precisión de las estimaciones. Las asociaciones con menor nivel educativo registrado, gestas previas, falla registrada del método anticonceptivo y rezago escolar conservaron la misma dirección en los tres períodos. Otras asociaciones se atenuaron o fueron compatibles con ausencia de diferencia, principalmente en 2020--2024, y de forma variable en 2009--2014 y 2015--2019 (Tabla S2).
+
+Datos faltantes
+
+La proporción de datos faltantes fue ≤2,5 % para la mayoría de las variables. La lactancia exclusiva al egreso presentó la mayor proporción de datos faltantes, con 14,5 % (Tabla S4).
+
+Discusión
+
+En la muestra analizada, las adolescentes de 10--14 años presentaron un perfil sociodemográfico, reproductivo y de utilización de atención prenatal diferente al de las adolescentes de 15--19 años. Los hallazgos principales fueron la mayor frecuencia de pertenencia a grupos étnicos minoritarios, la menor frecuencia registrada de pareja estable y embarazo planeado, y la menor utilización de atención prenatal. Aunque el nivel educativo registrado como ninguna o primaria fue más frecuente en el grupo de menor edad, la magnitud de la diferencia disminuyó al utilizar un indicador de rezago escolar ajustado por edad, lo que indica que el indicador crudo sobrestimó parcialmente la brecha educativa.
+
+La clasificación cruda de escolaridad como ninguna o primaria amplificó la diferencia entre los grupos. Sin embargo, la mayor frecuencia de rezago escolar persistió después de considerar la edad, por lo que la diferencia educativa observada no se explicó únicamente por la clasificación convencional de escolaridad. La coexistencia de menor frecuencia de pareja estable y embarazo planeado registrado, junto con una mayor frecuencia de pertenencia a grupos étnicos minoritarios, sugiere un perfil sociodemográfico y reproductivo diferenciado. Este patrón coincide con estudios latinoamericanos que muestran una distribución desigual del embarazo en edades tempranas, asociada con menores oportunidades sociales y barreras de acceso a servicios de salud sexual y reproductiva.(16,17)
+
+La mayor frecuencia registrada de pertenencia a grupos étnicos minoritarios puede actuar como marcador de desigualdades estructurales y de acceso a recursos, pero no debe interpretarse como un atributo biológico ni como una condición de vulnerabilidad por sí misma. La recodificación dicotómica agrupó poblaciones heterogéneas y limitó interpretaciones específicas. Dado el carácter exploratorio del estudio y el número de comparaciones realizadas, estos hallazgos no deben interpretarse como confirmatorios.
+
+La proporción anual de adolescentes de 10--14 años mostró variabilidad dentro de la población hospitalaria analizada. Estas fluctuaciones no representan tendencias poblacionales, porque la composición de la muestra pudo estar influida por cambios temporales en la cobertura del registro, los criterios de admisión neonatal y las prácticas institucionales. La persistencia de embarazos en 10--14 años durante todo el período es consistente con lo descrito en América Latina y el Caribe. (6,18--20)
+
+La menor frecuencia registrada de pareja estable entre las adolescentes de 10--14 años debe interpretarse con cautela. La base no permitió determinar la edad de la pareja, la naturaleza de la relación, la convivencia, la autonomía reproductiva, la presencia de coerción o violencia sexual ni la calidad del registro. En consecuencia, esta variable documenta una diferencia entre grupos, pero no permite caracterizar por sí sola la naturaleza de la relación, la autonomía reproductiva ni la presencia de coerción.(21,22)
+
+La mayor frecuencia de gestas previas en las adolescentes de 15--19 años es consistente con la mayor duración de la exposición reproductiva acumulada y con estudios sobre recurrencia del embarazo adolescente.(23,24) En consecuencia, la menor frecuencia observada en las adolescentes de 10--14 años no debe interpretarse como menor vulnerabilidad.
+
+La menor frecuencia registrada de embarazo planeado en las adolescentes de 10--14 años es consistente con estudios que describen barreras para el acceso a información, consejería y servicios de salud sexual y reproductiva.(25) Sin embargo, esta variable no constituye una medición directa de intención o autonomía reproductiva. De forma similar, la menor frecuencia registrada de falla anticonceptiva puede reflejar menor uso previo, ausencia de uso o subregistro, más que diferencias reales en la efectividad de los métodos. Estas explicaciones no fueron evaluadas directamente.(1)
+
+Las adolescentes de 10--14 años presentaron menor utilización de atención prenatal, tanto en el número de consultas como en su adecuación. Aunque la diferencia absoluta fue moderada, persistió después del ajuste por edad gestacional al parto. En estudios latinoamericanos, las adolescentes más jóvenes han presentado menor utilización de atención prenatal, en contextos caracterizados por barreras de acceso y continuidad asistencial.(11) Este hallazgo no permite establecer relaciones con la morbilidad neonatal debido al mecanismo de selección del estudio. Factores no medidos, como reconocimiento tardío del embarazo, estigma, barreras familiares o incorporación tardía a los servicios, podrían contribuir a esta diferencia. Las recomendaciones de la OMS destacan la atención prenatal oportuna como componente esencial para la detección y el manejo temprano de condiciones maternas y perinatales.(15)
+
+La mayor frecuencia de parto vaginal en las adolescentes de 10--14 años coincide con estudios que documentan menores tasas de cesárea en grupos de menor edad materna.(26,27) Sin embargo, esta diferencia no implica menor riesgo obstétrico, porque la vía de parto depende de indicaciones clínicas, características fetales, edad gestacional y prácticas institucionales no completamente capturadas por el registro.
+
+Las menores frecuencias registradas de infección urinaria, compromiso del bienestar fetal y trastorno hipertensivo deben interpretarse con cautela. La menor utilización de atención prenatal pudo reducir las oportunidades de detección y registro, por lo que estas diferencias pueden reflejar variaciones clínicas reales, diferencias en la oportunidad diagnóstica o limitaciones del registro. En consecuencia, no deben interpretarse como evidencia de menor riesgo obstétrico.(11,15)
+
+Las variables neonatales se incluyeron exclusivamente con fines descriptivos. Debido al condicionamiento por admisión neonatal, las diferencias observadas en prematuridad, Apgar, pequeño para la edad gestacional, ictericia, lactancia o supervivencia al egreso no permiten estimar asociaciones entre edad materna y resultados neonatales. Estos datos deben interpretarse únicamente como una descripción clínica de la submuestra analizada.
+
+Este estudio presenta varias limitaciones. Primero, la muestra estuvo condicionada por la admisión neonatal, lo que limita la generalización a otros nacimientos de madres adolescentes. Segundo, el diseño transversal retrospectivo no permite establecer relaciones causales y limita la determinación temporal de algunas variables registradas durante la atención perinatal. Tercero, el SIP no incluyó determinantes estructurales relevantes, como nivel socioeconómico, procedencia geográfica, violencia sexual, coerción reproductiva, edad de la pareja, apoyo familiar, inicio de la atención prenatal o calidad de la atención. Cuarto, los datos faltantes fueron inferiores a 2,5 % para la mayoría de las variables, pero alcanzaron 14,5 % en lactancia exclusiva al egreso y pudieron no ocurrir de forma aleatoria. Quinto, el menor tamaño del grupo de 10--14 años redujo la precisión de estimaciones para eventos infrecuentes y subperíodos. Finalmente, el indicador de rezago escolar utilizó un máximo de 12 años basado en el sistema educativo previo a 2011; la coexistencia de adolescentes escolarizadas bajo la reforma educativa pudo introducir clasificación errónea y sobreestimar el rezago en las más jóvenes.
+
+Este estudio caracteriza diferencias entre adolescentes de 10--14 y 15--19 años en una serie hospitalaria condicionada por admisión neonatal. Las adolescentes de 10--14 años presentaron mayor frecuencia de rezago escolar y pertenencia registrada a grupos étnicos minoritarios, menor frecuencia registrada de pareja estable y embarazo planeado, y menor utilización de atención prenatal. Estos hallazgos describen un perfil sociodemográfico y reproductivo diferente dentro de la muestra analizada, pero no deben generalizarse a todos los embarazos adolescentes ni interpretarse como efectos causales de la edad materna.
+
+**Contribuciones de los autores**
+
+SV: Curación de datos, administración del proyecto, supervisión, validación, análisis formal, metodología, conceptualización, investigación, redacción---revisión y edición, adquisición de financiamiento y redacción---borrador original.
+
+CV: Redacción---borrador original, investigación, visualización, análisis formal y redacción---revisión y edición.
+
+ZC: Redacción---borrador original y redacción---revisión y edición.
+
+SM: Redacción---revisión y edición y redacción---borrador original.
+
+MR: Investigación, redacción---revisión y edición, curación de datos, conceptualización, redacción---borrador original y análisis formal.
+
+PT: Visualización, curación de datos, redacción---borrador original, recursos, investigación, metodología, redacción---revisión y edición, análisis formal y supervisión.
+
+**Financiamiento**
+
+Universidad Central del Ecuador- Proyecto BIOMED-DI-EXT-2024-001
+
+**Agradecimientos**
+
+Los autores no tienen agradecimientos que declarar.
+
+**Conflicto de intereses**
+
+Los autores declaran que la investigación se llevó a cabo en ausencia de relaciones comerciales o financieras que pudieran interpretarse como un potencial conflicto de intereses.
+
+**Disponibilidad de datos y código**
+
+La base de datos anonimizada que sustenta los resultados de este estudio se encuentra disponible en Mendeley Data: [**https://doi.org/10.17632/jbbp5vb6fy.1**](https://doi.org/10.17632/jbbp5vb6fy.1). Los scripts de R utilizados para la depuración y desduplicación de los registros, los análisis estadísticos bayesianos, los análisis de sensibilidad y la generación de tablas y figuras están disponibles en Zenodo: [**https://doi.org/10.5281/zenodo.21445981.**]{.underline}
+
+**Declaración sobre inteligencia artificial**
+
+Los autores declaran que herramientas de inteligencia artificial (ChatGPT, OpenAI) fueron utilizadas exclusivamente para apoyo lingüístico y revisión de estilo. La interpretación científica, análisis estadístico, discusión y conclusiones fueron realizadas y verificadas íntegramente por los autores.
+
+**Referencias**
+
+**1. Pietras J, Jarząbek-Bielecka G, Mizgier M, Markowska A. Adolescent pregnancy -- medical, legal and social issues. The Journal of Maternal-Fetal & Neonatal Medicine \[Internet\]. 2024 \[cited 2024 Dec 25\];37. doi: 10.1080/14767058.2024.2391490. Cited in PMID: 39183188.**
+
+**2. Marvin-Dowle K, Kilner K, Burley VJ, Soltani H. Impact of adolescent age on maternal and neonatal outcomes in the Born in Bradford cohort. BMJ Open \[Internet\]. 2018 \[cited 2024 Aug 9\];8:e016258. doi: 10.1136/bmjopen-2017-016258.**
+
+**3. Zhang T, Wang H, Wang X, Yang Y, Zhang Y, Tang Z, Wang L. The adverse maternal and perinatal outcomes of adolescent pregnancy: a cross sectional study in Hebei, China. BMC Pregnancy Childbirth \[Internet\]. 2020 \[cited 2024 Aug 9\];20:339. doi: 10.1186/s12884-020-03022-7.**
+
+**4. Mann L, Bateson D, Black KI. Teenage pregnancy. Aust J Gen Pract \[Internet\]. 2020;49:310--316. doi: 10.31128/AJGP-02-20-5224. Cited in PMID: 32464731.**
+
+**5. Organización Mundial de la Salud (OMS). Aceleración mundial de las medidas para promover la salud de los adolescentes (Guía AA-HA). Washington, D.C: Organización Panamericana de la Salud; 2018.**
+
+**6. Sanhueza A, Costa JC, Mújica OJ, Carvajal-Velez L, Caffe S, Victora C, Barros AJD. Trends and inequities in adolescent childbearing in Latin American and Caribbean countries across generations and over time: a population-based study. Lancet Child Adolesc Health \[Internet\]. 2023;7:392--404. doi: 10.1016/S2352-4642(23)00077-9.**
+
+**7. World Health Organization (WHO). Adolescent pregnancy \[Internet\]. World Health Organization. 2024 \[cited 2024 Aug 9\]. Available from: https://www.who.int/es/news-room/fact-sheets/detail/adolescent-pregnancy.**
+
+**8. Rodríguez Ribas C. Adolescent pregnancy, public policies, and targeted programs in Latin America and the Caribbean: a systematic review. Revista Panamericana de Salud Pública. 2021;45:1. doi: 10.26633/RPSP.2021.144.**
+
+**9. UNFPA Ecuador; UNICEF Ecuador; UNFPA LAC; Ministerio de Salud Pública. Consecuencias socioeconomicas del embarazo en adolescencia en Ecuador. Fondo de naciones unidas \[Internet\]. 2020;1:31--32.**
+
+**10. Hayer S, Fuentes‐Rivera E, Schiavon R, Darney BG. Prenatal care utilization and perinatal outcomes among pregnant adolescents in Mexico, 2008--2019. International Journal of Gynecology & Obstetrics \[Internet\]. 2024 \[cited 2026 Feb 28\];165:1047--1055. doi: 10.1002/ijgo.15303.**
+
+**11. Ministerio de Salúd Pública del Ecuador. Salud de adolescentes. Guía de Supervisión. . Primera Edición. Dirección Nacional de Normatización -- MSP, editor. Quito; 2014.**
+
+**12. CONSEJO NACIONAL DE EDUCACION. REGLAMENTO GENERAL A LA LEY ORGANICA DE EDUCACION INTERCULTURAL \[Internet\]. 2011 p. 1--110. Available from: https://www.evaluacion.gob.ec/wp-content/uploads/downloads/2016/05/Reglamento_LOEI-enero2013.pdf.**
+
+**13. Ministerio de Educación y Cultura. Reglamento General de la Ley de Educación de la Estructura del Sistema Educativo \[Internet\]. Registro Oficial de la República del Ecuador Quito, Ecuador; 1985. Available from: https://www.acnur.org/fileadmin/Documentos/BDL/2008/6625.pdf.**
+
+**14. World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. 2016.**
+
+**15. Mejia JR, Quincho-Estares ÁJ, Flores-Rondon AJ, Reyes-Beltran G, Arias-Sulca IL, Palomino-Hilario E, Barrientos-Cochachi JE, Toro-Huamanchumo CJ. Determinants of adolescent pregnancy in indigenous communities from the Peruvian central jungle: a case--control study. Reprod Health \[Internet\]. 2021;18:203. doi: 10.1186/s12978-021-01247-z.**
+
+**16. Caira-Chuquineyra B, Fernandez-Guzman D, Meza-Gómez A, Luque-Mamani BM, Medina-Carpio SL, Mamani-García CS, Romani-Peña M, Díaz-Vélez C. Prevalence and factors associated with adolescent pregnancy among sexually active adolescent girls in Peru: Evidence from Demographic and Family Health Survey, 2015-2019. F1000Res \[Internet\]. 2023;11:566. doi: 10.12688/f1000research.108837.2.**
+
+**17. United Nations. Fertility among young adolescents aged 10 to 14 years. United Nations \[Internet\]. 2020 \[cited 2025 Mar 6\];1--30.**
+
+**18. Borges ALV, Chofakian CB do N, Sato APS, Fujimori E, Duarte LS, Gomes MN. Fertility rates among very young adolescent women: Temporal and spatial trends in Brazil. BMC Pregnancy Childbirth. 2016;16. doi: 10.1186/s12884-016-0843-x. Cited in PMID: 26992396.**
+
+**19. Monteiro DLM, Monteiro IP, Machado MSC, Bruno ZV, Silveira FA da, Rehme MFB, Takiuti AD, Rodrigues NCP. Trends in teenage pregnancy in Brazil in the last 20 years (2000-2019). Rev Assoc Med Bras \[Internet\]. 2021;67:759--765. doi: 10.1590/1806-9282.20210265.**
+
+**20. Lopes MC de L, Oliveira RR de, Silva M de AP da, Padovani C, Oliveira NLB de, Higarashi IH. Tendência temporal e fatores associados à gravidez na adolescência. Revista da Escola de Enfermagem da USP \[Internet\]. 2020;54:1--8. doi: 10.1590/s1980-220x2019020403639. Cited in PMID: 33263667.**
+
+**21. Diabelková J, Rimárová K, Dorko E, Urdzík P, Houžvičková A, Argalášová Ľ. Adolescent Pregnancy Outcomes and Risk Factors. Int J Environ Res Public Health \[Internet\]. 2023;20:4113. doi: 10.3390/ijerph20054113.**
+
+**22. Assis T de SC, Martinelli KG, Gama SGN da, Santos Neto ET dos. Reincidência de gravidez na adolescência: fatores associados e desfechos maternos e neonatais. Cien Saude Colet \[Internet\]. 2022;27:3261--3271. doi: 10.1590/1413-81232022278.00292022.**
+
+**23. Ramage K, Tough S, Scott C, McLaughlin A-M, Metcalfe A. Trends in Adolescent Rapid Repeat Pregnancy in Canada. Journal of Obstetrics and Gynaecology Canada \[Internet\]. 2021;43:589--595. doi: 10.1016/j.jogc.2020.09.024.**
+
+**24. Bennetsen AKK, Faber MT, Nygaard M, Sundström K, Hansen BT, Thomsen LT, Munk C, Frederiksen K, Kjaer SK. Factors associated with teenage pregnancy in the Scandinavian countries. Scand J Public Health \[Internet\]. 2024;52:616--623. doi: 10.1177/14034948231172819.**
+
+**25. Traisrisilp K, Jaiprom J, Luewan S, Tongsong T. Pregnancy outcomes among mothers aged 15 years or less. Journal of Obstetrics and Gynaecology Research. 2015;41:1726--1731. doi: 10.1111/jog.12789.**
+
+**26. Lastinger J, Enengl S, Neururer S, Leitner H, Oppelt P, Stelzl P. Teenage Pregnancies in Austria - an Epidemiological Study on Prevalence and Perinatal Outcome. Geburtshilfe Frauenheilkd \[Internet\]. 2023;83:212--219. doi: 10.1055/a-1911-1996. Cited in PMID: 36743456.**
+
+**cc**
+
+![](./manuscript/media/media/image1.png){width="6.53125in" height="6.864583333333333in"}
+
+**Figura 1.** Diagrama conceptual del diseño del estudio y del mecanismo de selección por admisión neonatal
+
+**Nota:** el condicionamiento por admisión neonatal puede afectar tanto las comparaciones maternas como la descripción neonatal; por ello, los resultados se restringen a la muestra analizada y no representan todos los nacimientos de madres adolescentes de la institución.
+
+![](./manuscript/media/media/image2.png){width="6.50384186351706in" height="3.4895833333333335in"}
+
+**Figura 2.** Flujograma de selección de participantes.
+
+*La población fuente estuvo constituida por registros madre--recién nacido de adolescentes de 10--19 años cuyos recién nacidos fueron admitidos en Neonatología entre enero de 2009 y junio de 2024. No se identificaron registros de madres menores de 10 años. Los registros sin edad materna consignada no fueron elegibles para la clasificación etaria y no se incluyeron en la base inicial de 7.202 registros. Los óbitos fetales y las pérdidas gestacionales no formaron parte de esta población fuente.*
+
+![](./manuscript/media/media/image3.jpeg){width="6.521527777777778in" height="4.104166666666667in"}
+
+**Figura 3**. Distribución anual de madres adolescentes según grupo etario, 2009--2024.
+
+#  {#section .text-3}
+
+# **Tabla 1. Características sociodemográficas, reproductivas y obstétricas** {#tabla-1.-características-sociodemográficas-reproductivas-y-obstétricas .text-3}
+
+|                                                                      |       |                     |       |                     |
+|:----------------|:-------------|:-------------|:-------------|:-------------|
+| **Variable**                                                         | **n** | **15--19 años**     | **n** | **10--14 años**     |
+| ***Variables sociodemográficas***                                    |       |                     |       |                     |
+| Pareja estable                                                       | 6649  | 55,9 %              | 386   | 47,9 %              |
+| Menor nivel educativo registradoᵃ                                    | 6649  | 15,1 %              | 386   | 65,8 %              |
+| Etnia minoritaria (autoidentificación)                               | 6649  | 4,9 %               | 386   | 8,8 %               |
+| Rezago escolar (≥2 años respecto de lo esperado para la edad)        | 6645  | 16,6 %              | 382   | 34,6 %              |
+| ***Antecedentes reproductivos***                                     |       |                     |       |                     |
+| Gestas previas                                                       | 6649  | 18,3 %              | 386   | 2,8 %               |
+| Embarazo múltiple                                                    | 6649  | 3,6 %               | 386   | 1,3 %               |
+| Embarazo planeado (registrado)                                       | 6649  | 22,9 %              | 386   | 14,2 %              |
+| Falla de método anticonceptivo (registrada)                          | 6649  | 17,4 %              | 386   | 7,3 %               |
+| ***Atención prenatal***                                              |       |                     |       |                     |
+| N.º de consultas prenatales, mediana \[RIC\]                         | 6511  | 6 \[4--8\]          | 373   | 5 \[3--7\]          |
+| Adecuación del control prenatal --- categoría "adecuado"             | 6487  | 61,6 %              | 373   | 53,4 %              |
+| ***Condiciones obstétricas***                                        |       |                     |       |                     |
+| Infección urinaria                                                   | 6561  | 52,7 %              | 378   | 42,6 %              |
+| Compromiso del bienestar fetal                                       | 6649  | 10,3 %              | 386   | 6,0 %               |
+| Trastorno hipertensivo del embarazo                                  | 6532  | 18,3 %              | 379   | 14,2 %              |
+| Parto vía vaginal                                                    | 6644  | 59,8 %              | 386   | 69,9 %              |
+| ***Variables neonatales (subpoblación admitida en Neonatología) ᵇ*** |       |                     |       |                     |
+| Edad gestacional al parto, mediana \[RIC\], semanas                  | 6623  | 38 \[36--39\]       | 386   | 38 \[35--39\]       |
+| Peso al nacer, mediana \[RIC\], g                                    | 6648  | 2626 \[2050--3060\] | 386   | 2690 \[2196--3030\] |
+| Prematuro (\<37 semanas)                                             | 6611  | 33,5 %              | 381   | 35,4 %              |
+| Apgar 1 min bajo                                                     | 6531  | 19,1 %              | 378   | 20,6 %              |
+| Apgar 5 min bajo                                                     | 6539  | 3,6 %               | 378   | 4,8 %               |
+| Pequeño para la edad gestacional (Fenton, \<p10)                     | 6648  | 31,2 %              | 386   | 25,1 %              |
+| Macrosómico (≥4000 g)ᶜ                                               | 6649  | 3,4 %               | 386   | 1,6 %               |
+| Ictericia neonatal                                                   | 6649  | 34,5 %              | 386   | 26,7 %              |
+| Recién nacido vivo (criterio CIE-10)                                 | 6553  | 95,1 %              | 379   | 93,9 %              |
+| Lactancia exclusiva al egresoᵈ                                       | 5683  | 97,0 %              | 329   | 97,3 %              |
+
+Nota: Los porcentajes se calcularon sobre los registros con información disponible para cada variable. Las variables continuas se presentan como mediana \[rango intercuartílico\]. RIC: rango intercuartílico; p10: percentil 10.
+
+ᵃ Definido como ninguna escolaridad o educación primaria; su interpretación se complementa con el indicador de rezago escolar ajustado por edad.
+
+ᵇ Variables neonatales descritas únicamente en nacimientos únicos admitidos en Neonatología. En esta submuestra neonatal única se excluyeron los 245 embarazos múltiples que permanecen en la muestra materna de 7.035 eventos. Los denominadores de la Tabla 1 difieren por variable según la disponibilidad de datos en los 6.790 nacimientos únicos.
+
+ᶜ Macrosomía definida como peso al nacer ≥4.000 g.
+
+ᵈ Variable con la mayor proporción de datos faltantes.
+
+# **Tabla 2. Comparaciones bivariadas modeladas entre adolescentes de 10--14 y 15--19 años** {#tabla-2.-comparaciones-bivariadas-modeladas-entre-adolescentes-de-1014-y-1519-años .text-3}
+
+| **Panel A. Características sociodemográficas, reproductivas y obstétricas**         |       |             |                       |                         |
+|:----------------|--------------|--------------|--------------|--------------|
+| **Característica**                                                                  | **n** | **Eventos** | **RP (ICr 95 %) ^a^** | **pd**                  |
+| Pareja estable                                                                      | 7035  | 3901        | 0,86 (0,77--0,95)     | 99,8 %                  |
+| Etnia minoritaria                                                                   | 7035  | 360         | 1,77 (1,24--2,44)     | 99,9 %                  |
+| Gestas previas                                                                      | 7035  | 1225        | 0,17 (0,09--0,27)     | \>99,9 %                |
+| Embarazo múltiple                                                                   | 7035  | 245         | 0,37 (0,14--0,79)     | 99,5 %                  |
+| Embarazo planeado                                                                   | 7035  | 1580        | 0,62 (0,48--0,79)     | \>99,9 %                |
+| Falla de método anticonceptivo                                                      | 7035  | 1183        | 0,42 (0,28--0,59)     | \>99,9 %                |
+| Infección urinaria                                                                  | 6939  | 3617        | 0,81 (0,71--0,91)     | 99,9 %                  |
+| Compromiso del bienestar fetal                                                      | 7035  | 708         | 0,58 (0,38--0,83)     | 99,9 %                  |
+| Trastorno hipertensivo del embarazo                                                 | 6911  | 1249        | 0,78 (0,60--1,00)     | 97,7 %                  |
+| Parto vía vaginal                                                                   | 7030  | 4243        | 1,17 (1,09--1,25)     | \>99,9 %                |
+| Adecuación del control prenatal ^b^                                                 | 6860  | 4198        | 0,87 (0,78--0,95)     | 99,9 %                  |
+| **Panel B. Comparación entre los indicadores educativos crudo y ajustado por edad** |       |             |                       |                         |
+| **Indicador educativo**                                                             | **n** | **Eventos** | **RP (ICr 95 %)**     | **DP (ICr 95 %)** ^*c*^ |
+| Ninguna escolaridad o educación primaria (indicador crudo)                          | 7035  | 1259        | 4,33 (3,94--4,74)     | 0,50 (0,46--0,55)       |
+| Rezago escolar ≥2 años respecto de lo esperado para la edad                         | 7027  | 1232        | 2,07 (1,78--2,41)     | 0,18 (0,13--0,23)       |
+
+**Notas:** RP: razón de prevalencias marginal estandarizada; DP: diferencia de prevalencias marginal estandarizada; ICr: intervalo de credibilidad; pd: probabilidad de dirección. Las estimaciones comparan adolescentes de 10--14 años con adolescentes de 15--19 años como grupo de referencia. El indicador crudo clasifica como menor nivel educativo la ausencia de escolaridad o la educación primaria; el indicador de rezago considera la diferencia entre los años de escolaridad observados y los esperados para la edad. Por construcción, la pd no alcanza el 100 % exacto; se muestra como "\>99,9 %" únicamente cuando el valor estimado no permite distinguirla de la unidad.
+
+a RP no ajustadas e independientes entre sí; no representan efectos causales ajustados por covariables.
+
+b Compara la categoría Adecuación del control prenatal (variable ordinal de 4 niveles: Sin controles / Inadecuado /Intermedio / Adecuado) frente a las otras tres categorías combinadas. El desglose completo de las cuatro categorías, por grupo de edad, se presenta en la Tabla S1 del Material Suplementario.
+
+^*c*^ *DP: diferencia de prevalencia marginal estandarizada, ICr 95 %.*
+
+# Material Suplementario {#material-suplementario .unnumbered}
+
+## Tabla S1. Categorías descriptivas de rezago escolar y de adecuación del control prenatal {#tabla-s1.-categorías-descriptivas-de-rezago-escolar-y-de-adecuación-del-control-prenatal .unnumbered}
+
+| **Variable**                    | **Categoría** | **n 15--19a** | **n 10--14a** | **% 15--19a** | **% 10--14a** |
+|:-----------|:-----------|:-----------|:-----------|:-----------|:-----------|
+| Rezago escolar                  | Ausente       | 6645          | 382           | 83,4 %        | 65,4 %        |
+|                                 | Presente      | 6645          | 382           | 16,6 %        | 34,6 %        |
+| Adecuación del control prenatal | Sin controles | 6487          | 373           | 2,6 %         | 4,0 %         |
+|                                 | Inadecuado    | 6487          | 373           | 10,8 %        | 16,4 %        |
+|                                 | Intermedio    | 6487          | 373           | 24,9 %        | 26,3 %        |
+|                                 | Adecuado      | 6487          | 373           | 61,6 %        | 53,4 %        |
+
+*a Columnas de grupo de edad materna: 15--19 años y 10--14 años.*
+
+Complementa la Tabla 1 del cuerpo principal, desagregando las variables binarias "Rezago escolar" y "Adecuación del control prenatal" en sus categorías completas.
+
+## Tabla S2. Modelos bayesianos de razón de prevalencia (RP) --- análisis principal (2009--2024) y sensibilidad por subperíodo {#tabla-s2.-modelos-bayesianos-de-razón-de-prevalencia-rp-análisis-principal-20092024-y-sensibilidad-por-subperíodo .unnumbered}
+
+| **Subperíodo**     | **Variable**                                                | **n** | **ev.** | **RP (ICr95%)**   | **DP (ICr95%)**      | **pd**   | **R-hat** | **ESSbulk** | **ESStail** | **E-BFMI** | **Div.** |
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+| 2009--2024 (total) | Pareja estable                                              | 7035  | 3901    | 0,86 (0,77--0,95) | -0,08 (-0,13---0,03) | 99,8 %   | 1,0007    | 4126        | 5201        | 0,957      | 0        |
+| 2009--2024 (total) | Ninguna escolaridad o educación primaria                    | 7035  | 1259    | 4,33 (3,94--4,74) | 0,50 (0,46--0,55)    | \>99,9 % | 1,0018    | 4380        | 5287        | 0,974      | 0        |
+| 2009--2024 (total) | Etnia minoritaria                                           | 7035  | 360     | 1,77 (1,24--2,44) | 0,04 (0,01--0,07)    | 99,9 %   | 1,0012    | 4209        | 5050        | 1,014      | 0        |
+| 2009--2024 (total) | Gestas previas                                              | 7035  | 1225    | 0,17 (0,09--0,27) | -0,15 (-0,17---0,13) | \>99,9 % | 1,0007    | 4632        | 5016        | 0,961      | 0        |
+| 2009--2024 (total) | Embarazo múltiple                                           | 7035  | 245     | 0,37 (0,14--0,79) | -0,02 (-0,03---0,01) | 99,5 %   | 1,0006    | 4150        | 4516        | 0,920      | 0        |
+| 2009--2024 (total) | Embarazo planeado                                           | 7035  | 1580    | 0,62 (0,48--0,79) | -0,09 (-0,12---0,05) | \>99,9 % | 1,0012    | 4297        | 5544        | 0,950      | 0        |
+| 2009--2024 (total) | Falla de método anticonceptivo                              | 7035  | 1183    | 0,42 (0,28--0,59) | -0,10 (-0,13---0,07) | \>99,9 % | 1,0005    | 4547        | 5390        | 0,984      | 0        |
+| 2009--2024 (total) | Infección urinaria                                          | 6939  | 3617    | 0,81 (0,71--0,91) | -0,10 (-0,15---0,05) | 99,99 %  | 1,0009    | 4295        | 5306        | 0,909      | 0        |
+| 2009--2024 (total) | Compromiso del bienestar fetal                              | 7035  | 708     | 0,58 (0,38--0,83) | -0,04 (-0,07---0,02) | 99,9 %   | 1,0015    | 4709        | 5195        | 1,021      | 0        |
+| 2009--2024 (total) | Trastorno hipertensivo del embarazo                         | 6911  | 1249    | 0,78 (0,60--1,00) | -0,04 (-0,07--0,00)  | 97,7 %   | 1,0006    | 4296        | 4945        | 0,995      | 0        |
+| 2009--2024 (total) | Parto vía vaginal                                           | 7030  | 4243    | 1,17 (1,09--1,25) | 0,10 (0,05--0,15)    | \>99,9 % | 1,0003    | 4259        | 5944        | 1,050      | 0        |
+| 2009--2024 (total) | Rezago escolar ≥2 años respecto de lo esperado para la edad | 7027  | 1232    | 2,07 (1,78--2,41) | 0,18 (0,13--0,23)    | \>99,9 % | 1,0004    | 4195        | 4992        | 0,961      | 0        |
+| 2009--2024 (total) | Adecuación del control prenatal                             | 6860  | 4198    | 0,87 (0,78--0,95) | -0,08 (-0,13---0,03) | 99,9 %   | 1,0014    | 4097        | 4821        | 0,948      | 0        |
+| 2009--2014         | Pareja estable                                              | 3631  | 2209    | 0,84 (0,71--0,98) | -0,10 (-0,18---0,02) | 99,0 %   | 1,0016    | 4210        | 4874        | 1,016      | 0        |
+| 2009--2014         | Ninguna escolaridad o educación                             | 3631  | 701     | 3,13 (2,65--3,64) | 0,38 (0,30--0,46)    | \>99,9 % | 1,0006    | 3829        | 5097        | 0,979      | 0        |
+| 2009--2014         | Etnia minoritaria                                           | 3631  | 109     | 1,67 (0,76--3,11) | 0,02 (-0,01--0,06)   | 90,9 %   | 1,0022    | 4048        | 4328        | 0,940      | 0        |
+| 2009--2014         | Gestas previas                                              | 3631  | 719     | 0,21 (0,09--0,39) | -0,16 (-0,19---0,12) | \>99,9 % | 1,0010    | 4119        | 4315        | 0,940      | 0        |
+| 2009--2014         | Embarazo múltiple                                           | 3631  | 133     | 0,24 (0,05--0,80) | -0,03 (-0,04---0,01) | 99,3 %   | 1,0008    | 3946        | 5235        | 1,007      | 0        |
+| 2009--2014         | Embarazo planeado                                           | 3631  | 955     | 0,78 (0,56--1,06) | -0,06 (-0,12--0,02)  | 94,4 %   | 1,0012    | 4171        | 4257        | 0,932      | 0        |
+| 2009--2014         | Falla de método anticonceptivo                              | 3631  | 605     | 0,39 (0,20--0,67) | -0,11 (-0,14---0,06) | 99,98 %  | 1,0012    | 3582        | 4783        | 0,894      | 0        |
+| 2009--2014         | Infección urinaria                                          | 3563  | 1886    | 0,94 (0,79--1,09) | -0,03 (-0,11--0,05)  | 78,9 %   | 1,0007    | 3988        | 5191        | 1,012      | 0        |
+| 2009--2014         | Compromiso del bienestar fetal                              | 3631  | 302     | 0,69 (0,35--1,20) | -0,03 (-0,06--0,02)  | 89,5 %   | 1,0009    | 4443        | 4799        | 0,975      | 0        |
+| 2009--2014         | Trastorno hipertensivo del embarazo                         | 3547  | 677     | 0,72 (0,46--1,03) | -0,06 (-0,11--0,01)  | 96,4 %   | 1,0013    | 4068        | 5401        | 0,943      | 0        |
+| 2009--2014         | Parto vaginal                                               | 3628  | 2235    | 1,21 (1,09--1,33) | 0,13 (0,06--0,20)    | 99,98 %  | 1,0006    | 4226        | 4561        | 0,948      | 0        |
+| 2009--2014         | Rezago escolar                                              | 3628  | 718     | 1,67 (1,28--2,10) | 0,13 (0,05--0,21)    | 99,98 %  | 1,0011    | 3730        | 4507        | 0,917      | 0        |
+| 2009--2014         | Adecuación del control prenatal                             | 3530  | 2108    | 0,78 (0,65--0,92) | -0,13 (-0,21---0,05) | 99,9 %   | 1,0010    | 4025        | 5575        | 1,006      | 0        |
+| 2015--2019         | Pareja estable                                              | 2324  | 1065    | 0,67 (0,51--0,85) | -0,16 (-0,23---0,07) | 99,99 %  | 1,0005    | 4194        | 5357        | 1,023      | 0        |
+| 2015--2019         | Ninguna escolaridad o educación primaria                    | 2324  | 322     | 6,04 (5,04--7,17) | 0,55 (0,46--0,63)    | \>99,9 % | 1,0005    | 4555        | 5358        | 0,994      | 0        |
+| 2015--2019         | Etnia minoritaria                                           | 2324  | 152     | 1,97 (1,16--3,08) | 0,06 (0,01--0,12)    | 99,3 %   | 1,0004    | 4134        | 5205        | 0,994      | 0        |
+| 2015--2019         | Gestas previas                                              | 2324  | 345     | 0,18 (0,06--0,41) | -0,13 (-0,15---0,09) | \>99,9 % | 1,0013    | 4269        | 5257        | 0,946      | 0        |
+| 2015--2019         | Embarazo múltiple                                           | 2324  | 69      | 0,77 (0,22--1,92) | -0,01 (-0,03--0,03)  | 69,6 %   | 1,0010    | 4208        | 4597        | 0,997      | 0        |
+| 2015--2019         | Embarazo planeado                                           | 2324  | 473     | 0,46 (0,26--0,75) | -0,11 (-0,16---0,05) | 99,96 %  | 1,0006    | 4216        | 4822        | 0,993      | 0        |
+| 2015--2019         | Falla de método anticonceptivo                              | 2324  | 448     | 0,52 (0,30--0,84) | -0,09 (-0,14---0,03) | 99,8 %   | 1,0006    | 4222        | 5444        | 0,961      | 0        |
+| 2015--2019         | Infección urinaria                                          | 2302  | 1420    | 0,91 (0,76--1,05) | -0,06 (-0,15--0,03)  | 90,1 %   | 1,0004    | 3924        | 5270        | 0,966      | 0        |
+| 2015--2019         | Compromiso del bienestar fetal                              | 2324  | 286     | 0,45 (0,20--0,83) | -0,07 (-0,10---0,02) | 99,6 %   | 1,0007    | 4382        | 4764        | 0,953      | 0        |
+| 2015--2019         | Trastorno hipertensivo del embarazo                         | 2288  | 429     | 1,03 (0,69--1,44) | 0,01 (-0,06--0,08)   | 56,9 %   | 1,0007    | 4017        | 5494        | 0,997      | 0        |
+| 2015--2019         | Parto vía vaginal                                           | 2322  | 1319    | 1,07 (0,91--1,22) | 0,04 (-0,05--0,12)   | 80,0 %   | 1,0007    | 3650        | 5277        | 0,958      | 0        |
+| 2015--2019         | Rezago escolar                                              | 2323  | 323     | 3,39 (2,65--4,23) | 0,29 (0,21--0,38)    | \>99,9 % | 1,0010    | 4169        | 4999        | 0,973      | 0        |
+| 2015--2019         | Adecuación del control prenatal                             | 2286  | 1500    | 0,90 (0,77--1,04) | -0,06 (-0,16--0,02)  | 91,9 %   | 1,0014    | 4088        | 4629        | 0,940      | 0        |
+| 2020--2024         | Pareja estable                                              | 1080  | 627     | 1,10 (0,93--1,27) | 0,06 (-0,04--0,15)   | 88,0 %   | 1,0019    | 3879        | 4871        | 0,977      | 0        |
+| 2020--2024         | Ninguna escolaridad o educación primaria                    | 1080  | 236     | 4,96 (4,13--5,92) | 0,62 (0,54--0,70)    | \>99,9 % | 1,0010    | 3966        | 4625        | 0,919      | 0        |
+| 2020--2024         | Etnia minoritaria                                           | 1080  | 99      | 1,01 (0,52--1,77) | 0,00 (-0,05--0,07)   | 50,7 %   | 1,0008    | 3981        | 4593        | 0,996      | 0        |
+| 2020--2024         | Gestas previas                                              | 1080  | 161     | 0,15 (0,04--0,39) | -0,14 (-0,17---0,10) | \>99,9 % | 1,0012    | 4347        | 4716        | 0,997      | 0        |
+| 2020--2024         | Embarazo múltiple                                           | 1080  | 43      | 0,30 (0,05--1,01) | -0,03 (-0,05--0,00)  | 97,4 %   | 1,0012    | 4307        | 4746        | 0,914      | 0        |
+| 2020--2024         | Embarazo planeado                                           | 1080  | 152     | 0,71 (0,38--1,19) | -0,04 (-0,09--0,03)  | 89,0 %   | 1,0006    | 4316        | 5528        | 0,935      | 0        |
+| 2020--2024         | Falla de método anticonceptivo                              | 1080  | 130     | 0,38 (0,15--0,78) | -0,08 (-0,12---0,03) | 99,6 %   | 1,0019    | 3964        | 3933        | 0,958      | 0        |
+| 2020--2024         | Infeccion urinaria                                          | 1074  | 311     | 0,54 (0,35--0,81) | -0,14 (-0,21---0,06) | 99,95 %  | 1,0010    | 4619        | 5253        | 1,024      | 0        |
+| 2020--2024         | Compromiso del bienestar fetal                              | 1080  | 120     | 0,58 (0,26--1,09) | -0,05 (-0,09--0,01)  | 95,5 %   | 1,0011    | 4273        | 5250        | 0,991      | 0        |
+| 2020--2024         | Trastorno hipertensivo del embarazo                         | 1076  | 143     | 0,62 (0,32--1,08) | -0,05 (-0,10--0,01)  | 95,3 %   | 1,0007    | 4347        | 5310        | 0,975      | 0        |
+| 2020--2024         | Parto vía vaginal                                           | 1080  | 689     | 1,21 (1,06--1,35) | 0,13 (0,04--0,21)    | 99,8 %   | 1,0013    | 4040        | 4632        | 0,988      | 0        |
+| 2020--2024         | Rezago escolar                                              | 1076  | 191     | 1,69 (1,18--2,31) | 0,11 (0,03--0,20)    | 99,7 %   | 1,0007    | 4330        | 5215        | 0,966      | 0        |
+| 2020--2024         | Adecuación del control prenatal                             | 1044  | 590     | 0,98 (0,80--1,15) | -0,01 (-0,12--0,08)  | 60,3 %   | 1,0012    | 3695        | 4867        | 0,908      | 0        |
+
+Bernoulli-logit con estandarización posterior, un modelo independiente por característica (10--14 años vs. 15--19 años como referencia). RP: razón de prevalencia; DP: diferencia de prevalencia marginal estandarizada; ev.: eventos; Div.: divergencias. Diagnósticos de convergencia adecuados en todos los modelos (R-hat ≤1,01; cero divergencias; E-BFMI ≥0,30).
+
+## Tabla S3. Modelos secundarios de atención prenatal {#tabla-s3.-modelos-secundarios-de-atención-prenatal .unnumbered}
+
+| **Análisis**                                                       | **Estimador**  | **n** | **Valor (ICr95 %)**   | **pd**   | **R-hat / Div.** |
+|:-----------|:-----------|:-----------|:-----------|:-----------|:-----------|
+| Adecuación ordinal del control prenatal                            | OR             | 6860  | 0,69 (0,56--0,84)     | \>99,9 % | 1,0009 / 0       |
+| N.º de consultas prenatales no ajustado                            | Dif. de medias | 6860  | -0,56 (-0,85 a -0,26) | \>99,9 % | 1,0028 / 0       |
+| N.º de consultas prenatales ajustado por edad gestacional al parto | Dif. de medias | 6860  | -0,55 (-0,83 a -0,27) | 99,99 %  | 1,0009 / 0       |
+
+Modelo cumulative-logit (adecuación ordinal del control prenatal) y modelos gaussianos (número de consultas prenatales, no ajustado y ajustado por edad gestacional al parto).
+
+Los estimadores comparan adolescentes de 10--14 años frente a adolescentes de 15--19 años como grupo de referencia. Los valores negativos indican un menor número medio de consultas prenatales en el grupo de 10--14 años. OR: razón de momios acumulada; ICr: intervalo de credibilidad; pd: probabilidad de dirección.
+
+## Tabla S4. Datos faltantes por variable y completitud del análisis {#tabla-s4.-datos-faltantes-por-variable-y-completitud-del-análisis .unnumbered}
+
+| **Variable**                                 | **n total** | **n faltante** | **% faltante** |
+|:-----------------------|:---------------|:---------------|:---------------|
+| Lactancia exclusiva al egreso                | 7035        | 1023           | 14,54 %        |
+| Adecuación "adecuada" del control prenatal   | 7035        | 175            | 2,49 %         |
+| Adecuación del control prenatal (categórica) | 7035        | 175            | 2,49 %         |
+| N.º de consultas prenatales                  | 7035        | 151            | 2,15 %         |
+| Apgar 1 min bajo                             | 7035        | 126            | 1,79 %         |
+| Trastorno hipertensivo del embarazo          | 7035        | 124            | 1,76 %         |
+| Apgar 5 min bajo                             | 7035        | 118            | 1,68 %         |
+| Recién nacido vivo                           | 7035        | 103            | 1,46 %         |
+| Infección urinaria                           | 7035        | 96             | 1,36 %         |
+| Prematuro                                    | 7035        | 43             | 0,61 %         |
+| Edad gestacional al parto                    | 7035        | 26             | 0,37 %         |
+| Rezago escolar (binario)                     | 7035        | 8              | 0,11 %         |
+| Categoría de rezago escolar                  | 7035        | 8              | 0,11 %         |
+| Parto vía vaginal                            | 7035        | 5              | 0,07 %         |
+| Pequeño para la edad gestacional             | 7035        | 1              | 0,01 %         |
+| Peso al nacer                                | 7035        | 1              | 0,01 %         |
+| Pareja estable                               | 7035        | 0              | 0,00 %         |
+| Menor nivel educativo registrado             | 7035        | 0              | 0,00 %         |
+| Etnia minoritaria                            | 7035        | 0              | 0,00 %         |
+| Gestas previas                               | 7035        | 0              | 0,00 %         |
+| Embarazo múltiple                            | 7035        | 0              | 0,00 %         |
+| Embarazo planeado (registrado)               | 7035        | 0              | 0,00 %         |
+| Falla de método anticonceptivo (registrada)  | 7035        | 0              | 0,00 %         |
+| Compromiso del bienestar fetal               | 7035        | 0              | 0,00 %         |
+| Macrosómico                                  | 7035        | 0              | 0,00 %         |
+| Ictericia neonatal                           | 7035        | 0              | 0,00 %         |
+
+**Datos faltantes por variable (n total = 7035):**
