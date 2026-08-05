@@ -6,7 +6,34 @@ library(openxlsx)
 
 # Cargar y limpiar datos
 ruta_csv <- "Adolescentes.csv"
-Adolescentes <- read_csv(ruta_csv, locale = locale(encoding = "UTF-8"), show_col_types = FALSE)
+
+Adolescentes <- readr::read_csv(
+  ruta_csv,
+  locale = readr::locale(encoding = "UTF-8"),
+  col_types = readr::cols(
+    `Obstrucción del parto` = readr::col_character(),
+    `BEBE Otro trastorno metabolico` = readr::col_character(),
+    `BEBE Dificultad respiratoria` = readr::col_character()
+  ),
+  show_col_types = FALSE
+)
+
+problemas_parseo <- readr::problems(Adolescentes)
+
+if (nrow(problemas_parseo) > 0L) {
+  readr::write_csv(
+    problemas_parseo,
+    "output/reconciliation/problemas_parseo.csv"
+  )
+
+  warning(
+    "Se detectaron ",
+    nrow(problemas_parseo),
+    " problemas de importación. ",
+    "Revise output/reconciliation/problemas_parseo.csv"
+  )
+}
+
 names(Adolescentes) <- trimws(names(Adolescentes))
 names(Adolescentes) <- gsub("[[:space:]]+", " ", names(Adolescentes))
 
