@@ -51,9 +51,30 @@ En consecuencia, no pudo descartarse una posible dependencia residual entre obse
 
 Se verificó que el manuscrito, la carta de respuesta y la fuente de la figura empleen de forma consistente la terminología de eventos obstétricos maternos y que se evite presentar los 7.035 registros como 7.035 personas distintas.
 
-### Comentario editorial 4: indicador de rezago escolar
+## 4. Indicador de rezago escolar
 
-Agradecemos esta observación. Se aclaró que el rezago escolar se calculó como la diferencia entre los años esperados y los años aprobados, con un máximo de 12 años, y que esta definición es operacional. La redacción del manuscrito ahora indica que, bajo esta fórmula, una subestimación de los años esperados puede subestimar el rezago calculado, especialmente en adolescentes escolarizadas bajo la reforma educativa. Este punto se incorporó en los apartados de Métodos y Limitaciones.
+**Comentario editorial**
+
+El nuevo indicador constituye una mejora importante, pero el manuscrito invierte la dirección del posible error: si el rezago se calcula como años esperados menos años aprobados, subestimar los años esperados reduce —no aumenta— el rezago estimado. Se solicita corregir esta afirmación en Métodos y Limitaciones; presentar una tabla con los años esperados por edad; justificar la regla “edad menos seis”; realizar sensibilidad con una regla alternativa plausible; describir el impacto de la reforma educativa; y reconocer que la escolaridad registrada en el parto puede haber sido afectada por interrupción escolar durante la propia gestación.
+
+**Respuesta**
+
+Agradecemos esta observación. Se corrigió la dirección del posible error de clasificación. Dado que el rezago se definió como años esperados menos años aprobados, una subestimación de los años esperados reduce el rezago calculado y puede producir una estimación conservadora, en lugar de sobreestimarlo.
+
+La regla principal, edad materna menos seis con un máximo de 12 años, se mantuvo como aproximación operacional al avance escolar esperado bajo la estructura educativa ecuatoriana previa a 2011 y al inicio habitual de la escolarización formal alrededor de los seis años. Se incorporó una tabla suplementaria con los años esperados para cada edad entre 10 y 19 años.
+
+Además, se realizó un análisis de sensibilidad con una regla alternativa de edad materna menos cinco y un máximo de 13 años. Esta especificación reclasificó 434 de 7.027 registros (6,18 %). La estimación principal fue RP=2,07 (ICr95%: 1,78–2,41) y diferencia de prevalencias=0,18 (ICr95%: 0,13–0,23). Con la regla alternativa, la asociación se atenuó a RP=1,83 (ICr95%: 1,60–2,07), mientras que la diferencia de prevalencias fue 0,19 (ICr95%: 0,14–0,24). Por tanto, la magnitud relativa fue sensible a la especificación, pero la dirección y la diferencia absoluta se mantuvieron.
+
+También se incorporó en Métodos y Limitaciones que la base no permitió identificar el régimen educativo aplicable individualmente y que la reforma educativa pudo modificar los años de escolaridad esperados. Se reconoció, además, que la escolaridad registrada en el momento del parto pudo haber sido afectada por interrupciones escolares durante la propia gestación, por lo que no puede asumirse que todo el rezago precedió al embarazo.
+
+**Cambios realizados**
+
+- Métodos: definición, justificación y sensibilidad del indicador de rezago escolar.
+- Resultados: número de registros reclasificados y estimaciones bajo la regla alternativa.
+- Limitaciones: corrección de la dirección del posible sesgo, efecto de la reforma educativa y temporalidad de la escolaridad registrada.
+- Material suplementario: tabla de años esperados por edad y resultados completos de sensibilidad.
+- Código reproducible: R/06_sensibilidad_rezago_escolar.R.
+- Archivos de salida: output/rezago_escolar/.
 
 ## 2. Gestaciones múltiples
 
