@@ -4,12 +4,56 @@ Estimado/a Editor/a,
 
 Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación presentamos una respuesta detallada y blindada sobre la unidad de análisis, el manejo de gestaciones múltiples y la descripción neonatal.
 
-## 1. Unidad de análisis
+## 1. Comentario del editor
 
-- La unidad de análisis principal del estudio es el **evento obstétrico materno** en adolescentes de 10–19 años.
-- La muestra analítica final para variables maternas incluye **7.035 eventos obstétricos**, de los cuales **386** corresponden a adolescentes de 10–14 años y **6.649** a adolescentes de 15–19 años.
-- Estos eventos se obtuvieron a partir de **7.202 registros iniciales**.
-- Se eliminaron **15 duplicados exactos**.
+El comentario editorial solicitó usar de forma consistente la terminología de la unidad de análisis y aclarar que la base contiene eventos obstétricos, no necesariamente personas distintas, dado que no se disponía de un identificador longitudinal personal.
+
+## 2. Respuesta de los autores
+
+Agradecemos esta observación. Reconocemos que la versión anterior utilizó de manera inconsistente expresiones referidas a personas y a eventos. La unidad de análisis fue el evento obstétrico materno, no la adolescente individual.
+
+## 3. Problema reconocido
+
+La formulación previa podía sugerir que los 7.035 registros analíticos equivalían a 7.035 personas únicas. Este problema era especialmente relevante en el Resumen, los Resultados, el flujograma y las notas de figura, donde la terminología podía interpretarse como referida a personas individuales.
+
+## 4. Cambios realizados
+
+Se corrigió la terminología en el manuscrito para referirse sistemáticamente a eventos obstétricos maternos; se reformuló el Resumen, los Resultados, el apartado de Métodos, la sección de Limitaciones y el texto del flujograma y las notas de figura. También se añadió una explicación explícita sobre la ausencia de un identificador longitudinal personal y la posibilidad de dependencia residual entre observaciones.
+
+## 5. Terminología adoptada
+
+Se adoptó la formulación: “Se analizaron 7.035 eventos obstétricos de adolescentes” y “La unidad de análisis fue el evento obstétrico materno”.
+
+## 6. Explicación de la imposibilidad de identificar recurrencias
+
+No se dispuso de un identificador personal longitudinal que permitiera determinar si una misma adolescente contribuyó con más de un evento obstétrico durante el período 2009–junio de 2024. Por ello, los registros finales se interpretaron como eventos obstétricos y no como 7.035 personas distintas.
+
+## 7. Discusión de la dependencia residual
+
+En consecuencia, no pudo descartarse una posible dependencia residual entre observaciones correspondientes a eventos recurrentes no identificables de una misma persona. Esta limitación se incorporó en la sección de Limitaciones, sin afirmar que la dependencia se hubiera demostrado ni que se hubiera cuantificado.
+
+## 8. Ubicación exacta de cada cambio
+
+- Resumen y Abstract: [manuscript/Adolescentes_19_julio.qmd](manuscript/Adolescentes_19_julio.qmd)
+- Métodos: [manuscript/Adolescentes_19_julio.qmd](manuscript/Adolescentes_19_julio.qmd)
+- Resultados: [manuscript/Adolescentes_19_julio.qmd](manuscript/Adolescentes_19_julio.qmd)
+- Limitaciones y Discusión: [manuscript/Adolescentes_19_julio.qmd](manuscript/Adolescentes_19_julio.qmd)
+- Figura 2 y nota asociada: [manuscript/Adolescentes_19_julio.qmd](manuscript/Adolescentes_19_julio.qmd)
+- Fuente de la figura conceptual: [Figura1_marco_conceptual.R](Figura1_marco_conceptual.R)
+
+## 9. Archivos modificados
+
+- [manuscript/Adolescentes_19_julio.qmd](manuscript/Adolescentes_19_julio.qmd)
+- [Carta de Respuesta.md](Carta%20de%20Respuesta.md)
+- [Figura1_marco_conceptual.R](Figura1_marco_conceptual.R)
+
+## 10. Verificación final de consistencia
+
+Se verificó que el manuscrito, la carta de respuesta y la fuente de la figura empleen de forma consistente la terminología de eventos obstétricos maternos y que se evite presentar los 7.035 registros como 7.035 personas distintas.
+
+### Comentario editorial 4: indicador de rezago escolar
+
+Agradecemos esta observación. Se aclaró que el rezago escolar se calculó como la diferencia entre los años esperados y los años aprobados, con un máximo de 12 años, y que esta definición es operacional. La redacción del manuscrito ahora indica que, bajo esta fórmula, una subestimación de los años esperados puede subestimar el rezago calculado, especialmente en adolescentes escolarizadas bajo la reforma educativa. Este punto se incorporó en los apartados de Métodos y Limitaciones.
 
 ## 2. Gestaciones múltiples
 

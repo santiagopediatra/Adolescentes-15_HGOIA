@@ -1,0 +1,5 @@
+- Se corrigió la terminología del Resumen y Abstract para hablar de eventos obstétricos.
+- Se reformuló Métodos para definir la unidad de análisis como evento obstétrico materno y explicar la ausencia de identificador longitudinal.
+- Se ajustó Resultados y Discusión para referirse a eventos y no a personas únicas.
+- Se actualizó el texto del flujograma y de la nota asociada.
+- Se actualizó la fuente de la figura conceptual en Figura1_marco_conceptual.R y se regeneró la figura.
