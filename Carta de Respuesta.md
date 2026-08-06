@@ -76,6 +76,25 @@ También se incorporó en Métodos y Limitaciones que la base no permitió ident
 - Código reproducible: R/06_sensibilidad_rezago_escolar.R.
 - Archivos de salida: output/rezago_escolar/.
 
+## 5. Inconsistencia sobre el modelo ordinal de rezago escolar
+
+**Comentario editorial**
+
+Los Métodos afirmaban que el rezago escolar fue analizado mediante un modelo ordinal, pero el indicador se presentó como variable binaria, la Tabla S1 mostró únicamente dos categorías y no se incluyeron resultados ordinales correspondientes.
+
+**Respuesta**
+
+Agradecemos la observación. Se retiró la afirmación de que el rezago escolar fue analizado mediante un modelo ordinal. El indicador de rezago escolar se mantuvo como variable binaria, definida como ausente (0–1 año) o presente (≥2 años), y fue analizado únicamente mediante un modelo Bernoulli-logit, en concordancia con la Tabla 2 y la Tabla S1.
+
+El modelo ordinal se reservó exclusivamente para la adecuación del control prenatal, que sí se definió mediante cuatro categorías ordenadas. No se modificaron las estimaciones del rezago escolar, porque el análisis presentado en el manuscrito y en las tablas ya correspondía al modelo binario Bernoulli-logit.
+
+**Cambios realizados**
+
+- Métodos: se eliminó la referencia al modelo ordinal para el rezago escolar.
+- Métodos: se aclaró que el rezago escolar se analizó únicamente como variable binaria mediante un modelo Bernoulli-logit.
+- Material suplementario: se mantuvo la Tabla S1 con las dos categorías del indicador binario, sin añadir categorías ordinales inexistentes.
+- Resultados y Tabla 2: se conservaron las estimaciones previamente presentadas, porque ya correspondían al análisis binario.
+
 ## 2. Gestaciones múltiples
 
 - Se identificaron **245 eventos de embarazo múltiple** en la muestra final de 7.035 eventos obstétricos.

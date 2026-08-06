@@ -82,7 +82,7 @@ Para cada característica materna binaria se ajustó un modelo bayesiano indepen
 
 El análisis de sensibilidad del rezago escolar utilizó la misma especificación Bernoulli-logit del análisis principal y comparó la regla principal con la regla alternativa de años esperados.
 
-El rezago escolar y la adecuación prenatal se analizaron adicionalmente mediante modelos ordinales bayesianos con enlace logit acumulativo y puntos de corte flexibles, con un prior Normal(0; 1,5) para el coeficiente del grupo etario. En el modelo de rezago, una razón de momios superior a 1 indicó mayor probabilidad de pertenecer a una categoría de mayor severidad; en el modelo de adecuación prenatal, indicó mayor probabilidad de pertenecer a una categoría de mejor adecuación.
+La adecuación prenatal se analizó adicionalmente mediante un modelo ordinal bayesiano con enlace logit acumulativo y puntos de corte flexibles, con un prior Normal(0; 1,5) para el coeficiente del grupo etario. Una razón de momios superior a 1 indicó mayor probabilidad de pertenecer a una categoría de mejor adecuación. El rezago escolar se mantuvo como variable binaria y se analizó únicamente mediante el modelo Bernoulli-logit descrito previamente.
 
 El número de consultas prenatales se analizó mediante modelos lineales bayesianos gaussianos antes y después del ajuste por edad gestacional al parto. Se especificaron priors Normal(5; 3) para el intercepto, Normal(0; 1,5) para el grupo etario, Normal(0; 0,5) para la edad gestacional y exponencial(1) para sigma.
 
