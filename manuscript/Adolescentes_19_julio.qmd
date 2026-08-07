@@ -56,7 +56,7 @@ El Hospital Gineco-Obstétrico Isidro Ayora (HGOIA), en Quito, Ecuador, es un ce
 
 **Materiales y métodos**
 
-Se realizó un estudio observacional transversal retrospectivo basado en registros secundarios del Sistema de Información Perinatal (SIP) de la Organización Panamericana de la Salud del Hospital Gineco-Obstétrico Isidro Ayora, Quito, Ecuador, entre enero de 2009 y junio de 2024. El SIP estandariza el registro clínico de la atención durante el embarazo, el parto y el período neonatal. Durante el período estudiado, la base institucional incluyó registros de madres cuyos recién nacidos fueron admitidos en Neonatología. El HGOIA es un hospital público de referencia nacional que atiende población urbana y rural. El diseño y el mecanismo de selección se presentan en la Figura 1.
+Se realizó un estudio observacional transversal retrospectivo basado en registros secundarios del Sistema de Información Perinatal (SIP) de la Organización Panamericana de la Salud del Hospital Gineco-Obstétrico Isidro Ayora, Quito, Ecuador, entre enero de 2009 y junio de 2024. El SIP estandariza el registro clínico de la atención durante el embarazo, el parto y el período neonatal. La base accesible al estudio ya estaba restringida a registros de madres cuyos recién nacidos habían sido admitidos en Neonatología; la selección por admisión neonatal antecedió, por tanto, al marco analítico disponible. No se dispuso del conjunto de todos los partos adolescentes institucionales para comparar eventos incluidos y no incluidos. El HGOIA es un hospital público de referencia nacional que atiende población urbana y rural. El diseño y el mecanismo de selección se presentan en la Figura 1.
 
 La unidad de análisis fue el evento obstétrico materno en adolescentes de 10--19 años. Los 7.202 registros iniciales podían incluir más de una fila materna cuando una gestación múltiple generaba registros neonatales separados. Se eliminaron 15 duplicados exactos y los registros de embarazos múltiples se consolidaron a nivel materno mediante una llave compuesta por 13 variables: año de atención, edad materna, escolaridad, pareja estable, etnia, gestas, partos y cesáreas previas, embarazo planeado, uso de anticonceptivos, número de consultas prenatales, tipo de parto y cesárea.
 
@@ -144,7 +144,7 @@ La clasificación cruda de escolaridad como ninguna o primaria amplificó la dif
 
 La mayor frecuencia registrada de pertenencia a grupos étnicos minoritarios puede actuar como marcador de desigualdades estructurales y de acceso a recursos, pero no debe interpretarse como un atributo biológico ni como una condición de vulnerabilidad por sí misma. La recodificación dicotómica agrupó poblaciones heterogéneas y limitó interpretaciones específicas. Dado el carácter exploratorio del estudio y el número de comparaciones realizadas, estos hallazgos no deben interpretarse como confirmatorios.
 
-La proporción anual de adolescentes de 10--14 años mostró variabilidad dentro de la población hospitalaria analizada. Estas fluctuaciones no representan tendencias poblacionales, porque la composición de la muestra pudo estar influida por cambios temporales en la cobertura del registro, los criterios de admisión neonatal y las prácticas institucionales. La persistencia de embarazos en 10--14 años durante todo el período es consistente con lo descrito en América Latina y el Caribe. (6,18--20)
+La proporción anual de adolescentes de 10--14 años mostró variabilidad dentro de la población hospitalaria analizada (Figura 3). Estas fluctuaciones no representan tendencias poblacionales, porque la composición de la muestra pudo estar influida por cambios temporales en la cobertura del registro, los criterios de admisión neonatal y las prácticas institucionales. El dato de 2024 comprende únicamente enero--junio, se muestra como período parcial separado y no se comparó directamente con los años calendario completos. La persistencia de embarazos en 10--14 años durante todo el período es consistente con lo descrito en América Latina y el Caribe. (6,18--20)
 
 La pareja estable fue menos frecuente entre las adolescentes de 10--14 años en los dos primeros períodos, pero la estimación cambió descriptivamente de dirección en 2020--junio 2024 y su intervalo fue compatible con diferencias en ambos sentidos. La pequeña e incierta ventaja predictiva del modelo con interacción refuerza la necesidad de mostrar el cambio sin afirmar heterogeneidad concluyente. Además, la base no permitió determinar la edad de la pareja, la naturaleza de la relación, la convivencia, la autonomía reproductiva, la presencia de coerción o violencia sexual ni la calidad del registro. En consecuencia, esta variable no permite caracterizar por sí sola la naturaleza de la relación, la autonomía reproductiva ni la presencia de coerción.(21,22)
 
@@ -256,11 +256,11 @@ Los autores declaran que herramientas de inteligencia artificial (ChatGPT, OpenA
 
 **cc**
 
-![](./manuscript/media/media/image1.png){width="6.53125in" height="6.864583333333333in"}
+![](./manuscript/media/media/image1.png){width="6.53125in" height="5.2590625in"}
 
-**Figura 1.** Diagrama conceptual del diseño del estudio y del mecanismo de selección por admisión neonatal
+**Figura 1.** Marco de selección y muestras analíticas del estudio.
 
-**Nota:** el condicionamiento por admisión neonatal puede afectar tanto las comparaciones maternas como la descripción neonatal; por ello, los resultados se restringen a la muestra analizada y no representan todos los nacimientos de madres adolescentes de la institución.
+**Nota:** la base SIP accesible ya estaba condicionada por admisión neonatal antes de su disponibilidad para el estudio; la población institucional completa y los partos no incluidos no fueron observados. Los factores sociodemográficos, reproductivos/obstétricos y de atención prenatal se muestran como posibles determinantes del mecanismo de selección, no como causas ni efectos causales estimados. Después de eliminar duplicados exactos y consolidar registros de gestaciones múltiples, la muestra final incluyó 7.035 eventos obstétricos maternos; la descripción neonatal se restringió a 6.790 nacimientos únicos. La inferencia se limita a la población seleccionada analizada.
 
 ![](./manuscript/media/media/image2.png){width="6.50384186351706in" height="3.4895833333333335in"}
 
@@ -268,9 +268,11 @@ Los autores declaran que herramientas de inteligencia artificial (ChatGPT, OpenA
 
 *La población fuente estuvo constituida por registros madre--recién nacido de adolescentes de 10--19 años cuyos recién nacidos fueron admitidos en Neonatología entre enero de 2009 y junio de 2024. No se identificaron registros de madres menores de 10 años. Los registros sin edad materna consignada no fueron elegibles para la clasificación etaria y no se incluyeron en la base inicial de 7.202 registros. Los óbitos fetales y las pérdidas gestacionales no formaron parte de esta población fuente.*
 
-![](./manuscript/media/media/image3.jpeg){width="6.521527777777778in" height="4.104166666666667in"}
+![](./manuscript/media/media/image3.jpeg){width="6.521527777777778in" height="3.872157986111111in"}
 
-**Figura 3**. Distribución anual de madres adolescentes según grupo etario, enero de 2009--junio de 2024.
+**Figura 3.** Distribución anual de madres adolescentes según grupo etario, enero de 2009--junio de 2024.
+
+**Nota:** las barras muestran proporciones dentro de la base SIP ya seleccionada por admisión neonatal; el número sobre cada barra corresponde al total anual de eventos obstétricos maternos y el número dentro del segmento oscuro a los eventos de adolescentes de 10--14 años. El dato de 2024 incluye exclusivamente enero--junio, se presenta separado y rotulado como período parcial, no se anualizó ni se comparó directamente con los años completos de 2009--2023.
 
 #  {#section .text-3}
 

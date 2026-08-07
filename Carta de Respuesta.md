@@ -170,14 +170,35 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 - **Tabla S2:** período final corregido a 2020--junio 2024 y período total aclarado como enero de 2009--junio de 2024.
 - **Tabla S12:** resumen compacto de prevalencias marginales, DP, RP, términos de interacción y ΔELPD con su EE.
 
-## 10. Resumen técnico
+## 10. Figuras y marco de selección
+
+**Comentario del editor:** Se señaló que la Figura 1 podía sugerir que el estudio partió de todos los partos adolescentes institucionales y aplicó después el criterio de admisión neonatal, aunque la base accesible ya estaba restringida a recién nacidos admitidos. También se solicitó identificar claramente que 2024 contiene solo enero--junio y evitar su comparación directa con años completos en la Figura 3.
+
+**Respuesta de los autores:** Rediseñamos ambas figuras y revisamos sus llamadas, pies y texto interpretativo. La Figura 1 comienza ahora por la base SIP realmente disponible para el estudio, ya condicionada por admisión neonatal, y distingue visualmente este marco analítico del contexto institucional completo no observado. La Figura 3 identifica y separa explícitamente el período parcial de 2024.
+
+**Figura 1 y base accesible:** La población institucional de todos los partos de adolescentes aparece únicamente como contexto externo, en una caja discontinua rotulada “no observado directamente”, y no como un paso del flujo de inclusión. Se aclara que no se dispuso del denominador institucional ni de los partos no incluidos. El primer nodo observado es la base SIP disponible: 7.202 registros iniciales de adolescentes de 10--19 años cuyos recién nacidos ya habían sido admitidos en Neonatología. Desde allí se representa el proceso real de eliminación de 15 duplicados exactos, linkage/consolidación de gestaciones múltiples, muestra materna final de 7.035 eventos obstétricos y submuestra neonatal descriptiva de 6.790 nacimientos únicos.
+
+**Posibles determinantes del mecanismo de selección:** Se incorporaron, como factores potencialmente relacionados con la probabilidad de admisión neonatal e inclusión en la base, características sociodemográficas —edad/grupo etario, etnia, pareja estable y educación/rezago—; reproductivas/obstétricas —embarazo planeado, antecedentes y condiciones obstétricas/perinatales—; y de atención prenatal —adecuación y número de consultas—. Las flechas y el pie indican expresamente que se trata de un diagrama conceptual y no de causas o efectos causales estimados.
+
+**Figura 3 y 2024 parcial:** La etiqueta del eje X se cambió a **“2024 (ene--jun)”**. El período se separó de 2009--2023 mediante espacio adicional, una línea discontinua y un contorno diferenciado. Dentro de la figura se añadió la advertencia **“2024: enero--junio; conteo parcial; no comparable directamente con años completos”**. No se anualizaron, proyectaron ni extrapolaron los datos de julio--diciembre.
+
+**Interpretación:** El texto del manuscrito aclara que la variación anual se describe dentro de la población hospitalaria seleccionada y no representa una tendencia poblacional. El dato parcial de 2024 no se interpreta como descenso anual ni se compara directamente con los años calendario completos.
+
+**Ubicación exacta de los cambios:**
+
+- **Materiales y métodos, primer párrafo:** se aclara que la base accesible ya estaba restringida por admisión neonatal y que no se observaron todos los partos adolescentes institucionales.
+- **Figura 1 y su nota:** nuevo marco de selección, flujo real de depuración, posibles determinantes de selección, ausencia de atribución causal y restricción de la inferencia.
+- **Discusión, párrafo sobre variación anual:** llamada a la Figura 3 y aclaración de que 2024 es parcial y no directamente comparable.
+- **Figura 3, eje X, anotación y nota:** identificación de enero--junio de 2024, separación visual y advertencia de no comparabilidad anual.
+
+## 11. Resumen técnico
 
 - La muestra materna y la muestra neonatal están claramente separadas.
 - La descripción neonatal se realiza únicamente en la submuestra de nacimientos únicos.
 - No se retuvo de forma arbitraria ningún recién nacido de una gestación múltiple.
 - Las denominaciones de las tablas neonatales y las notas del manuscrito reflejan esta lógica.
 
-## 11. Conclusión
+## 12. Conclusión
 
 Hemos corregido completamente la redacción y la documentación del proceso. El análisis ahora declara y aplica con transparencia:
 
