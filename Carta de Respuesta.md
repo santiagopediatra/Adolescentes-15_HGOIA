@@ -144,14 +144,40 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 - **Tabla S10:** parámetros posteriores completos, incluidos interceptos, thresholds, sigma y shape.
 - **Tabla S11:** comparación compacta de coeficientes principales bajo priors principales y alternativos.
 
-## 9. Resumen técnico
+## 9. Heterogeneidad temporal
+
+**Comentario del editor:** Se solicitó dar centralidad a la heterogeneidad temporal observada, evaluar formalmente la interacción entre grupo etario y período, evitar presentar como rasgos estables asociaciones que dependen del período, discutir prudentemente posibles cambios de registro o prácticas institucionales y aclarar que 2024 comprende únicamente enero--junio.
+
+**Respuesta de los autores:** Incorporamos un análisis formal por tres subperíodos categóricos: 2009--2014, 2015--2019 y 2020--junio 2024. Para pareja estable, etnia minoritaria y control prenatal adecuado (sí/no) comparamos modelos bayesianos Bernoulli-logit aditivos y con interacción grupo etario × período. Estimamos prevalencias marginales por grupo, diferencias y razones de prevalencia por período, e informamos los términos de interacción. La comparación entre modelos se realizó mediante LOO, considerando conjuntamente la dirección, magnitud, incertidumbre, ΔELPD y su error estándar. La adecuación ordinal se conservó únicamente como sensibilidad secundaria.
+
+**Pareja estable:** En adolescentes de 10--14 frente a 15--19 años, las prevalencias marginales fueron 0,51 frente a 0,61 en 2009--2014 (DP=-0,10; ICr95 %: -0,18 a -0,02; RP=0,84; ICr95 %: 0,71--0,97), 0,31 frente a 0,47 en 2015--2019 (DP=-0,16; ICr95 %: -0,24 a -0,07; RP=0,66; ICr95 %: 0,50--0,84) y 0,63 frente a 0,58 en 2020--junio 2024 (DP=0,05; ICr95 %: -0,04 a 0,15; RP=1,10; ICr95 %: 0,93--1,26). Por tanto, la dirección se invirtió descriptivamente en el período reciente, aunque con incertidumbre. La razón de OR de interacción reciente fue 1,88 (ICr95 %: 1,13--3,17). El modelo con interacción tuvo ΔELPD=3,46 (EE=3,25), interpretado como una ventaja predictiva pequeña e incierta, no como evidencia concluyente.
+
+**Etnia minoritaria:** Las prevalencias marginales fueron 0,05 frente a 0,03 en 2009--2014 (DP=0,02; ICr95 %: -0,01 a 0,06; RP=1,62; ICr95 %: 0,79--3,02), 0,12 frente a 0,06 en 2015--2019 (DP=0,06; ICr95 %: 0,01--0,13; RP=2,01; ICr95 %: 1,19--3,18) y 0,09 frente a 0,09 en 2020--junio 2024 (DP=0,00; ICr95 %: -0,04 a 0,07; RP=1,04; ICr95 %: 0,53--1,82). La diferencia fue mayor principalmente en 2015--2019 y se aproximó a la nulidad en el período reciente, con mayor incertidumbre. La razón de OR de interacción reciente fue 0,64 (ICr95 %: 0,25--1,63) y el modelo con interacción no mejoró la predicción (ΔELPD=-0,51; EE=1,65).
+
+**Control prenatal adecuado:** Las prevalencias marginales fueron 0,47 frente a 0,60 en 2009--2014 (DP=-0,13; ICr95 %: -0,21 a -0,05; RP=0,79; ICr95 %: 0,65--0,92), 0,59 frente a 0,66 en 2015--2019 (DP=-0,06; ICr95 %: -0,16 a 0,02; RP=0,90; ICr95 %: 0,77--1,03) y 0,55 frente a 0,57 en 2020--junio 2024 (DP=-0,02; ICr95 %: -0,12 a 0,08; RP=0,97; ICr95 %: 0,80--1,14). La diferencia negativa fue mayor en el primer período y se aproximó progresivamente a la nulidad. La razón de OR de interacción reciente fue 1,59 (ICr95 %: 0,95--2,63), sin ventaja predictiva del modelo con interacción (ΔELPD=-0,19; EE=1,76). La sensibilidad ordinal mostró un patrón concordante: OR de 0,57, 0,76 y 0,86 por período, y ΔELPD=-0,31 (EE=1,79).
+
+**Interpretación:** Las estimaciones muestran variación temporal de dirección o magnitud, especialmente para pareja estable, pero la comparación predictiva no proporciona evidencia concluyente de interacción. Cambios en la composición de la población atendida, el registro o cobertura del SIP, las prácticas institucionales, el acceso o uso de atención prenatal y las circunstancias del período pandémico son explicaciones plausibles. El estudio no permite identificar cuál mecanismo explica los cambios ni atribuirles causalmente la heterogeneidad.
+
+**Aclaración de 2024:** En todo el manuscrito y en la tabla suplementaria, el último período se denomina **2020--junio 2024**. El año 2024 incluye exclusivamente enero--junio y no se interpreta como un año completo.
+
+**Ubicación exacta de los cambios:**
+
+- **Resumen y Abstract:** período de estudio corregido a enero de 2009--junio de 2024 y resultados globales matizados como no temporalmente uniformes.
+- **Materiales y métodos, análisis estadístico:** definición de los tres períodos, modelos aditivo y con interacción, estimaciones marginales, comparación mediante LOO y sensibilidad ordinal.
+- **Resultados, apartado “Heterogeneidad temporal”:** resultados completos de pareja estable, etnia minoritaria y control prenatal adecuado, incluidos estimandos marginales, términos de interacción y comparación LOO.
+- **Discusión:** asociaciones globales reformuladas como dependientes del período, atención especial a la inversión descriptiva de pareja estable e interpretación no causal de mecanismos plausibles.
+- **Conclusiones:** aclaración de que estas diferencias no fueron temporalmente uniformes.
+- **Tabla S2:** período final corregido a 2020--junio 2024 y período total aclarado como enero de 2009--junio de 2024.
+- **Tabla S12:** resumen compacto de prevalencias marginales, DP, RP, términos de interacción y ΔELPD con su EE.
+
+## 10. Resumen técnico
 
 - La muestra materna y la muestra neonatal están claramente separadas.
 - La descripción neonatal se realiza únicamente en la submuestra de nacimientos únicos.
 - No se retuvo de forma arbitraria ningún recién nacido de una gestación múltiple.
 - Las denominaciones de las tablas neonatales y las notas del manuscrito reflejan esta lógica.
 
-## 10. Conclusión
+## 11. Conclusión
 
 Hemos corregido completamente la redacción y la documentación del proceso. El análisis ahora declara y aplica con transparencia:
 
