@@ -7,7 +7,6 @@
       docx:
         toc: false
         number-sections: true
-    bibliography: referencias.bib
     csl: rbsmi-vancouver-icmje.csl
     ---
 
@@ -52,7 +51,7 @@ En los países de ingresos bajos y medianos se estimaron aproximadamente 21 mill
 
 Aunque existe una amplia literatura sobre el embarazo en adolescentes y sus implicaciones para la salud materna y perinatal,(2,3) gran parte de los estudios considera a las adolescentes como un grupo homogéneo de 10 a 19 años. Esta aproximación puede ocultar diferencias relevantes entre las adolescentes 10--14 años y aquellas de 15-19 años, particularmente en dimensiones sociodemográficas, reproductivas y relacionadas con la utilización de servicios de salud.(11) La identificación de estas diferencias resulta relevante para comprender la heterogeneidad del embarazo adolescente y orientar estrategias de atención adaptadas a las necesidades de los distintos grupos etarios.
 
-El Hospital Gineco-Obstétrico Isidro Ayora (HGOIA), en Quito, Ecuador, es un centro nacional de referencia en salud materno-infantil que atiende principalmente a mujeres de bajos y medianos ingresos procedentes de áreas urbanas y rurales, y mantiene desde 1988 un programa integral de atención para adolescentes.(12) En este contexto, el objetivo del presente estudio fue comparar las características sociodemográficas, reproductivas, obstétricas y de utilización de atención prenatal entre madres adolescentes de 10--14 años y de 15--19 años cuyos recién nacidos fueron admitidos en Neonatología en un hospital de referencia nacional de Ecuador
+El Hospital Gineco-Obstétrico Isidro Ayora (HGOIA), en Quito, Ecuador, es un centro nacional de referencia en salud materno-infantil que atiende principalmente a mujeres de bajos y medianos ingresos procedentes de áreas urbanas y rurales, y alberga el Servicio de Atención Integral para Adolescentes (SAIA), descrito como activo desde 1988.(12) En este contexto, el objetivo del presente estudio fue comparar las características sociodemográficas, reproductivas, obstétricas y de utilización de atención prenatal entre madres adolescentes de 10--14 años y de 15--19 años cuyos recién nacidos fueron admitidos en Neonatología en un hospital de referencia nacional de Ecuador
 
 **Materiales y métodos**
 
@@ -140,6 +139,8 @@ Discusión
 
 En la muestra analizada, las adolescentes de 10--14 años presentaron un perfil sociodemográfico, reproductivo y de utilización de atención prenatal diferente al de las adolescentes de 15--19 años. En el análisis global se observaron mayor frecuencia de pertenencia a grupos étnicos minoritarios, menor frecuencia registrada de pareja estable y embarazo planeado, y menor utilización de atención prenatal; sin embargo, las diferencias en pareja estable, etnia minoritaria y adecuación prenatal variaron entre períodos. Aunque el nivel educativo registrado como ninguna o primaria fue más frecuente en el grupo de menor edad, la magnitud de la diferencia disminuyó al utilizar un indicador de rezago escolar ajustado por edad, lo que indica que el indicador crudo sobrestimó parcialmente la brecha educativa.
 
+La pertinencia de examinar factores sociodemográficos y de acceso en subgrupos adolescentes también ha sido señalada en estudios peruanos basados en comunidades indígenas y encuestas nacionales.(16,17)
+
 La clasificación cruda de escolaridad como ninguna o primaria amplificó la diferencia entre los grupos. Sin embargo, la mayor frecuencia de rezago escolar persistió después de considerar la edad, por lo que la diferencia educativa observada no se explicó únicamente por la clasificación convencional de escolaridad. En contraste, la combinación global de menor frecuencia de pareja estable y mayor frecuencia de pertenencia a grupos étnicos minoritarios no constituyó un patrón estable: la pareja estable cambió descriptivamente de dirección en 2020--junio 2024 y la diferencia de etnia se aproximó a la nulidad. Por ello, estas asociaciones deben situarse en sus respectivos períodos y no caracterizarse como atributos uniformes de las adolescentes de 10--14 años.
 
 La mayor frecuencia registrada de pertenencia a grupos étnicos minoritarios puede actuar como marcador de desigualdades estructurales y de acceso a recursos, pero no debe interpretarse como un atributo biológico ni como una condición de vulnerabilidad por sí misma. La recodificación dicotómica agrupó poblaciones heterogéneas y limitó interpretaciones específicas. Dado el carácter exploratorio del estudio y el número de comparaciones realizadas, estos hallazgos no deben interpretarse como confirmatorios.
@@ -202,57 +203,59 @@ Los autores declaran que herramientas de inteligencia artificial (ChatGPT, OpenA
 
 **Referencias**
 
-**1. Pietras J, Jarząbek-Bielecka G, Mizgier M, Markowska A. Adolescent pregnancy -- medical, legal and social issues. The Journal of Maternal-Fetal & Neonatal Medicine \[Internet\]. 2024 \[cited 2024 Dec 25\];37. doi: 10.1080/14767058.2024.2391490. Cited in PMID: 39183188.**
+**1. Pietras J, Jarząbek-Bielecka G, Mizgier M, Markowska A. Adolescent pregnancy -- medical, legal and social issues. J Matern Fetal Neonatal Med. 2024;37(1):2391490. doi: 10.1080/14767058.2024.2391490.**
 
-**2. Marvin-Dowle K, Kilner K, Burley VJ, Soltani H. Impact of adolescent age on maternal and neonatal outcomes in the Born in Bradford cohort. BMJ Open \[Internet\]. 2018 \[cited 2024 Aug 9\];8:e016258. doi: 10.1136/bmjopen-2017-016258.**
+**2. Marvin-Dowle K, Kilner K, Burley VJ, Soltani H. Impact of adolescent age on maternal and neonatal outcomes in the Born in Bradford cohort. BMJ Open. 2018;8(3):e016258. doi: 10.1136/bmjopen-2017-016258.**
 
-**3. Zhang T, Wang H, Wang X, Yang Y, Zhang Y, Tang Z, Wang L. The adverse maternal and perinatal outcomes of adolescent pregnancy: a cross sectional study in Hebei, China. BMC Pregnancy Childbirth \[Internet\]. 2020 \[cited 2024 Aug 9\];20:339. doi: 10.1186/s12884-020-03022-7.**
+**3. Zhang T, Wang H, Wang X, Yang Y, Zhang Y, Tang Z, et al. The adverse maternal and perinatal outcomes of adolescent pregnancy: a cross sectional study in Hebei, China. BMC Pregnancy Childbirth. 2020;20(1):339. doi: 10.1186/s12884-020-03022-7.**
 
-**4. Mann L, Bateson D, Black KI. Teenage pregnancy. Aust J Gen Pract \[Internet\]. 2020;49:310--316. doi: 10.31128/AJGP-02-20-5224. Cited in PMID: 32464731.**
+**4. Mann L, Bateson D, Black KI. Teenage pregnancy. Aust J Gen Pract. 2020;49(6):310--316. doi: 10.31128/AJGP-02-20-5224.**
 
 **5. Organización Mundial de la Salud (OMS). Aceleración mundial de las medidas para promover la salud de los adolescentes (Guía AA-HA). Washington, D.C: Organización Panamericana de la Salud; 2018.**
 
-**6. Sanhueza A, Costa JC, Mújica OJ, Carvajal-Velez L, Caffe S, Victora C, Barros AJD. Trends and inequities in adolescent childbearing in Latin American and Caribbean countries across generations and over time: a population-based study. Lancet Child Adolesc Health \[Internet\]. 2023;7:392--404. doi: 10.1016/S2352-4642(23)00077-9.**
+**6. Sanhueza A, Costa JC, Mújica OJ, Carvajal-Velez L, Caffe S, Victora C, et al. Trends and inequities in adolescent childbearing in Latin American and Caribbean countries across generations and over time: a population-based study. Lancet Child Adolesc Health. 2023;7(6):392--404. doi: 10.1016/S2352-4642(23)00077-9.**
 
-**7. World Health Organization (WHO). Adolescent pregnancy \[Internet\]. World Health Organization. 2024 \[cited 2024 Aug 9\]. Available from: https://www.who.int/es/news-room/fact-sheets/detail/adolescent-pregnancy.**
+**7. World Health Organization. Adolescent pregnancy \[Internet\]. Geneva: World Health Organization; 2024 \[cited 2024 Aug 9\]. Available from: https://www.who.int/es/news-room/fact-sheets/detail/adolescent-pregnancy.**
 
-**8. Rodríguez Ribas C. Adolescent pregnancy, public policies, and targeted programs in Latin America and the Caribbean: a systematic review. Revista Panamericana de Salud Pública. 2021;45:1. doi: 10.26633/RPSP.2021.144.**
+**8. Rodríguez Ribas C. Adolescent pregnancy, public policies, and targeted programs in Latin America and the Caribbean: a systematic review. Rev Panam Salud Publica. 2021;45:e144. doi: 10.26633/RPSP.2021.144.**
 
-**9. UNFPA Ecuador; UNICEF Ecuador; UNFPA LAC; Ministerio de Salud Pública. Consecuencias socioeconomicas del embarazo en adolescencia en Ecuador. Fondo de naciones unidas \[Internet\]. 2020;1:31--32.**
+**9. UNFPA Ecuador, UNICEF Ecuador, UNFPA LAC, Ministerio de Salud Pública. Consecuencias socioeconómicas del embarazo en la adolescencia en Ecuador: implementación de la metodología para estimar el impacto socioeconómico del embarazo y la maternidad adolescentes en países de América Latina y el Caribe--Milena 1.0 \[Internet\]. Quito: UNFPA Ecuador; 2020 \[cited 2026 Aug 7\]. Available from: https://ecuador.unfpa.org/sites/default/files/pub-pdf/consecuencias_socioeconomicas_del_embarazo_adolescente_en_ecuador_1.pdf.**
 
-**10. Hayer S, Fuentes‐Rivera E, Schiavon R, Darney BG. Prenatal care utilization and perinatal outcomes among pregnant adolescents in Mexico, 2008--2019. International Journal of Gynecology & Obstetrics \[Internet\]. 2024 \[cited 2026 Feb 28\];165:1047--1055. doi: 10.1002/ijgo.15303.**
+**10. Hayer S, Fuentes-Rivera E, Schiavon R, Darney BG. Prenatal care utilization and perinatal outcomes among pregnant adolescents in Mexico, 2008--2019. Int J Gynaecol Obstet. 2024;165(3):1047--1055. doi: 10.1002/ijgo.15303.**
 
-**11. Ministerio de Salúd Pública del Ecuador. Salud de adolescentes. Guía de Supervisión. . Primera Edición. Dirección Nacional de Normatización -- MSP, editor. Quito; 2014.**
+**11. Ministerio de Salud Pública del Ecuador. Salud de adolescentes: guía de supervisión. 1a ed. Quito: Dirección Nacional de Normatización, Ministerio de Salud Pública; 2014.**
 
-**12. CONSEJO NACIONAL DE EDUCACION. REGLAMENTO GENERAL A LA LEY ORGANICA DE EDUCACION INTERCULTURAL \[Internet\]. 2011 p. 1--110. Available from: https://www.evaluacion.gob.ec/wp-content/uploads/downloads/2016/05/Reglamento_LOEI-enero2013.pdf.**
+**12. Peñaherrera Cepeda G. Historia e importancia de la ginecología en la infancia y adolescencia. MetroCiencia. 2022;30(4):55--59. doi: 10.47464/MetroCiencia/vol30/4/2022/55-59.**
 
-**13. Ministerio de Educación y Cultura. Reglamento General de la Ley de Educación de la Estructura del Sistema Educativo \[Internet\]. Registro Oficial de la República del Ecuador Quito, Ecuador; 1985. Available from: https://www.acnur.org/fileadmin/Documentos/BDL/2008/6625.pdf.**
+**13. Ecuador, Presidencia de la República. Reglamento General a la Ley Orgánica de Educación Intercultural \[Internet\]. Quito: Presidencia de la República; 2012 \[cited 2026 Aug 7\]. Available from: https://www.evaluacion.gob.ec/wp-content/uploads/downloads/2016/05/Reglamento_LOEI-enero2013.pdf.**
 
-**14. World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. 2016.**
+**14. Ministerio de Educación y Cultura. Reglamento General de la Ley de Educación de la Estructura del Sistema Educativo \[Internet\]. Quito: Registro Oficial de la República del Ecuador; 1985 \[cited 2026 Aug 7\]. Available from: https://www.acnur.org/fileadmin/Documentos/BDL/2008/6625.pdf.**
 
-**15. Mejia JR, Quincho-Estares ÁJ, Flores-Rondon AJ, Reyes-Beltran G, Arias-Sulca IL, Palomino-Hilario E, Barrientos-Cochachi JE, Toro-Huamanchumo CJ. Determinants of adolescent pregnancy in indigenous communities from the Peruvian central jungle: a case--control study. Reprod Health \[Internet\]. 2021;18:203. doi: 10.1186/s12978-021-01247-z.**
+**15. World Health Organization. WHO recommendations on antenatal care for a positive pregnancy experience. Geneva: World Health Organization; 2016. Available from: https://www.who.int/publications/i/item/9789241549912.**
 
-**16. Caira-Chuquineyra B, Fernandez-Guzman D, Meza-Gómez A, Luque-Mamani BM, Medina-Carpio SL, Mamani-García CS, Romani-Peña M, Díaz-Vélez C. Prevalence and factors associated with adolescent pregnancy among sexually active adolescent girls in Peru: Evidence from Demographic and Family Health Survey, 2015-2019. F1000Res \[Internet\]. 2023;11:566. doi: 10.12688/f1000research.108837.2.**
+**16. Mejia JR, Quincho-Estares ÁJ, Flores-Rondon AJ, Reyes-Beltran G, Arias-Sulca IL, Palomino-Hilario E, et al. Determinants of adolescent pregnancy in indigenous communities from the Peruvian central jungle: a case--control study. Reprod Health. 2021;18(1):203. doi: 10.1186/s12978-021-01247-z.**
 
-**17. United Nations. Fertility among young adolescents aged 10 to 14 years. United Nations \[Internet\]. 2020 \[cited 2025 Mar 6\];1--30.**
+**17. Caira-Chuquineyra B, Fernandez-Guzman D, Meza-Gómez A, Luque-Mamani BM, Medina-Carpio SL, Mamani-García CS, et al. Prevalence and factors associated with adolescent pregnancy among sexually active adolescent girls in Peru: evidence from Demographic and Family Health Survey, 2015--2019 [version 2; peer review: 1 approved, 2 approved with reservations]. F1000Res. 2023;11:566. doi: 10.12688/f1000research.108837.2.**
 
-**18. Borges ALV, Chofakian CB do N, Sato APS, Fujimori E, Duarte LS, Gomes MN. Fertility rates among very young adolescent women: Temporal and spatial trends in Brazil. BMC Pregnancy Childbirth. 2016;16. doi: 10.1186/s12884-016-0843-x. Cited in PMID: 26992396.**
+**18. United Nations, Department of Economic and Social Affairs, Population Division. Fertility among young adolescents aged 10 to 14 years \[Internet\]. New York: United Nations; 2020 \[cited 2026 Aug 7\]. Available from: https://www.un.org/en/development/desa/population/publications/pdf/fertility/Fertility-young-adolescents-2020.pdf.**
 
-**19. Monteiro DLM, Monteiro IP, Machado MSC, Bruno ZV, Silveira FA da, Rehme MFB, Takiuti AD, Rodrigues NCP. Trends in teenage pregnancy in Brazil in the last 20 years (2000-2019). Rev Assoc Med Bras \[Internet\]. 2021;67:759--765. doi: 10.1590/1806-9282.20210265.**
+**19. Borges ALV, Chofakian CB do N, Sato APS, Fujimori E, Duarte LS, Gomes MN. Fertility rates among very young adolescent women: temporal and spatial trends in Brazil. BMC Pregnancy Childbirth. 2016;16:98. doi: 10.1186/s12884-016-0843-x.**
 
-**20. Lopes MC de L, Oliveira RR de, Silva M de AP da, Padovani C, Oliveira NLB de, Higarashi IH. Tendência temporal e fatores associados à gravidez na adolescência. Revista da Escola de Enfermagem da USP \[Internet\]. 2020;54:1--8. doi: 10.1590/s1980-220x2019020403639. Cited in PMID: 33263667.**
+**20. Monteiro DLM, Monteiro IP, Machado MSC, Bruno ZV, Silveira FA da, Rehme MFB, et al. Trends in teenage pregnancy in Brazil in the last 20 years (2000--2019). Rev Assoc Med Bras. 2021;67(5):759--765. doi: 10.1590/1806-9282.20210265.**
 
-**21. Diabelková J, Rimárová K, Dorko E, Urdzík P, Houžvičková A, Argalášová Ľ. Adolescent Pregnancy Outcomes and Risk Factors. Int J Environ Res Public Health \[Internet\]. 2023;20:4113. doi: 10.3390/ijerph20054113.**
+**21. Lopes MC de L, Oliveira RR de, Silva M de AP da, Padovani C, Oliveira NLB de, Higarashi IH. Tendência temporal e fatores associados à gravidez na adolescência. Rev Esc Enferm USP. 2020;54:e03639. doi: 10.1590/S1980-220X2019020403639.**
 
-**22. Assis T de SC, Martinelli KG, Gama SGN da, Santos Neto ET dos. Reincidência de gravidez na adolescência: fatores associados e desfechos maternos e neonatais. Cien Saude Colet \[Internet\]. 2022;27:3261--3271. doi: 10.1590/1413-81232022278.00292022.**
+**22. Diabelková J, Rimárová K, Dorko E, Urdzík P, Houžvičková A, Argalášová Ľ. Adolescent pregnancy outcomes and risk factors. Int J Environ Res Public Health. 2023;20(5):4113. doi: 10.3390/ijerph20054113.**
 
-**23. Ramage K, Tough S, Scott C, McLaughlin A-M, Metcalfe A. Trends in Adolescent Rapid Repeat Pregnancy in Canada. Journal of Obstetrics and Gynaecology Canada \[Internet\]. 2021;43:589--595. doi: 10.1016/j.jogc.2020.09.024.**
+**23. Assis T de SC, Martinelli KG, Gama SGN da, Santos Neto ET dos. Reincidência de gravidez na adolescência: fatores associados e desfechos maternos e neonatais. Cien Saude Colet. 2022;27(8):3261--3271. doi: 10.1590/1413-81232022278.00292022.**
 
-**24. Bennetsen AKK, Faber MT, Nygaard M, Sundström K, Hansen BT, Thomsen LT, Munk C, Frederiksen K, Kjaer SK. Factors associated with teenage pregnancy in the Scandinavian countries. Scand J Public Health \[Internet\]. 2024;52:616--623. doi: 10.1177/14034948231172819.**
+**24. Ramage K, Tough S, Scott C, McLaughlin AM, Metcalfe A. Trends in adolescent rapid repeat pregnancy in Canada. J Obstet Gynaecol Can. 2021;43(5):589--595. doi: 10.1016/j.jogc.2020.09.024.**
 
-**25. Traisrisilp K, Jaiprom J, Luewan S, Tongsong T. Pregnancy outcomes among mothers aged 15 years or less. Journal of Obstetrics and Gynaecology Research. 2015;41:1726--1731. doi: 10.1111/jog.12789.**
+**25. Bennetsen AKK, Faber MT, Nygaard M, Sundström K, Hansen BT, Thomsen LT, et al. Factors associated with teenage pregnancy in the Scandinavian countries. Scand J Public Health. 2024;52(6):616--623. doi: 10.1177/14034948231172819.**
 
-**26. Lastinger J, Enengl S, Neururer S, Leitner H, Oppelt P, Stelzl P. Teenage Pregnancies in Austria - an Epidemiological Study on Prevalence and Perinatal Outcome. Geburtshilfe Frauenheilkd \[Internet\]. 2023;83:212--219. doi: 10.1055/a-1911-1996. Cited in PMID: 36743456.**
+**26. Traisrisilp K, Jaiprom J, Luewan S, Tongsong T. Pregnancy outcomes among mothers aged 15 years or less. J Obstet Gynaecol Res. 2015;41(11):1726--1731. doi: 10.1111/jog.12789.**
+
+**27. Lastinger J, Enengl S, Neururer S, Leitner H, Oppelt P, Stelzl P. Teenage pregnancies in Austria: an epidemiological study on prevalence and perinatal outcome. Geburtshilfe Frauenheilkd. 2023;83(2):212--219. doi: 10.1055/a-1911-1996.**
 
 **cc**
 

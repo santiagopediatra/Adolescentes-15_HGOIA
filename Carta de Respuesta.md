@@ -191,14 +191,30 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 - **Discusión, párrafo sobre variación anual:** llamada a la Figura 3 y aclaración de que 2024 es parcial y no directamente comparable.
 - **Figura 3, eje X, anotación y nota:** identificación de enero--junio de 2024, separación visual y advertencia de no comparabilidad anual.
 
-## 11. Resumen técnico
+## 11. Referencias y consistencia editorial
+
+**Comentario del editor:** Se solicitó corregir la URL que duplicaba la extensión PDF, verificar activamente todas las referencias y su correspondencia con las afirmaciones citadas, documentar específicamente la existencia del programa de atención para adolescentes desde 1988, revisar la procedencia editorial de F1000Research y reconciliar citas y referencias sin duplicados ni enlaces rotos.
+
+**Respuesta de los autores:** Auditamos las 27 referencias de la versión revisada, incluidos autores, título, fuente, año, volumen, número, páginas o identificador electrónico, DOI/URL y correspondencia con el texto. Se corrigieron 25 entradas existentes por metadatos incompletos, abreviaturas, paginación o formato Vancouver, y se incorporó una publicación verificable para la afirmación histórica. La lista quedó numerada según el orden de primera aparición; todas las citas tienen una referencia y todas las referencias están citadas.
+
+**URL con extensión duplicada:** La duplicación correspondía al enlace del *Reglamento General a la Ley Orgánica de Educación Intercultural*, ahora referencia 13. El enlace final es `https://www.evaluacion.gob.ec/wp-content/uploads/downloads/2016/05/Reglamento_LOEI-enero2013.pdf`; abre el PDF de 110 páginas con el título citado. La búsqueda final de la cadena defectuosa no devolvió resultados.
+
+**Fuente de 1988:** La referencia que ocupaba anteriormente el número 12 era normativa educativa y no respaldaba la afirmación histórica. Se sustituyó como soporte de esa afirmación por Peñaherrera Cepeda, *Historia e importancia de la ginecología en la infancia y adolescencia* (MetroCiencia. 2022;30(4):55--59; doi: 10.47464/MetroCiencia/vol30/4/2022/55-59), publicación que declara explícitamente que desde 1988 funciona el Servicio de Atención Integral para Adolescentes del HGOIA. Para no exceder la evidencia, el manuscrito ahora dice que el hospital “alberga el Servicio de Atención Integral para Adolescentes (SAIA), descrito como activo desde 1988”. La normativa educativa se conservó, renumerada, donde sí respalda el cálculo de escolaridad esperada.
+
+**F1000Research:** Se mantuvo una referencia, ahora número 17. Se verificó que existe como versión 2 revisada y publicada en 2023, con revisión abierta que informa un dictamen aprobado y dos aprobados con reservas. La cita se actualizó para mostrar expresamente ese estado editorial. Las instrucciones públicas para autores de la Revista Brasileira de Saúde Materno Infantil no establecen una prohibición explícita de citar preprints, artículos con revisión abierta o revisión posterior a la publicación. Además, la fuente aporta evidencia poblacional peruana directamente pertinente y no se usa como referencia metodológica; por ello no se sustituyó.
+
+**Reconciliación y enlaces:** Se verificaron los DOI, páginas institucionales y PDF. Los enlaces institucionales finales abren el documento citado, incluida la URL corregida del reglamento. No quedaron referencias duplicadas ni enlaces rotos. La inserción de la nueva referencia 12 desplazó de forma controlada las referencias posteriores hasta el número 27 y restituyó la correspondencia de las citas `(13,14)`, `(15)`, `(6,18--20)`, `(21,22)`, `(23,24)`, `(25)` y `(26,27)`.
+
+**Ubicación exacta de los cambios:** Introducción, afirmación y cita sobre el SAIA desde 1988; lista completa de referencias, números 1--27; y presente sección de la carta. La auditoría trazable se conserva en `output/referencias/auditoria_referencias.csv`.
+
+## 12. Resumen técnico
 
 - La muestra materna y la muestra neonatal están claramente separadas.
 - La descripción neonatal se realiza únicamente en la submuestra de nacimientos únicos.
 - No se retuvo de forma arbitraria ningún recién nacido de una gestación múltiple.
 - Las denominaciones de las tablas neonatales y las notas del manuscrito reflejan esta lógica.
 
-## 12. Conclusión
+## 13. Conclusión
 
 Hemos corregido completamente la redacción y la documentación del proceso. El análisis ahora declara y aplica con transparencia:
 
