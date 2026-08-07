@@ -25,9 +25,9 @@ Resumen
 
 **Objetivos: Comparar las características sociodemográficas, reproductivas, obstétricas y de atención prenatal entre adolescentes de 10--14 y 15--19 años cuyos recién nacidos fueron admitidos en Neonatología.**
 
-**Métodos: Estudio transversal retrospectivo basado en registros del Sistema de Información Perinatal del Hospital Gineco-Obstétrico Isidro Ayora, Quito, Ecuador, entre 2009 y 2024. Se analizaron 7.035 eventos obstétricos maternos desduplicados. Las características binarias se evaluaron mediante modelos bayesianos Bernoulli-logit, con estimación posterior de razones de prevalencia marginales. La adecuación prenatal se analizó mediante regresión ordinal y el número de consultas mediante modelos gaussianos ajustados por edad gestacional.**
+**Métodos: Estudio transversal retrospectivo basado en registros del Sistema de Información Perinatal del Hospital Gineco-Obstétrico Isidro Ayora, Quito, Ecuador, entre 2009 y 2024. Se analizaron 7.035 eventos obstétricos maternos desduplicados. Las características binarias, incluido el análisis principal de control prenatal adecuado (sí/no), se evaluaron mediante modelos bayesianos Bernoulli-logit, con estimación posterior de razones de prevalencia marginales. La adecuación ordinal del control prenatal se examinó como análisis secundario y el número de consultas mediante modelos gaussianos ajustados por edad gestacional.**
 
-**Resultados: Se incluyeron 386 adolescentes de 10--14 años y 6.649 de 15--19 años. En el grupo de 10--14 años fueron menos frecuentes la pareja estable (RP=0,86; ICr95%: 0,77--0,95) y el embarazo planeado registrado (RP=0,62; ICr95%: 0,48--0,79), y más frecuente la pertenencia étnica minoritaria (RP=1,77; ICr95%: 1,24--2,44). El rezago escolar ajustado por edad fue más frecuente (RP=2,07; ICr95%: 1,78--2,41). También se observó menor adecuación prenatal (OR=0,69; ICr95%: 0,56--0,84) y 0,55 consultas menos después del ajuste por edad gestacional.**
+**Resultados: Se incluyeron 386 adolescentes de 10--14 años y 6.649 de 15--19 años. En el grupo de 10--14 años fueron menos frecuentes la pareja estable (RP=0,86; ICr95%: 0,77--0,95) y el embarazo planeado registrado (RP=0,62; ICr95%: 0,48--0,79), y más frecuente la pertenencia étnica minoritaria (RP=1,77; ICr95%: 1,24--2,44). El rezago escolar ajustado por edad fue más frecuente (RP=2,07; ICr95%: 1,78--2,41). El control prenatal adecuado fue menos frecuente (RP=0,87; ICr95%: 0,78--0,95) y se observaron 0,55 consultas menos después del ajuste por edad gestacional.**
 
 **Conclusiones: Las adolescentes de 10--14 años presentaron un perfil sociodemográfico, educativo y asistencial diferente. Los hallazgos se restringen a la muestra analizada y no son generalizables a todos los embarazos adolescentes.**
 
@@ -36,9 +36,9 @@ Resumen
 **Abstract\
 Objectives: To compare sociodemographic, reproductive, obstetric, and prenatal care characteristics between adolescents aged 10--14 and 15--19 years whose newborns were admitted to a neonatal unit.**
 
-**Methods: A retrospective cross-sectional study was conducted using records from the Perinatal Information System of Hospital Gineco-Obstétrico Isidro Ayora, Quito, Ecuador, from 2009 to 2024. A total of 7,035 deduplicated maternal obstetric events were analyzed. Binary characteristics were assessed using Bayesian Bernoulli-logit models with posterior estimation of marginal prevalence ratios. Prenatal care adequacy was assessed using ordinal regression, and the number of prenatal visits using Gaussian models adjusted for gestational age.**
+**Methods: A retrospective cross-sectional study was conducted using records from the Perinatal Information System of Hospital Gineco-Obstétrico Isidro Ayora, Quito, Ecuador, from 2009 to 2024. A total of 7,035 deduplicated maternal obstetric events were analyzed. Binary characteristics, including the primary analysis of adequate prenatal care (yes/no), were assessed using Bayesian Bernoulli-logit models with posterior estimation of marginal prevalence ratios. Ordinal prenatal care adequacy was examined as a secondary analysis, and the number of prenatal visits using Gaussian models adjusted for gestational age.**
 
-**Results: The study included 386 adolescents aged 10--14 years and 6,649 aged 15--19 years. Among those aged 10--14 years, stable partnership (PR=0.86; 95%CrI: 0.77--0.95) and recorded planned pregnancy (PR=0.62; 95%CrI: 0.48--0.79) were less frequent, whereas minority ethnic identification was more frequent (PR=1.77; 95%CrI: 1.24--2.44). Age-adjusted school delay was more frequent (PR=2.07; 95%CrI: 1.78--2.41). This group also showed lower prenatal care adequacy (OR=0.69; 95%CrI: 0.56--0.84) and 0.55 fewer visits after adjustment for gestational age.**
+**Results: The study included 386 adolescents aged 10--14 years and 6,649 aged 15--19 years. Among those aged 10--14 years, stable partnership (PR=0.86; 95%CrI: 0.77--0.95) and recorded planned pregnancy (PR=0.62; 95%CrI: 0.48--0.79) were less frequent, whereas minority ethnic identification was more frequent (PR=1.77; 95%CrI: 1.24--2.44). Age-adjusted school delay was more frequent (PR=2.07; 95%CrI: 1.78--2.41). Adequate prenatal care was less frequent (PR=0.87; 95%CrI: 0.78--0.95), and this group had 0.55 fewer visits after adjustment for gestational age.**
 
 **Conclusions: Adolescents aged 10--14 years showed a different sociodemographic, educational, and healthcare profile. Findings are restricted to the analyzed sample and cannot be generalized to all adolescent pregnancies.**
 
@@ -68,7 +68,7 @@ Los años de escolaridad esperados se calcularon como la edad materna menos seis
 
 Las variables reproductivas incluyeron gestas previas, embarazo planeado registrado y falla registrada del método anticonceptivo. Estas dos últimas correspondieron a campos dicotómicos del SIP y no se interpretaron como mediciones directas de autonomía reproductiva, intención prospectiva o uso correcto del método. La falla anticonceptiva se analizó entre todos los registros con información disponible, no exclusivamente entre adolescentes identificadas como usuarias de anticonceptivos.
 
-La utilización de atención prenatal se evaluó mediante el número de consultas registradas. Se construyó una medida operacional de adecuación como la proporción entre los contactos observados y los esperados para la edad gestacional alcanzada al parto, conforme al esquema de ocho contactos recomendado por la OMS. La adecuación se clasificó, para este estudio, como ausencia de controles, inadecuada (\<50 %), intermedia (50--79 %) o adecuada (≥80 %).(15)
+La utilización de atención prenatal se evaluó mediante el número de consultas registradas. Se construyó una medida operacional de adecuación como la proporción entre los contactos observados y los esperados para la edad gestacional alcanzada al parto, conforme al esquema de ocho contactos recomendado por la OMS. El algoritmo asignó 1 contacto esperado antes de las 20 semanas; 2 entre 20 y \<26; 3 entre 26 y \<30; 4 entre 30 y \<34; 5 entre 34 y \<36; 6 entre 36 y \<38; 7 entre 38 y \<40; y 8 desde las 40 semanas. La regla completa se presenta en la Tabla S5. La adecuación se clasificó, para este estudio, en cuatro categorías: sin controles (0 contactos), inadecuado (\>0 y \<50 % de los contactos esperados), intermedio (50 a \<80 %) y adecuado (≥80 %).(15)
 
 Las variables obstétricas incluyeron embarazo múltiple, infección urinaria, compromiso del bienestar fetal, trastorno hipertensivo del embarazo y vía de parto. La infección urinaria y el compromiso del bienestar fetal se analizaron según su registro dicotómico, debido a que la base no permitía reconstruir criterios diagnósticos, pruebas complementarias ni gravedad. El trastorno hipertensivo se definió por el registro de preeclampsia, eclampsia o hipertensión inducida por el embarazo. La vía de parto se clasificó como vaginal o cesárea.
 
@@ -78,7 +78,7 @@ Las variables categóricas se resumieron mediante frecuencias y porcentajes calc
 
 Para cada característica materna binaria se ajustó un modelo bayesiano independiente con distribución Bernoulli y enlace logit, utilizando el grupo etario como único predictor y las adolescentes de 15--19 años como referencia. Se especificaron priors Normal(0; 3) para el intercepto y Normal(0; 1,5) para el coeficiente del grupo etario, en escala logit. A partir de las predicciones posteriores se estimaron las prevalencias marginales, razones de prevalencia, diferencias de prevalencia e intervalos de credibilidad del 95 %. Estos modelos representaron comparaciones bivariadas no ajustadas y no se interpretaron como efectos causales.
 
-El rezago escolar y la adecuación prenatal se analizaron adicionalmente mediante modelos ordinales bayesianos con enlace logit acumulativo y puntos de corte flexibles, con un prior Normal(0; 1,5) para el coeficiente del grupo etario. En el modelo de rezago, una razón de momios superior a 1 indicó mayor probabilidad de pertenecer a una categoría de mayor severidad; en el modelo de adecuación prenatal, indicó mayor probabilidad de pertenecer a una categoría de mejor adecuación.
+El análisis principal de adecuación prenatal fue binario: control prenatal adecuado (sí/no), definido como ≥80 % frente a \<80 % de los contactos esperados, y se estimó con el mismo modelo Bernoulli-logit y la misma estandarización posterior utilizados para las demás características binarias. Como análisis secundario, la adecuación ordinal del control prenatal se modeló en sus cuatro categorías ordenadas (sin controles, inadecuado, intermedio y adecuado) mediante un modelo bayesiano cumulative-logit con thresholds flexibles y un prior Normal(0; 1,5) para el coeficiente del grupo etario. Una razón de momios superior a 1 indicó mayor probabilidad de pertenecer a una categoría de mejor adecuación. Se evaluó el supuesto de odds proporcionales mediante tres modelos binarios acumulativos en los cortes: sin controles frente a categorías superiores; sin controles + inadecuado frente a intermedio + adecuado; y sin controles + inadecuado + intermedio frente a adecuado. Los thresholds y diagnósticos del modelo ordinal se presentan en la Tabla S6 y la evaluación de sensibilidad del supuesto en la Tabla S7.
 
 El número de consultas prenatales se analizó mediante modelos lineales bayesianos gaussianos antes y después del ajuste por edad gestacional al parto. Se especificaron priors Normal(5; 3) para el intercepto, Normal(0; 1,5) para el grupo etario, Normal(0; 0,5) para la edad gestacional y exponencial(1) para sigma.
 
@@ -102,7 +102,7 @@ La magnitud de la asociación disminuyó al sustituir el indicador crudo de esco
 
 Atención prenatal
 
-Las adolescentes de 10--14 años registraron menor número de consultas prenatales y menor adecuación del control prenatal (Tabla 1). La diferencia en el número de consultas persistió después del ajuste por edad gestacional al parto (diferencia media ajustada: -0,55; ICr95 %: -0,83 a -0,27; Tabla S3).
+En el análisis principal binario, el control prenatal adecuado fue menos frecuente en las adolescentes de 10--14 años (RP=0,87; ICr95 %: 0,78--0,95; Tabla 2). En el análisis ordinal secundario también se observó menor probabilidad de pertenecer a una categoría de mejor adecuación (OR acumulativa=0,69; ICr95 %: 0,56--0,84; Tabla S3). Los OR de los tres cortes acumulativos fueron 0,67, 0,61 y 0,71; su magnitud fue cercana a la del OR común y sus ICr95 % se solaparon con el del modelo ordinal, por lo que los resultados fueron compatibles con el supuesto de odds proporcionales (Tabla S7). Las adolescentes de 10--14 años también registraron menor número de consultas prenatales; la diferencia persistió después del ajuste por edad gestacional al parto (diferencia media ajustada: -0,55; ICr95 %: -0,83 a -0,27; Tabla S3).
 
 Condiciones obstétricas
 
@@ -314,7 +314,7 @@ Nota: Los porcentajes se calcularon sobre los registros con información disponi
 | Compromiso del bienestar fetal                                                      | 7035  | 708         | 0,58 (0,38--0,83)     | 99,9 %                  |
 | Trastorno hipertensivo del embarazo                                                 | 6911  | 1249        | 0,78 (0,60--1,00)     | 97,7 %                  |
 | Parto vía vaginal                                                                   | 7030  | 4243        | 1,17 (1,09--1,25)     | \>99,9 %                |
-| Adecuación del control prenatal ^b^                                                 | 6860  | 4198        | 0,87 (0,78--0,95)     | 99,9 %                  |
+| Control prenatal adecuado: sí/no                                                    | 6860  | 4198        | 0,87 (0,78--0,95)     | 99,9 %                  |
 | **Panel B. Comparación entre los indicadores educativos crudo y ajustado por edad** |       |             |                       |                         |
 | **Indicador educativo**                                                             | **n** | **Eventos** | **RP (ICr 95 %)**     | **DP (ICr 95 %)** ^*c*^ |
 | Ninguna escolaridad o educación primaria (indicador crudo)                          | 7035  | 1259        | 4,33 (3,94--4,74)     | 0,50 (0,46--0,55)       |
@@ -324,7 +324,7 @@ Nota: Los porcentajes se calcularon sobre los registros con información disponi
 
 a RP no ajustadas e independientes entre sí; no representan efectos causales ajustados por covariables.
 
-b Compara la categoría Adecuación del control prenatal (variable ordinal de 4 niveles: Sin controles / Inadecuado /Intermedio / Adecuado) frente a las otras tres categorías combinadas. El desglose completo de las cuatro categorías, por grupo de edad, se presenta en la Tabla S1 del Material Suplementario.
+Nota adicional: Control prenatal adecuado compara ≥80 % de los contactos esperados frente a no adecuado (\<80 %). El desglose de las cuatro categorías ordinales se presenta en la Tabla S1 y su análisis secundario en la Tabla S3 del Material Suplementario.
 
 ^*c*^ *DP: diferencia de prevalencia marginal estandarizada, ICr 95 %.*
 
@@ -361,7 +361,7 @@ Complementa la Tabla 1 del cuerpo principal, desagregando las variables binarias
 | 2009--2024 (total) | Trastorno hipertensivo del embarazo                         | 6911  | 1249    | 0,78 (0,60--1,00) | -0,04 (-0,07--0,00)  | 97,7 %   | 1,0006    | 4296        | 4945        | 0,995      | 0        |
 | 2009--2024 (total) | Parto vía vaginal                                           | 7030  | 4243    | 1,17 (1,09--1,25) | 0,10 (0,05--0,15)    | \>99,9 % | 1,0003    | 4259        | 5944        | 1,050      | 0        |
 | 2009--2024 (total) | Rezago escolar ≥2 años respecto de lo esperado para la edad | 7027  | 1232    | 2,07 (1,78--2,41) | 0,18 (0,13--0,23)    | \>99,9 % | 1,0004    | 4195        | 4992        | 0,961      | 0        |
-| 2009--2024 (total) | Adecuación del control prenatal                             | 6860  | 4198    | 0,87 (0,78--0,95) | -0,08 (-0,13---0,03) | 99,9 %   | 1,0014    | 4097        | 4821        | 0,948      | 0        |
+| 2009--2024 (total) | Control prenatal adecuado: sí/no                            | 6860  | 4198    | 0,87 (0,78--0,95) | -0,08 (-0,13---0,03) | 99,9 %   | 1,0014    | 4097        | 4821        | 0,948      | 0        |
 | 2009--2014         | Pareja estable                                              | 3631  | 2209    | 0,84 (0,71--0,98) | -0,10 (-0,18---0,02) | 99,0 %   | 1,0016    | 4210        | 4874        | 1,016      | 0        |
 | 2009--2014         | Ninguna escolaridad o educación                             | 3631  | 701     | 3,13 (2,65--3,64) | 0,38 (0,30--0,46)    | \>99,9 % | 1,0006    | 3829        | 5097        | 0,979      | 0        |
 | 2009--2014         | Etnia minoritaria                                           | 3631  | 109     | 1,67 (0,76--3,11) | 0,02 (-0,01--0,06)   | 90,9 %   | 1,0022    | 4048        | 4328        | 0,940      | 0        |
@@ -374,7 +374,7 @@ Complementa la Tabla 1 del cuerpo principal, desagregando las variables binarias
 | 2009--2014         | Trastorno hipertensivo del embarazo                         | 3547  | 677     | 0,72 (0,46--1,03) | -0,06 (-0,11--0,01)  | 96,4 %   | 1,0013    | 4068        | 5401        | 0,943      | 0        |
 | 2009--2014         | Parto vaginal                                               | 3628  | 2235    | 1,21 (1,09--1,33) | 0,13 (0,06--0,20)    | 99,98 %  | 1,0006    | 4226        | 4561        | 0,948      | 0        |
 | 2009--2014         | Rezago escolar                                              | 3628  | 718     | 1,67 (1,28--2,10) | 0,13 (0,05--0,21)    | 99,98 %  | 1,0011    | 3730        | 4507        | 0,917      | 0        |
-| 2009--2014         | Adecuación del control prenatal                             | 3530  | 2108    | 0,78 (0,65--0,92) | -0,13 (-0,21---0,05) | 99,9 %   | 1,0010    | 4025        | 5575        | 1,006      | 0        |
+| 2009--2014         | Control prenatal adecuado: sí/no                            | 3530  | 2108    | 0,78 (0,65--0,92) | -0,13 (-0,21---0,05) | 99,9 %   | 1,0010    | 4025        | 5575        | 1,006      | 0        |
 | 2015--2019         | Pareja estable                                              | 2324  | 1065    | 0,67 (0,51--0,85) | -0,16 (-0,23---0,07) | 99,99 %  | 1,0005    | 4194        | 5357        | 1,023      | 0        |
 | 2015--2019         | Ninguna escolaridad o educación primaria                    | 2324  | 322     | 6,04 (5,04--7,17) | 0,55 (0,46--0,63)    | \>99,9 % | 1,0005    | 4555        | 5358        | 0,994      | 0        |
 | 2015--2019         | Etnia minoritaria                                           | 2324  | 152     | 1,97 (1,16--3,08) | 0,06 (0,01--0,12)    | 99,3 %   | 1,0004    | 4134        | 5205        | 0,994      | 0        |
@@ -387,7 +387,7 @@ Complementa la Tabla 1 del cuerpo principal, desagregando las variables binarias
 | 2015--2019         | Trastorno hipertensivo del embarazo                         | 2288  | 429     | 1,03 (0,69--1,44) | 0,01 (-0,06--0,08)   | 56,9 %   | 1,0007    | 4017        | 5494        | 0,997      | 0        |
 | 2015--2019         | Parto vía vaginal                                           | 2322  | 1319    | 1,07 (0,91--1,22) | 0,04 (-0,05--0,12)   | 80,0 %   | 1,0007    | 3650        | 5277        | 0,958      | 0        |
 | 2015--2019         | Rezago escolar                                              | 2323  | 323     | 3,39 (2,65--4,23) | 0,29 (0,21--0,38)    | \>99,9 % | 1,0010    | 4169        | 4999        | 0,973      | 0        |
-| 2015--2019         | Adecuación del control prenatal                             | 2286  | 1500    | 0,90 (0,77--1,04) | -0,06 (-0,16--0,02)  | 91,9 %   | 1,0014    | 4088        | 4629        | 0,940      | 0        |
+| 2015--2019         | Control prenatal adecuado: sí/no                            | 2286  | 1500    | 0,90 (0,77--1,04) | -0,06 (-0,16--0,02)  | 91,9 %   | 1,0014    | 4088        | 4629        | 0,940      | 0        |
 | 2020--2024         | Pareja estable                                              | 1080  | 627     | 1,10 (0,93--1,27) | 0,06 (-0,04--0,15)   | 88,0 %   | 1,0019    | 3879        | 4871        | 0,977      | 0        |
 | 2020--2024         | Ninguna escolaridad o educación primaria                    | 1080  | 236     | 4,96 (4,13--5,92) | 0,62 (0,54--0,70)    | \>99,9 % | 1,0010    | 3966        | 4625        | 0,919      | 0        |
 | 2020--2024         | Etnia minoritaria                                           | 1080  | 99      | 1,01 (0,52--1,77) | 0,00 (-0,05--0,07)   | 50,7 %   | 1,0008    | 3981        | 4593        | 0,996      | 0        |
@@ -400,7 +400,7 @@ Complementa la Tabla 1 del cuerpo principal, desagregando las variables binarias
 | 2020--2024         | Trastorno hipertensivo del embarazo                         | 1076  | 143     | 0,62 (0,32--1,08) | -0,05 (-0,10--0,01)  | 95,3 %   | 1,0007    | 4347        | 5310        | 0,975      | 0        |
 | 2020--2024         | Parto vía vaginal                                           | 1080  | 689     | 1,21 (1,06--1,35) | 0,13 (0,04--0,21)    | 99,8 %   | 1,0013    | 4040        | 4632        | 0,988      | 0        |
 | 2020--2024         | Rezago escolar                                              | 1076  | 191     | 1,69 (1,18--2,31) | 0,11 (0,03--0,20)    | 99,7 %   | 1,0007    | 4330        | 5215        | 0,966      | 0        |
-| 2020--2024         | Adecuación del control prenatal                             | 1044  | 590     | 0,98 (0,80--1,15) | -0,01 (-0,12--0,08)  | 60,3 %   | 1,0012    | 3695        | 4867        | 0,908      | 0        |
+| 2020--2024         | Control prenatal adecuado: sí/no                            | 1044  | 590     | 0,98 (0,80--1,15) | -0,01 (-0,12--0,08)  | 60,3 %   | 1,0012    | 3695        | 4867        | 0,908      | 0        |
 
 Bernoulli-logit con estandarización posterior, un modelo independiente por característica (10--14 años vs. 15--19 años como referencia). RP: razón de prevalencia; DP: diferencia de prevalencia marginal estandarizada; ev.: eventos; Div.: divergencias. Diagnósticos de convergencia adecuados en todos los modelos (R-hat ≤1,01; cero divergencias; E-BFMI ≥0,30).
 
@@ -448,3 +448,38 @@ Los estimadores comparan adolescentes de 10--14 años frente a adolescentes de 1
 | Ictericia neonatal                           | 7035        | 0              | 0,00 %         |
 
 **Datos faltantes por variable (n total = 7035):**
+
+## Tabla S5. Regla operacional de contactos prenatales esperados según edad gestacional {#tabla-s5.-regla-operacional-de-contactos-prenatales-esperados-según-edad-gestacional .unnumbered}
+
+| **Edad gestacional al parto** | **Contactos esperados** |
+|:------------------------------|------------------------:|
+| \<20 semanas                  | 1                       |
+| 20--\<26 semanas              | 2                       |
+| 26--\<30 semanas              | 3                       |
+| 30--\<34 semanas              | 4                       |
+| 34--\<36 semanas              | 5                       |
+| 36--\<38 semanas              | 6                       |
+| 38--\<40 semanas              | 7                       |
+| ≥40 semanas                   | 8                       |
+
+Operacionalización acumulativa del esquema OMS de ocho contactos utilizada para calcular la proporción de contactos observados respecto de los esperados. Sin controles = 0; inadecuado = \>0 y \<50 %; intermedio = 50 a \<80 %; adecuado = ≥80 %.
+
+## Tabla S6. Thresholds y diagnósticos del modelo ordinal de adecuación del control prenatal {#tabla-s6.-thresholds-y-diagnósticos-del-modelo-ordinal-de-adecuación-del-control-prenatal .unnumbered}
+
+| **Threshold** | **Media** | **ICr95 %**      | **R-hat** | **ESS bulk** | **ESS tail** |
+|--------------:|----------:|:-----------------|----------:|-------------:|-------------:|
+| 1             | -3,607    | -3,755 a -3,462 | 1,0009    | 4182         | 5217         |
+| 2             | -1,851    | -1,920 a -1,783 | 1,0000    | 7491         | 8221         |
+| 3             | -0,476    | -0,525 a -0,426 | 1,0004    | 13153        | 8617         |
+
+Diagnósticos globales del modelo cumulative-logit: R-hat máximo=1,0009; ESS bulk mínimo=4182; ESS tail mínimo=5184; cero divergencias; profundidad de árbol máxima observada=7 (máxima configurada=15), sin transiciones en la profundidad máxima; E-BFMI mínimo=0,985. Estos diagnósticos no indicaron problemas de convergencia o muestreo.
+
+## Tabla S7. Sensibilidad del supuesto de odds proporcionales {#tabla-s7.-sensibilidad-del-supuesto-de-odds-proporcionales .unnumbered}
+
+| **Corte acumulativo**                                             | **n** | **Eventos en categorías superiores** | **OR (ICr95 %)**   | **OR ordinal común** | **Solapamiento de ICr** |
+|:-----------------------------------------------------------------|------:|-------------------------------------:|:--------------------|---------------------:|:------------------------|
+| Sin controles vs. categorías superiores                          | 6860  | 6674                                 | 0,67 (0,40--1,19)  | 0,69                 | Sí                      |
+| Sin controles + inadecuado vs. intermedio + adecuado             | 6860  | 5910                                 | 0,61 (0,48--0,80)  | 0,69                 | Sí                      |
+| Sin controles + inadecuado + intermedio vs. adecuado             | 6860  | 4198                                 | 0,71 (0,58--0,88)  | 0,69                 | Sí                      |
+
+Modelos Bernoulli-logit separados para cada punto de corte, con adolescentes de 15--19 años como referencia. Los tres OR fueron de magnitud cercana al OR común y sus ICr95 % se solaparon con el ICr95 % del modelo ordinal, resultado compatible con el supuesto de odds proporcionales.

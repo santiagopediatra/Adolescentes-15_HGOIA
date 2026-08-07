@@ -1,0 +1,13 @@
+"tipo","metrica","cadena","valor"
+"global","Rhat_max",NA,1.00092571179629
+"global","ESS_bulk_min",NA,4181.9341322682
+"global","ESS_tail_min",NA,5183.58523056085
+"global","divergencias",NA,0
+"global","max_treedepth_configurado",NA,15
+"global","treedepth_observado_max",NA,7
+"global","transiciones_en_max_treedepth",NA,0
+"global","E_BFMI_min",NA,0.984585598172681
+"por_cadena","E_BFMI",1,0.990807846487245
+"por_cadena","E_BFMI",2,1.02950674416372
+"por_cadena","E_BFMI",3,0.984585598172681
+"por_cadena","E_BFMI",4,1.00798221155538
