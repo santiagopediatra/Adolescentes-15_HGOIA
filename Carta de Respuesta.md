@@ -2,7 +2,7 @@
 
 Estimado/a Editor/a,
 
-Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación presentamos una respuesta detallada y blindada sobre la unidad de análisis, el manejo de gestaciones múltiples y la descripción neonatal.
+Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación presentamos las respuestas y los cambios realizados en el manuscrito.
 
 ## 1. Unidad de análisis
 
@@ -10,6 +10,7 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 - La muestra analítica final para variables maternas incluye **7.035 eventos obstétricos**, de los cuales **386** corresponden a adolescentes de 10–14 años y **6.649** a adolescentes de 15–19 años.
 - Estos eventos se obtuvieron a partir de **7.202 registros iniciales**.
 - Se eliminaron **15 duplicados exactos**.
+- Después de esta eliminación quedaron **7.187 registros** y se consolidaron **152 registros** mediante el procedimiento de linkage de gestaciones múltiples.
 
 ## 2. Gestaciones múltiples
 
@@ -38,7 +39,7 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 ## 3. Descripción neonatal y denominadores
 
 - La descripción neonatal **se restringió exclusivamente a nacimientos únicos**.
-- Para este propósito se definió una submuestra llamada `df_neonatal` que excluye cualquier registro con `embarazo_multiple == 1`.
+- Para este propósito se definió la submuestra `Adolescentes_neonatal`, que excluye los registros identificados como embarazos múltiples.
 - En el manuscrito y en el código se aclara que la muestra materna completa de 7.035 eventos y la submuestra neonatal única de 6.790 nacimientos son distintas.
 - Esta submuestra neonatal única corresponde a:
   - **381 nacimientos únicos** en adolescentes de 10–14 años.
@@ -109,7 +110,7 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 
 **Resultado de LOO:** La binomial negativa obtuvo el mayor ELPD-LOO en ambos conjuntos comparables. Frente a ella, el gaussiano presentó delta ELPD de −9,65 sin ajuste y −27,00 con ajuste; Poisson presentó −167,92 y −91,50, respectivamente. La binomial negativa tuvo 6/16 estadísticos PPC fuera del ICr95 %, frente a 12/16 en el gaussiano. No hubo valores de Pareto-k >0,7. Todos los modelos mostraron convergencia adecuada, con R-hat máximo ≤1,0021 y cero divergencias.
 
-**Decisión final:** La binomial negativa se considera el análisis principal porque respeta el soporte de conteo, admite sobredispersión y presentó el mejor ajuste predictivo. Los modelos de Poisson y gaussiano se mantienen únicamente como sensibilidades. El gaussiano no se mantuvo como principal por inercia ni se seleccionó ningún modelo por significación estadística.
+**Decisión final:** La binomial negativa se considera el análisis principal porque respeta el soporte de conteo, admite sobredispersión y presentó el mejor ajuste predictivo. Los modelos de Poisson y gaussiano se mantienen únicamente como análisis de sensibilidad. El gaussiano no se mantuvo como principal por inercia ni se seleccionó ningún modelo por significación estadística.
 
 **Interpretación de la edad gestacional:** El ajuste por edad gestacional al parto se interpretó como un ajuste por la oportunidad acumulada de recibir consultas prenatales y no como control causal de confusión. No se interpreta como un efecto independiente ni causalmente ajustado.
 
@@ -146,41 +147,41 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 
 ## 9. Heterogeneidad temporal
 
-**Comentario del editor:** Se solicitó dar centralidad a la heterogeneidad temporal observada, evaluar formalmente la interacción entre grupo etario y período, evitar presentar como rasgos estables asociaciones que dependen del período, discutir prudentemente posibles cambios de registro o prácticas institucionales y aclarar que 2024 comprende únicamente enero--junio.
+**Comentario del editor:** Se solicitó dar centralidad a la heterogeneidad temporal observada, evaluar formalmente la interacción entre grupo etario y período, evitar presentar como rasgos estables asociaciones que dependen del período, discutir prudentemente posibles cambios de registro o prácticas institucionales y aclarar que 2024 comprende únicamente enero–junio.
 
-**Respuesta de los autores:** Incorporamos un análisis formal por tres subperíodos categóricos: 2009--2014, 2015--2019 y 2020--junio 2024. Para pareja estable, etnia minoritaria y control prenatal adecuado (sí/no) comparamos modelos bayesianos Bernoulli-logit aditivos y con interacción grupo etario × período. Estimamos prevalencias marginales por grupo, diferencias y razones de prevalencia por período, e informamos los términos de interacción. La comparación entre modelos se realizó mediante LOO, considerando conjuntamente la dirección, magnitud, incertidumbre, ΔELPD y su error estándar. La adecuación ordinal se conservó únicamente como sensibilidad secundaria.
+**Respuesta de los autores:** Incorporamos un análisis formal por tres subperíodos categóricos: 2009–2014, 2015–2019 y 2020–junio 2024. Para pareja estable, etnia minoritaria y control prenatal adecuado (sí/no) comparamos modelos bayesianos Bernoulli-logit aditivos y con interacción grupo etario × período. Estimamos prevalencias marginales por grupo, diferencias y razones de prevalencia por período, e informamos los términos de interacción. La comparación entre modelos se realizó mediante LOO, considerando conjuntamente la dirección, magnitud, incertidumbre, ΔELPD y su error estándar. La adecuación ordinal se conservó únicamente como sensibilidad secundaria.
 
-**Pareja estable:** En adolescentes de 10--14 frente a 15--19 años, las prevalencias marginales fueron 0,51 frente a 0,61 en 2009--2014 (DP=-0,10; ICr95 %: -0,18 a -0,02; RP=0,84; ICr95 %: 0,71--0,97), 0,31 frente a 0,47 en 2015--2019 (DP=-0,16; ICr95 %: -0,24 a -0,07; RP=0,66; ICr95 %: 0,50--0,84) y 0,63 frente a 0,58 en 2020--junio 2024 (DP=0,05; ICr95 %: -0,04 a 0,15; RP=1,10; ICr95 %: 0,93--1,26). Por tanto, la dirección se invirtió descriptivamente en el período reciente, aunque con incertidumbre. La razón de OR de interacción reciente fue 1,88 (ICr95 %: 1,13--3,17). El modelo con interacción tuvo ΔELPD=3,46 (EE=3,25), interpretado como una ventaja predictiva pequeña e incierta, no como evidencia concluyente.
+**Pareja estable:** En adolescentes de 10–14 frente a 15–19 años, las prevalencias marginales fueron 0,51 frente a 0,61 en 2009–2014 (DP=-0,10; ICr95 %: -0,18 a -0,02; RP=0,84; ICr95 %: 0,71–0,97), 0,31 frente a 0,47 en 2015–2019 (DP=-0,16; ICr95 %: -0,24 a -0,07; RP=0,66; ICr95 %: 0,50–0,84) y 0,63 frente a 0,58 en 2020–junio 2024 (DP=0,05; ICr95 %: -0,04 a 0,15; RP=1,10; ICr95 %: 0,93–1,26). Por tanto, la dirección se invirtió descriptivamente en el período reciente, aunque con incertidumbre. La razón de OR de interacción reciente fue 1,88 (ICr95 %: 1,13–3,17). El modelo con interacción tuvo ΔELPD=3,46 (EE=3,25), interpretado como una ventaja predictiva pequeña e incierta, no como evidencia concluyente.
 
-**Etnia minoritaria:** Las prevalencias marginales fueron 0,05 frente a 0,03 en 2009--2014 (DP=0,02; ICr95 %: -0,01 a 0,06; RP=1,62; ICr95 %: 0,79--3,02), 0,12 frente a 0,06 en 2015--2019 (DP=0,06; ICr95 %: 0,01--0,13; RP=2,01; ICr95 %: 1,19--3,18) y 0,09 frente a 0,09 en 2020--junio 2024 (DP=0,00; ICr95 %: -0,04 a 0,07; RP=1,04; ICr95 %: 0,53--1,82). La diferencia fue mayor principalmente en 2015--2019 y se aproximó a la nulidad en el período reciente, con mayor incertidumbre. La razón de OR de interacción reciente fue 0,64 (ICr95 %: 0,25--1,63) y el modelo con interacción no mejoró la predicción (ΔELPD=-0,51; EE=1,65).
+**Etnia minoritaria:** Las prevalencias marginales fueron 0,05 frente a 0,03 en 2009–2014 (DP=0,02; ICr95 %: -0,01 a 0,06; RP=1,62; ICr95 %: 0,79–3,02), 0,12 frente a 0,06 en 2015–2019 (DP=0,06; ICr95 %: 0,01–0,13; RP=2,01; ICr95 %: 1,19–3,18) y 0,09 frente a 0,09 en 2020–junio 2024 (DP=0,00; ICr95 %: -0,04 a 0,07; RP=1,04; ICr95 %: 0,53–1,82). La diferencia fue mayor principalmente en 2015–2019 y se aproximó a la nulidad en el período reciente, con mayor incertidumbre. La razón de OR de interacción reciente fue 0,64 (ICr95 %: 0,25–1,63) y el modelo con interacción no mejoró la predicción (ΔELPD=-0,51; EE=1,65).
 
-**Control prenatal adecuado:** Las prevalencias marginales fueron 0,47 frente a 0,60 en 2009--2014 (DP=-0,13; ICr95 %: -0,21 a -0,05; RP=0,79; ICr95 %: 0,65--0,92), 0,59 frente a 0,66 en 2015--2019 (DP=-0,06; ICr95 %: -0,16 a 0,02; RP=0,90; ICr95 %: 0,77--1,03) y 0,55 frente a 0,57 en 2020--junio 2024 (DP=-0,02; ICr95 %: -0,12 a 0,08; RP=0,97; ICr95 %: 0,80--1,14). La diferencia negativa fue mayor en el primer período y se aproximó progresivamente a la nulidad. La razón de OR de interacción reciente fue 1,59 (ICr95 %: 0,95--2,63), sin ventaja predictiva del modelo con interacción (ΔELPD=-0,19; EE=1,76). La sensibilidad ordinal mostró un patrón concordante: OR de 0,57, 0,76 y 0,86 por período, y ΔELPD=-0,31 (EE=1,79).
+**Control prenatal adecuado:** Las prevalencias marginales fueron 0,47 frente a 0,60 en 2009–2014 (DP=-0,13; ICr95 %: -0,21 a -0,05; RP=0,79; ICr95 %: 0,65–0,92), 0,59 frente a 0,66 en 2015–2019 (DP=-0,06; ICr95 %: -0,16 a 0,02; RP=0,90; ICr95 %: 0,77–1,03) y 0,55 frente a 0,57 en 2020–junio 2024 (DP=-0,02; ICr95 %: -0,12 a 0,08; RP=0,97; ICr95 %: 0,80–1,14). La diferencia negativa fue mayor en el primer período y se aproximó progresivamente a la nulidad. La razón de OR de interacción reciente fue 1,59 (ICr95 %: 0,95–2,63), sin ventaja predictiva del modelo con interacción (ΔELPD=-0,19; EE=1,76). La sensibilidad ordinal mostró un patrón concordante: OR de 0,57, 0,76 y 0,86 por período, y ΔELPD=-0,31 (EE=1,79).
 
 **Interpretación:** Las estimaciones muestran variación temporal de dirección o magnitud, especialmente para pareja estable, pero la comparación predictiva no proporciona evidencia concluyente de interacción. Cambios en la composición de la población atendida, el registro o cobertura del SIP, las prácticas institucionales, el acceso o uso de atención prenatal y las circunstancias del período pandémico son explicaciones plausibles. El estudio no permite identificar cuál mecanismo explica los cambios ni atribuirles causalmente la heterogeneidad.
 
-**Aclaración de 2024:** En todo el manuscrito y en la tabla suplementaria, el último período se denomina **2020--junio 2024**. El año 2024 incluye exclusivamente enero--junio y no se interpreta como un año completo.
+**Aclaración de 2024:** En todo el manuscrito y en la tabla suplementaria, el último período se denomina **2020–junio 2024**. El año 2024 incluye exclusivamente enero–junio y no se interpreta como un año completo.
 
 **Ubicación exacta de los cambios:**
 
-- **Resumen y Abstract:** período de estudio corregido a enero de 2009--junio de 2024 y resultados globales matizados como no temporalmente uniformes.
+- **Resumen y Abstract:** período de estudio corregido a enero de 2009–junio de 2024 y resultados globales matizados como no temporalmente uniformes.
 - **Materiales y métodos, análisis estadístico:** definición de los tres períodos, modelos aditivo y con interacción, estimaciones marginales, comparación mediante LOO y sensibilidad ordinal.
 - **Resultados, apartado “Heterogeneidad temporal”:** resultados completos de pareja estable, etnia minoritaria y control prenatal adecuado, incluidos estimandos marginales, términos de interacción y comparación LOO.
 - **Discusión:** asociaciones globales reformuladas como dependientes del período, atención especial a la inversión descriptiva de pareja estable e interpretación no causal de mecanismos plausibles.
 - **Conclusiones:** aclaración de que estas diferencias no fueron temporalmente uniformes.
-- **Tabla S2:** período final corregido a 2020--junio 2024 y período total aclarado como enero de 2009--junio de 2024.
+- **Tabla S2:** período final corregido a 2020–junio 2024 y período total aclarado como enero de 2009–junio de 2024.
 - **Tabla S12:** resumen compacto de prevalencias marginales, DP, RP, términos de interacción y ΔELPD con su EE.
 
 ## 10. Figuras y marco de selección
 
-**Comentario del editor:** Se señaló que la Figura 1 podía sugerir que el estudio partió de todos los partos adolescentes institucionales y aplicó después el criterio de admisión neonatal, aunque la base accesible ya estaba restringida a recién nacidos admitidos. También se solicitó identificar claramente que 2024 contiene solo enero--junio y evitar su comparación directa con años completos en la Figura 3.
+**Comentario del editor:** Se señaló que la Figura 1 podía sugerir que el estudio partió de todos los partos adolescentes institucionales y aplicó después el criterio de admisión neonatal, aunque la base accesible ya estaba restringida a recién nacidos admitidos. También se solicitó identificar claramente que 2024 contiene solo enero–junio y evitar su comparación directa con años completos en la Figura 3.
 
 **Respuesta de los autores:** Rediseñamos ambas figuras y revisamos sus llamadas, pies y texto interpretativo. La Figura 1 comienza ahora por la base SIP realmente disponible para el estudio, ya condicionada por admisión neonatal, y distingue visualmente este marco analítico del contexto institucional completo no observado. La Figura 3 identifica y separa explícitamente el período parcial de 2024.
 
-**Figura 1 y base accesible:** La población institucional de todos los partos de adolescentes aparece únicamente como contexto externo, en una caja discontinua rotulada “no observado directamente”, y no como un paso del flujo de inclusión. Se aclara que no se dispuso del denominador institucional ni de los partos no incluidos. El primer nodo observado es la base SIP disponible: 7.202 registros iniciales de adolescentes de 10--19 años cuyos recién nacidos ya habían sido admitidos en Neonatología. Desde allí se representa el proceso real de eliminación de 15 duplicados exactos, linkage/consolidación de gestaciones múltiples, muestra materna final de 7.035 eventos obstétricos y submuestra neonatal descriptiva de 6.790 nacimientos únicos.
+**Figura 1 y base accesible:** La población institucional de todos los partos de adolescentes aparece únicamente como contexto externo, en una caja discontinua rotulada “no observado directamente”, y no como un paso del flujo de inclusión. Se aclara que no se dispuso del denominador institucional ni de los partos no incluidos. El primer nodo observado es la base SIP disponible: 7.202 registros iniciales de adolescentes de 10–19 años cuyos recién nacidos ya habían sido admitidos en Neonatología. Desde allí se representa el proceso real de eliminación de 15 duplicados exactos, linkage/consolidación de gestaciones múltiples, muestra materna final de 7.035 eventos obstétricos y submuestra neonatal descriptiva de 6.790 nacimientos únicos.
 
 **Posibles determinantes del mecanismo de selección:** Se incorporaron, como factores potencialmente relacionados con la probabilidad de admisión neonatal e inclusión en la base, características sociodemográficas —edad/grupo etario, etnia, pareja estable y educación/rezago—; reproductivas/obstétricas —embarazo planeado, antecedentes y condiciones obstétricas/perinatales—; y de atención prenatal —adecuación y número de consultas—. Las flechas y el pie indican expresamente que se trata de un diagrama conceptual y no de causas o efectos causales estimados.
 
-**Figura 3 y 2024 parcial:** La etiqueta del eje X se cambió a **“2024 (ene--jun)”**. El período se separó de 2009--2023 mediante espacio adicional, una línea discontinua y un contorno diferenciado. Dentro de la figura se añadió la advertencia **“2024: enero--junio; conteo parcial; no comparable directamente con años completos”**. No se anualizaron, proyectaron ni extrapolaron los datos de julio--diciembre.
+**Figura 3 y 2024 parcial:** La etiqueta del eje X se cambió a **“2024 (ene–jun)”**. El período se separó de 2009–2023 mediante espacio adicional, una línea discontinua y un contorno diferenciado. Dentro de la figura se añadió la advertencia **“2024: enero–junio; conteo parcial; no comparable directamente con años completos”**. No se anualizaron, proyectaron ni extrapolaron los datos de julio–diciembre.
 
 **Interpretación:** El texto del manuscrito aclara que la variación anual se describe dentro de la población hospitalaria seleccionada y no representa una tendencia poblacional. El dato parcial de 2024 no se interpreta como descenso anual ni se compara directamente con los años calendario completos.
 
@@ -189,7 +190,7 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 - **Materiales y métodos, primer párrafo:** se aclara que la base accesible ya estaba restringida por admisión neonatal y que no se observaron todos los partos adolescentes institucionales.
 - **Figura 1 y su nota:** nuevo marco de selección, flujo real de depuración, posibles determinantes de selección, ausencia de atribución causal y restricción de la inferencia.
 - **Discusión, párrafo sobre variación anual:** llamada a la Figura 3 y aclaración de que 2024 es parcial y no directamente comparable.
-- **Figura 3, eje X, anotación y nota:** identificación de enero--junio de 2024, separación visual y advertencia de no comparabilidad anual.
+- **Figura 3, eje X, anotación y nota:** identificación de enero–junio de 2024, separación visual y advertencia de no comparabilidad anual.
 
 ## 11. Referencias y consistencia editorial
 
@@ -199,28 +200,26 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 
 **URL con extensión duplicada:** La duplicación correspondía al enlace del *Reglamento General a la Ley Orgánica de Educación Intercultural*, ahora referencia 13. El enlace final es `https://www.evaluacion.gob.ec/wp-content/uploads/downloads/2016/05/Reglamento_LOEI-enero2013.pdf`; abre el PDF de 110 páginas con el título citado. La búsqueda final de la cadena defectuosa no devolvió resultados.
 
-**Fuente de 1988:** La referencia que ocupaba anteriormente el número 12 era normativa educativa y no respaldaba la afirmación histórica. Se sustituyó como soporte de esa afirmación por Peñaherrera Cepeda, *Historia e importancia de la ginecología en la infancia y adolescencia* (MetroCiencia. 2022;30(4):55--59; doi: 10.47464/MetroCiencia/vol30/4/2022/55-59), publicación que declara explícitamente que desde 1988 funciona el Servicio de Atención Integral para Adolescentes del HGOIA. Para no exceder la evidencia, el manuscrito ahora dice que el hospital “alberga el Servicio de Atención Integral para Adolescentes (SAIA), descrito como activo desde 1988”. La normativa educativa se conservó, renumerada, donde sí respalda el cálculo de escolaridad esperada.
+**Fuente de 1988:** La referencia que ocupaba anteriormente el número 12 era normativa educativa y no respaldaba la afirmación histórica. Se sustituyó como soporte de esa afirmación por Peñaherrera Cepeda, *Historia e importancia de la ginecología en la infancia y adolescencia* (MetroCiencia. 2022;30(4):55–59; doi: 10.47464/MetroCiencia/vol30/4/2022/55-59), publicación que declara explícitamente que desde 1988 funciona el Servicio de Atención Integral para Adolescentes del HGOIA. Para no exceder la evidencia, el manuscrito ahora dice que el hospital “alberga el Servicio de Atención Integral para Adolescentes (SAIA), descrito como activo desde 1988”. La normativa educativa se conservó, renumerada, donde sí respalda el cálculo de escolaridad esperada.
 
 **F1000Research:** Se mantuvo una referencia, ahora número 17. Se verificó que existe como versión 2 revisada y publicada en 2023, con revisión abierta que informa un dictamen aprobado y dos aprobados con reservas. La cita se actualizó para mostrar expresamente ese estado editorial. Las instrucciones públicas para autores de la Revista Brasileira de Saúde Materno Infantil no establecen una prohibición explícita de citar preprints, artículos con revisión abierta o revisión posterior a la publicación. Además, la fuente aporta evidencia poblacional peruana directamente pertinente y no se usa como referencia metodológica; por ello no se sustituyó.
 
-**Reconciliación y enlaces:** Se verificaron los DOI, páginas institucionales y PDF. Los enlaces institucionales finales abren el documento citado, incluida la URL corregida del reglamento. No quedaron referencias duplicadas ni enlaces rotos. La inserción de la nueva referencia 12 desplazó de forma controlada las referencias posteriores hasta el número 27 y restituyó la correspondencia de las citas `(13,14)`, `(15)`, `(6,18--20)`, `(21,22)`, `(23,24)`, `(25)` y `(26,27)`.
+**Reconciliación y enlaces:** Se verificaron los DOI, páginas institucionales y PDF. Los enlaces institucionales finales abren el documento citado, incluida la URL corregida del reglamento. No quedaron referencias duplicadas ni enlaces rotos. La inserción de la nueva referencia 12 desplazó de forma controlada las referencias posteriores hasta el número 27 y restituyó la correspondencia de las citas `(13,14)`, `(15)`, `(6,18–20)`, `(21,22)`, `(23,24)`, `(25)` y `(26,27)`.
 
-**Ubicación exacta de los cambios:** Introducción, afirmación y cita sobre el SAIA desde 1988; lista completa de referencias, números 1--27; y presente sección de la carta. La auditoría trazable se conserva en `output/referencias/auditoria_referencias.csv`.
+**Ubicación exacta de los cambios:** Introducción, afirmación y cita sobre el SAIA desde 1988; lista completa de referencias, números 1–27; y presente sección de la carta. La auditoría trazable se conserva en `output/referencias/auditoria_referencias.csv`.
 
-## 12. Resumen técnico
+## 12. Revisión lingüística y consistencia interna
 
-- La muestra materna y la muestra neonatal están claramente separadas.
-- La descripción neonatal se realiza únicamente en la submuestra de nacimientos únicos.
-- No se retuvo de forma arbitraria ningún recién nacido de una gestación múltiple.
-- Las denominaciones de las tablas neonatales y las notas del manuscrito reflejan esta lógica.
+**Comentario del editor:** Se solicitó una revisión humana final del español y del inglés, la estandarización de los intervalos de edad y períodos, la eliminación de marcas residuales y la comprobación de la concordancia numérica entre el manuscrito, el material suplementario, los outputs analíticos y esta carta.
 
-## 13. Conclusión
+**Respuesta de los autores:** Revisamos integralmente el título, el Resumen, el Abstract, el texto principal, las tablas, las notas, los pies de figura y los puntos 1–12 de esta carta. Estandarizamos la unidad de análisis como “eventos obstétricos maternos”, reservamos “adolescentes de 10–14 años” y “adolescentes de 15–19 años” para las comparaciones etarias, y usamos “nacimientos únicos” para la submuestra neonatal descriptiva. Los rangos se presentan con guion en dash y 2024 se identifica siempre como enero–junio.
 
-Hemos corregido completamente la redacción y la documentación del proceso. El análisis ahora declara y aplica con transparencia:
+**Revisión del Resumen y Abstract:** Se armonizaron objetivo, diseño, período, tamaños de muestra, resultados principales, heterogeneidad temporal y restricción por admisión neonatal. El inglés se revisó para utilizar una redacción epidemiológica natural y conservar la misma fuerza interpretativa que el español, sin añadir ni omitir resultados.
 
-- la unidad de análisis materna,
-- el manejo de gestaciones múltiples,
-- la restricción a nacimientos únicos para las variables neonatales,
-- y los denominadores auditados y reproducibles.
+**Concordancia numérica:** Confirmamos 7.202 registros iniciales, 15 duplicados exactos, 7.187 registros posteriores, 152 consolidaciones, 7.035 eventos obstétricos maternos —386 en adolescentes de 10–14 años y 6.649 en adolescentes de 15–19 años— y 6.790 nacimientos únicos —381 y 6.409, respectivamente—. Los resultados inferenciales de escolaridad, atención prenatal, heterogeneidad temporal y diagnósticos bayesianos concordaron con los outputs validados y no fueron modificados.
 
-Quedamos a disposición para proporcionar el código de auditoría y cualquier extracto adicional necesario para la revisión.
+**Corrección de la Tabla 1:** La revisión detectó que las filas neonatales conservaban denominadores y descriptivos calculados sobre la muestra materna completa, aunque la nota ya las atribuía a la submuestra de nacimientos únicos. Se recalcularon únicamente esos descriptivos, sin ajustar ni reejecutar modelos, aplicando la lógica de desduplicación validada. Todos los denominadores neonatales corregidos son ahora compatibles con el máximo de 6.790 nacimientos únicos y con los conteos por grupo.
+
+**Marcas y formato:** Se eliminaron la marca residual “cc”, un encabezado vacío, escapes visibles en el Abstract y contenedores HTML heredados. También se normalizaron encabezados, notas, abreviaturas, espacios y terminología; no se rediseñaron figuras ni se alteraron resultados estadísticos.
+
+**Ubicación exacta de los cambios:** título y metadatos Quarto; Resumen y Abstract; Introducción; Materiales y métodos; Resultados; Discusión; pies de figuras 1–3; Tablas 1 y 2; Tablas S1–S12 y sus notas; y puntos 1–12 de esta carta.
