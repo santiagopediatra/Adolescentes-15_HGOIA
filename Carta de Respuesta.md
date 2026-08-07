@@ -95,14 +95,41 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 - **Tabla S3:** se mantiene “Adecuación ordinal del control prenatal” como análisis secundario.
 - **Tablas S5–S7:** se incorporan, respectivamente, la regla de contactos esperados, los thresholds y diagnósticos del modelo ordinal, y la sensibilidad del supuesto de odds proporcionales.
 
-## 7. Resumen técnico
+## 7. Modelo gaussiano para número de consultas
+
+**Comentario del editor:** El número de consultas es una variable de conteo susceptible a asimetría, acumulaciones y sobredispersión. Se solicitó presentar verificaciones predictivas posteriores específicas, comparar el modelo gaussiano con modelos de Poisson y binomial negativa, mostrar la distribución observada y predicha, informar valores extremos y acumulaciones, y aclarar la interpretación del ajuste por edad gestacional.
+
+**Respuesta de los autores:** Evaluamos nuevamente el modelo gaussiano sin eliminarlo a priori y lo comparamos con modelos bayesianos de Poisson y binomial negativa, en versiones no ajustada y ajustada por edad gestacional al parto. La decisión se basó en la naturaleza de conteo del desenlace, las verificaciones predictivas posteriores y LOO, no en la significación estadística. Dado el mejor desempeño predictivo de la binomial negativa, este modelo se adoptó como análisis principal para el número de consultas; Poisson y gaussiano se conservaron como análisis de sensibilidad.
+
+**Distribución observada:** La variable `Número Consultas prenatales` tuvo 6.884 observaciones válidas y 151 faltantes. El rango fue 0–20, la media 5,714, la mediana 6, la varianza 7,663 y la desviación estándar 2,768. La relación varianza/media fue 1,341 y la asimetría 0,442. Se registraron 187 ceros (2,72 %), acumulaciones reproducibles en 5, 8 y 12 consultas, y 53 observaciones por encima del límite superior de Tukey de 14. Estos resultados mostraron asimetría moderada, heaping y sobredispersión respecto de Poisson.
+
+**PPC del gaussiano:** Aunque el modelo gaussiano reprodujo la media y la varianza globales, 12 de 16 estadísticos predictivos observados quedaron fuera del ICr95 % tanto sin ajuste como con ajuste. El modelo subestimó la proporción de ceros, generó aproximadamente 2 % de predicciones negativas y no reprodujo adecuadamente los extremos ni las acumulaciones principales.
+
+**Comparación de modelos:** En el modelo principal binomial negativo, la razón de medias para adolescentes de 10–14 frente a 15–19 años fue 0,902 (ICr95 %: 0,856–0,953) sin ajuste y 0,903 (0,857–0,949) con ajuste por oportunidad acumulada. En Poisson fue 0,902 (0,860–0,943) y 0,903 (0,863–0,945), respectivamente. En el gaussiano, las diferencias de medias fueron −0,561 (−0,854 a −0,272) sin ajuste y −0,546 (−0,828 a −0,275) con ajuste. La dirección y la magnitud relativa fueron concordantes entre familias.
+
+**Resultado de LOO:** La binomial negativa obtuvo el mayor ELPD-LOO en ambos conjuntos comparables. Frente a ella, el gaussiano presentó delta ELPD de −9,65 sin ajuste y −27,00 con ajuste; Poisson presentó −167,92 y −91,50, respectivamente. La binomial negativa tuvo 6/16 estadísticos PPC fuera del ICr95 %, frente a 12/16 en el gaussiano. No hubo valores de Pareto-k >0,7. Todos los modelos mostraron convergencia adecuada, con R-hat máximo ≤1,0021 y cero divergencias.
+
+**Decisión final:** La binomial negativa se considera el análisis principal porque respeta el soporte de conteo, admite sobredispersión y presentó el mejor ajuste predictivo. Los modelos de Poisson y gaussiano se mantienen únicamente como sensibilidades. El gaussiano no se mantuvo como principal por inercia ni se seleccionó ningún modelo por significación estadística.
+
+**Interpretación de la edad gestacional:** El ajuste por edad gestacional al parto se interpretó como un ajuste por la oportunidad acumulada de recibir consultas prenatales y no como control causal de confusión. No se interpreta como un efecto independiente ni causalmente ajustado.
+
+**Ubicación exacta de los cambios:**
+
+- **Resumen y Abstract:** binomial negativa como análisis principal y razón de medias ajustada.
+- **Materiales y métodos:** distribución evaluada, jerarquía de modelos, PPC, LOO y significado del ajuste por edad gestacional.
+- **Resultados, apartado “Atención prenatal”:** distribución observada, resultado principal binomial negativo y comparación predictiva.
+- **Discusión:** decisión metodológica y cautela interpretativa sobre edad gestacional.
+- **Tabla S3:** corrección del modelo gaussiano no ajustado a n=6.884 e ICr95 % de −0,85 a −0,27.
+- **Tabla S8:** comparación única de los seis modelos, sus estimadores, LOO, PPC y diagnósticos de convergencia.
+
+## 8. Resumen técnico
 
 - La muestra materna y la muestra neonatal están claramente separadas.
 - La descripción neonatal se realiza únicamente en la submuestra de nacimientos únicos.
 - No se retuvo de forma arbitraria ningún recién nacido de una gestación múltiple.
 - Las denominaciones de las tablas neonatales y las notas del manuscrito reflejan esta lógica.
 
-## 8. Conclusión
+## 9. Conclusión
 
 Hemos corregido completamente la redacción y la documentación del proceso. El análisis ahora declara y aplica con transparencia:
 
