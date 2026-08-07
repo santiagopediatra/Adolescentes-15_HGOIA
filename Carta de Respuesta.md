@@ -122,14 +122,36 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 - **Tabla S3:** corrección del modelo gaussiano no ajustado a n=6.884 e ICr95 % de −0,85 a −0,27.
 - **Tabla S8:** comparación única de los seis modelos, sus estimadores, LOO, PPC y diagnósticos de convergencia.
 
-## 8. Resumen técnico
+## 8. Diagnósticos bayesianos y sensibilidad a priors
+
+**Comentario del editor:** Se solicitó presentar integralmente los diagnósticos bayesianos de los modelos Bernoulli, ordinales, gaussianos y de conteo, incluidas R-hat, ESS bulk y tail, divergencias, treedepth, E-BFMI, verificaciones predictivas posteriores, sensibilidad a priors y parámetros posteriores completos.
+
+**Respuesta de los autores:** Auditamos los 20 modelos que sustentan resultados publicados: 13 Bernoulli-logit, un cumulative-logit ordinal, dos binomiales negativos principales, dos Poisson y dos gaussianos de sensibilidad. La auditoría consideró todos los parámetros relevantes de cada modelo, no únicamente el coeficiente del grupo.
+
+**Diagnósticos globales:** El R-hat máximo fue 1,0018; el ESS bulk mínimo, 4.182; y el ESS tail mínimo, 4.568. No hubo divergencias ni iteraciones que alcanzaran el max treedepth. El E-BFMI mínimo fue 0,909. En consecuencia, no se detectaron problemas de convergencia, eficiencia del muestreo, saturación de treedepth ni exploración de la energía posterior.
+
+**PPC por familia:** Los PPC compararon prevalencias globales y por grupo y varianza en los Bernoulli, las cuatro proporciones en el ordinal, y media, varianza, ceros, cuantiles, extremos y acumulaciones en los modelos de consultas. Las comparaciones observadas fuera del ICr95 % predictivo fueron 0/52 para Bernoulli-logit, 0/4 para el ordinal, 24/32 para los gaussianos, 15/32 para Poisson y 12/32 para binomial negativa. Específicamente, Poisson presentó 9/16 discrepancias sin ajuste y 6/16 con ajuste; la binomial negativa presentó 6/16 en cada versión. Estos valores describen el desempeño predictivo observado y no se interpretan como ajuste perfecto.
+
+**Sensibilidad a priors:** Cada coeficiente principal se comparó con una especificación alternativa moderadamente más amplia y coherente con su familia. Se ampliaron por separado los priors de interceptos, coeficientes y, según correspondía, sigma o shape; no se asumieron priors idénticos entre familias. La máxima diferencia absoluta entre estimaciones principales y alternativas fue 0,0113 y ninguno de los 20 modelos cambió de dirección. Por tanto, la magnitud y dirección de los resultados fueron estables frente a las especificaciones alternativas evaluadas.
+
+**Parámetros posteriores completos:** Se añadieron los interceptos y coeficientes de grupo de los 13 Bernoulli; el coeficiente de grupo y los tres thresholds del ordinal; intercepto, grupo, edad gestacional cuando correspondía y sigma de los gaussianos; los parámetros equivalentes y shape de las binomiales negativas; e intercepto, grupo y edad gestacional de Poisson. Para cada parámetro se informan estimación posterior, ICr95 %, R-hat, ESS bulk y ESS tail.
+
+**Ubicación exacta de los cambios:**
+
+- **Materiales y métodos, análisis bayesiano:** se explicitan todos los diagnósticos, los PPC por familia y las especificaciones principales y alternativas de priors.
+- **Resultados, “Diagnósticos bayesianos y sensibilidad a priors”:** se resumen los diagnósticos globales, PPC y estabilidad frente a priors.
+- **Tabla S9:** diagnósticos completos y resumen PPC de los 20 modelos.
+- **Tabla S10:** parámetros posteriores completos, incluidos interceptos, thresholds, sigma y shape.
+- **Tabla S11:** comparación compacta de coeficientes principales bajo priors principales y alternativos.
+
+## 9. Resumen técnico
 
 - La muestra materna y la muestra neonatal están claramente separadas.
 - La descripción neonatal se realiza únicamente en la submuestra de nacimientos únicos.
 - No se retuvo de forma arbitraria ningún recién nacido de una gestación múltiple.
 - Las denominaciones de las tablas neonatales y las notas del manuscrito reflejan esta lógica.
 
-## 9. Conclusión
+## 10. Conclusión
 
 Hemos corregido completamente la redacción y la documentación del proceso. El análisis ahora declara y aplica con transparencia:
 

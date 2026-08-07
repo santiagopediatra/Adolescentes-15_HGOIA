@@ -84,7 +84,9 @@ El número de consultas prenatales, por su naturaleza de conteo, se analizó pri
 
 La distribución observada se evaluó mediante frecuencias, momentos, percentiles, relación varianza/media, asimetría, ceros, valores extremos y acumulaciones. Las verificaciones predictivas posteriores compararon cuantitativamente media, varianza, proporción de ceros, cuantiles, extremos y frecuencias en los valores acumulados. Los modelos gaussiano, Poisson y binomial negativa se compararon mediante estos diagnósticos y validación cruzada leave-one-out (LOO); la selección no se basó en la significación estadística.
 
-Los modelos Bernoulli-logit y ordinales se estimaron con cuatro cadenas, 6.000 iteraciones por cadena y 3.000 de calentamiento; los modelos del número de consultas utilizaron cuatro cadenas, 4.000 iteraciones y 2.000 de calentamiento. La convergencia y la eficiencia del muestreo se evaluaron mediante R-hat, tamaños efectivos de muestra bulk y tail, transiciones divergentes, profundidad máxima del árbol y E-BFMI. Se realizaron verificaciones predictivas posteriores, análisis de sensibilidad con priors más amplios y análisis por los subperíodos 2009--2014, 2015--2019 y 2020--2024. Los datos faltantes se manejaron mediante análisis de casos disponibles.
+Los modelos Bernoulli-logit y ordinales se estimaron con cuatro cadenas, 6.000 iteraciones por cadena y 3.000 de calentamiento; los modelos del número de consultas utilizaron cuatro cadenas, 4.000 iteraciones y 2.000 de calentamiento. Para todos los modelos relevantes se evaluaron R-hat, tamaños efectivos de muestra (ESS) bulk y tail, transiciones divergentes, profundidad máxima del árbol (treedepth), E-BFMI y verificaciones predictivas posteriores (PPC). Los PPC compararon prevalencias observadas y replicadas en los Bernoulli, proporciones de las cuatro categorías en el ordinal y características distributivas del conteo en los modelos gaussiano, Poisson y binomial negativo.
+
+La sensibilidad a priors comparó cada coeficiente principal con una especificación alternativa moderadamente más amplia. En los Bernoulli se ampliaron los priors del intercepto de Normal(0; 3) a Normal(0; 5) y del grupo de Normal(0; 1,5) a Normal(0; 2,5). En el ordinal se amplió el prior del grupo de Normal(0; 1,5) a Normal(0; 2,5), manteniendo los priors Student-t(3; 0; 2,5) de los thresholds. En los gaussianos se ampliaron los priors del intercepto, coeficientes y sigma; en Poisson y binomial negativa se ampliaron moderadamente los priors en escala logarítmica y, para la binomial negativa, el prior de shape. También se realizaron análisis por los subperíodos 2009--2014, 2015--2019 y 2020--2024. Los datos faltantes se manejaron mediante análisis de casos disponibles. Los diagnósticos, parámetros posteriores completos y sensibilidad a priors se presentan en las Tablas S9--S11.
 
 Los análisis se realizaron en R, versión 4.4.3, principalmente con los paquetes brms, posterior y dplyr.
 
@@ -119,6 +121,10 @@ Las características neonatales se presentan de forma descriptiva en la Tabla 1,
 Análisis de sensibilidad
 
 Los análisis por subperíodos mostraron variación en la magnitud y precisión de las estimaciones. Las asociaciones con menor nivel educativo registrado, gestas previas, falla registrada del método anticonceptivo y rezago escolar conservaron la misma dirección en los tres períodos. Otras asociaciones se atenuaron o fueron compatibles con ausencia de diferencia, principalmente en 2020--2024, y de forma variable en 2009--2014 y 2015--2019 (Tabla S2).
+
+Diagnósticos bayesianos y sensibilidad a priors
+
+Los 20 modelos auditados mostraron convergencia y eficiencia de muestreo adecuadas: el R-hat máximo fue 1,0018, el ESS bulk mínimo 4.182 y el ESS tail mínimo 4.568; no hubo divergencias ni iteraciones que alcanzaran el max treedepth, y el E-BFMI mínimo fue 0,909 (Tabla S9). Los PPC se evaluaron por familia y documentaron el desempeño predictivo observado, sin implicar ajuste perfecto. En los modelos de conteo, las discrepancias fueron 9/16 para Poisson no ajustado, 6/16 para Poisson ajustado y 6/16 para cada modelo binomial negativo. Con priors alternativos moderadamente más amplios, la máxima diferencia absoluta del coeficiente principal fue 0,0113 y ninguno de los 20 modelos cambió de dirección, lo que indicó estabilidad de magnitud y dirección (Tabla S11). Los parámetros posteriores completos se presentan en la Tabla S10.
 
 Datos faltantes
 
@@ -502,3 +508,113 @@ Modelos Bernoulli-logit separados para cada punto de corte, con adolescentes de 
 | Poisson             | Sí                              | RM 0,903 (0,863--0,945)       | -16535,45    | -91,50         | 6/16                       | 1,0006 / 0             |
 
 La edad gestacional se incluyó como ajuste por la oportunidad acumulada de recibir consultas prenatales, no como control causal de confusión. RM: razón de medias; DM: diferencia de medias; ELPD-LOO: densidad predictiva esperada estimada mediante validación cruzada leave-one-out; delta ELPD: diferencia respecto del mejor modelo dentro de cada conjunto comparable; PPC: número de 16 estadísticos predictivos observados fuera del ICr95 %; Div.: divergencias. La binomial negativa se adoptó como análisis principal por la naturaleza de conteo del desenlace y su mejor desempeño predictivo; Poisson y gaussiano se conservaron como sensibilidades.
+
+## Tabla S9. Diagnósticos bayesianos completos de los modelos auditados {#tabla-s9.-diagnósticos-bayesianos-completos-de-los-modelos-auditados .unnumbered}
+
+| **Modelo** | **Familia** | **R-hat máx.** | **ESS bulk mín.** | **ESS tail mín.** | **Div.** | **Treedepth observado/configurado; en máx.** | **E-BFMI mín.** | **Resumen PPC** |
+|:--|:--|--:|--:|--:|--:|:--|--:|:--|
+| Pareja estable | Bernoulli-logit | 1,0006 | 6644 | 5201 | 0 | 4/15; 0 | 0,957 | 0/4 fuera del ICr95 % |
+| Escolaridad cruda: ninguna o primaria | Bernoulli-logit | 1,0018 | 5841 | 5866 | 0 | 4/15; 0 | 0,974 | 0/4 fuera del ICr95 % |
+| Etnia minoritaria | Bernoulli-logit | 1,0008 | 6039 | 5265 | 0 | 4/15; 0 | 1,014 | 0/4 fuera del ICr95 % |
+| Gestas previas | Bernoulli-logit | 1,0007 | 5569 | 5502 | 0 | 4/15; 0 | 0,961 | 0/4 fuera del ICr95 % |
+| Embarazo múltiple | Bernoulli-logit | 1,0004 | 5444 | 4885 | 0 | 4/15; 0 | 0,920 | 0/4 fuera del ICr95 % |
+| Embarazo planeado | Bernoulli-logit | 1,0012 | 7117 | 5920 | 0 | 4/15; 0 | 0,950 | 0/4 fuera del ICr95 % |
+| Falla anticonceptiva | Bernoulli-logit | 1,0005 | 6116 | 5895 | 0 | 4/15; 0 | 0,984 | 0/4 fuera del ICr95 % |
+| Infección urinaria | Bernoulli-logit | 1,0008 | 6468 | 5874 | 0 | 4/15; 0 | 0,909 | 0/4 fuera del ICr95 % |
+| Compromiso del bienestar fetal | Bernoulli-logit | 1,0013 | 6047 | 5705 | 0 | 5/15; 0 | 1,021 | 0/4 fuera del ICr95 % |
+| Trastorno hipertensivo | Bernoulli-logit | 1,0006 | 5263 | 4945 | 0 | 5/15; 0 | 0,995 | 0/4 fuera del ICr95 % |
+| Parto vaginal | Bernoulli-logit | 1,0001 | 6138 | 5944 | 0 | 4/15; 0 | 1,050 | 0/4 fuera del ICr95 % |
+| Rezago escolar binario | Bernoulli-logit | 1,0002 | 6150 | 5698 | 0 | 4/15; 0 | 0,961 | 0/4 fuera del ICr95 % |
+| Control prenatal adecuado: sí/no | Bernoulli-logit | 1,0014 | 6786 | 5479 | 0 | 4/15; 0 | 0,948 | 0/4 fuera del ICr95 % |
+| Adecuación ordinal del control prenatal | Cumulative-logit | 1,0009 | 4182 | 5217 | 0 | 7/15; 0 | 0,985 | 0/4 categorías fuera del ICr95 % |
+| Gaussiano no ajustado | Gaussiano | 1,0010 | 7722 | 5320 | 0 | 3/12; 0 | 0,981 | 12/16 fuera del ICr95 % |
+| Gaussiano ajustado | Gaussiano | 1,0005 | 9968 | 5825 | 0 | 3/12; 0 | 1,029 | 12/16 fuera del ICr95 % |
+| Poisson no ajustado | Poisson | 1,0008 | 5303 | 4568 | 0 | 3/12; 0 | 1,019 | 9/16 fuera del ICr95 % |
+| Poisson ajustado | Poisson | 1,0010 | 5784 | 4843 | 0 | 3/12; 0 | 1,005 | 6/16 fuera del ICr95 % |
+| Binomial negativa no ajustada | Binomial negativa | 1,0014 | 7626 | 5168 | 0 | 3/12; 0 | 0,978 | 6/16 fuera del ICr95 % |
+| Binomial negativa ajustada | Binomial negativa | 1,0006 | 8310 | 5240 | 0 | 3/12; 0 | 1,023 | 6/16 fuera del ICr95 % |
+
+ESS: tamaño efectivo de muestra; Div.: divergencias. Treedepth muestra la profundidad máxima observada/configurada y el número de iteraciones que alcanzaron el máximo configurado. Los PPC Bernoulli compararon prevalencias globales y por grupo y varianza; el ordinal comparó las cuatro proporciones; los modelos de consultas compararon 16 características distributivas. Estos resultados describen desempeño predictivo, no ajuste perfecto.
+
+## Tabla S10. Parámetros posteriores completos de los modelos auditados {#tabla-s10.-parámetros-posteriores-completos-de-los-modelos-auditados .unnumbered}
+
+| **Modelo** | **Parámetro** | **Estimación (ICr95 %)** | **R-hat** | **ESS bulk** | **ESS tail** |
+|:--|:--|:--|--:|--:|--:|
+| Pareja estable | Intercepto | 0,237 (0,188 a 0,285) | 1,0004 | 6903 | 5201 |
+| Pareja estable | Grupo 10--14 | -0,318 (-0,522 a -0,112) | 1,0006 | 6644 | 5906 |
+| Escolaridad cruda: ninguna o primaria | Intercepto | -1,725 (-1,792 a -1,657) | 1,0018 | 5841 | 5983 |
+| Escolaridad cruda: ninguna o primaria | Grupo 10--14 | 2,367 (2,149 a 2,596) | 1,0007 | 6755 | 5866 |
+| Etnia minoritaria | Intercepto | -2,965 (-3,076 a -2,855) | 1,0005 | 6039 | 5265 |
+| Etnia minoritaria | Grupo 10--14 | 0,611 (0,229 a 0,966) | 1,0008 | 6320 | 5556 |
+| Gestas previas | Intercepto | -1,500 (-1,565 a -1,436) | 1,0002 | 6103 | 5962 |
+| Gestas previas | Grupo 10--14 | -1,972 (-2,596 a -1,458) | 1,0007 | 5569 | 5502 |
+| Embarazo múltiple | Intercepto | -3,287 (-3,417 a -3,158) | 1,0003 | 6812 | 5837 |
+| Embarazo múltiple | Grupo 10--14 | -1,009 (-1,991 a -0,243) | 1,0004 | 5444 | 4885 |
+| Embarazo planeado | Intercepto | -1,212 (-1,269 a -1,155) | 1,0008 | 7120 | 6068 |
+| Embarazo planeado | Grupo 10--14 | -0,580 (-0,884 a -0,298) | 1,0012 | 7117 | 5920 |
+| Falla anticonceptiva | Intercepto | -1,560 (-1,623 a -1,497) | 1,0005 | 6997 | 5895 |
+| Falla anticonceptiva | Grupo 10--14 | -0,984 (-1,402 a -0,620) | 1,0003 | 6116 | 5976 |
+| Infección urinaria | Intercepto | 0,107 (0,058 a 0,156) | 1,0008 | 6605 | 6267 |
+| Infección urinaria | Grupo 10--14 | -0,406 (-0,618 a -0,189) | 1,0003 | 6468 | 5874 |
+| Compromiso del bienestar fetal | Intercepto | -2,165 (-2,243 a -2,085) | 1,0013 | 6198 | 5705 |
+| Compromiso del bienestar fetal | Grupo 10--14 | -0,596 (-1,034 a -0,200) | 1,0013 | 6047 | 5900 |
+| Trastorno hipertensivo | Intercepto | -1,497 (-1,560 a -1,435) | 1,0004 | 5263 | 4996 |
+| Trastorno hipertensivo | Grupo 10--14 | -0,297 (-0,598 a -0,005) | 1,0006 | 5858 | 4945 |
+| Parto vaginal | Intercepto | 0,397 (0,349 a 0,446) | 1,0001 | 6477 | 6001 |
+| Parto vaginal | Grupo 10--14 | 0,449 (0,223 a 0,674) | 1,0001 | 6138 | 5944 |
+| Rezago escolar binario | Intercepto | -1,617 (-1,682 a -1,552) | 1,0002 | 6150 | 5698 |
+| Rezago escolar binario | Grupo 10--14 | 0,970 (0,747 a 1,196) | 1,0002 | 6869 | 6187 |
+| Control prenatal adecuado: sí/no | Intercepto | 0,475 (0,424 a 0,525) | 1,0001 | 6786 | 5479 |
+| Control prenatal adecuado: sí/no | Grupo 10--14 | -0,337 (-0,544 a -0,126) | 1,0014 | 7148 | 6049 |
+| Adecuación ordinal del control prenatal | Grupo 10--14 | -0,376 (-0,578 a -0,176) | 1,0003 | 7078 | 6503 |
+| Adecuación ordinal del control prenatal | Threshold 1 | -3,606 (-3,755 a -3,462) | 1,0009 | 4182 | 5217 |
+| Adecuación ordinal del control prenatal | Threshold 2 | -1,851 (-1,920 a -1,783) | 1,0000 | 7491 | 8221 |
+| Adecuación ordinal del control prenatal | Threshold 3 | -0,476 (-0,525 a -0,426) | 1,0004 | 13153 | 8617 |
+| Gaussiano no ajustado | Intercepto | 5,743 (5,678 a 5,811) | 1,0003 | 7759 | 5320 |
+| Gaussiano no ajustado | Grupo 10--14 | -0,560 (-0,848 a -0,269) | 1,0010 | 8349 | 5514 |
+| Gaussiano no ajustado | Sigma | 2,766 (2,719 a 2,814) | 1,0007 | 7722 | 5356 |
+| Gaussiano ajustado | Intercepto | -3,439 (-4,251 a -2,650) | 1,0002 | 10788 | 5825 |
+| Gaussiano ajustado | Grupo 10--14 | -0,545 (-0,821 a -0,273) | 1,0003 | 10464 | 5965 |
+| Gaussiano ajustado | Edad gestacional | 0,248 (0,226 a 0,270) | 1,0001 | 10730 | 6009 |
+| Gaussiano ajustado | Sigma | 2,669 (2,625 a 2,714) | 1,0005 | 9968 | 5932 |
+| Poisson no ajustado | Intercepto | 1,748 (1,738 a 1,758) | 1,0008 | 5303 | 4932 |
+| Poisson no ajustado | Grupo 10--14 | -0,103 (-0,149 a -0,058) | 1,0005 | 5340 | 4568 |
+| Poisson ajustado | Intercepto | -0,027 (-0,160 a 0,108) | 1,0006 | 8036 | 5713 |
+| Poisson ajustado | Grupo 10--14 | -0,102 (-0,148 a -0,057) | 1,0010 | 5784 | 4843 |
+| Poisson ajustado | Edad gestacional | 0,048 (0,044 a 0,051) | 1,0007 | 8084 | 5839 |
+| Binomial negativa no ajustada | Intercepto | 1,748 (1,736 a 1,760) | 1,0009 | 8535 | 5838 |
+| Binomial negativa no ajustada | Grupo 10--14 | -0,103 (-0,156 a -0,050) | 1,0004 | 7626 | 5381 |
+| Binomial negativa no ajustada | Shape | 14,691 (13,021 a 16,638) | 1,0014 | 7907 | 5168 |
+| Binomial negativa ajustada | Intercepto | -0,042 (-0,194 a 0,115) | 0,9999 | 11342 | 6410 |
+| Binomial negativa ajustada | Grupo 10--14 | -0,102 (-0,154 a -0,051) | 1,0006 | 8379 | 5240 |
+| Binomial negativa ajustada | Edad gestacional | 0,048 (0,044 a 0,052) | 0,9999 | 11437 | 6303 |
+| Binomial negativa ajustada | Shape | 19,353 (16,856 a 22,501) | 1,0001 | 8310 | 5400 |
+
+Los interceptos, coeficientes y parámetros auxiliares se presentan en la escala del predictor lineal de cada familia. ICr: intervalo de credibilidad; ESS: tamaño efectivo de muestra.
+
+## Tabla S11. Sensibilidad de los coeficientes principales a priors alternativos {#tabla-s11.-sensibilidad-de-los-coeficientes-principales-a-priors-alternativos .unnumbered}
+
+| **Modelo** | **Prior principal: estimación (ICr95 %)** | **Prior alternativo: estimación (ICr95 %)** | **Cambio de dirección** |
+|:--|:--|:--|:--:|
+| Pareja estable | -0,318 (-0,522 a -0,112) | -0,315 (-0,519 a -0,116) | No |
+| Escolaridad cruda: ninguna o primaria | 2,367 (2,149 a 2,596) | 2,364 (2,147 a 2,585) | No |
+| Etnia minoritaria | 0,611 (0,229 a 0,966) | 0,609 (0,227 a 0,962) | No |
+| Gestas previas | -1,972 (-2,596 a -1,458) | -1,983 (-2,609 a -1,444) | No |
+| Embarazo múltiple | -1,009 (-1,991 a -0,243) | -1,005 (-1,925 a -0,284) | No |
+| Embarazo planeado | -0,580 (-0,884 a -0,298) | -0,585 (-0,882 a -0,314) | No |
+| Falla anticonceptiva | -0,984 (-1,402 a -0,620) | -0,988 (-1,414 a -0,612) | No |
+| Infección urinaria | -0,406 (-0,618 a -0,189) | -0,406 (-0,614 a -0,199) | No |
+| Compromiso del bienestar fetal | -0,596 (-1,034 a -0,200) | -0,592 (-1,036 a -0,202) | No |
+| Trastorno hipertensivo | -0,297 (-0,598 a -0,005) | -0,302 (-0,596 a -0,021) | No |
+| Parto vaginal | 0,449 (0,223 a 0,674) | 0,448 (0,224 a 0,672) | No |
+| Rezago escolar binario | 0,970 (0,747 a 1,196) | 0,972 (0,753 a 1,182) | No |
+| Control prenatal adecuado: sí/no | -0,337 (-0,544 a -0,126) | -0,338 (-0,554 a -0,122) | No |
+| Adecuación ordinal del control prenatal | -0,376 (-0,578 a -0,176) | -0,379 (-0,579 a -0,181) | No |
+| Gaussiano no ajustado | -0,560 (-0,848 a -0,269) | -0,558 (-0,843 a -0,278) | No |
+| Gaussiano ajustado | -0,545 (-0,821 a -0,273) | -0,544 (-0,817 a -0,273) | No |
+| Poisson no ajustado | -0,103 (-0,149 a -0,058) | -0,103 (-0,149 a -0,058) | No |
+| Poisson ajustado | -0,102 (-0,148 a -0,057) | -0,102 (-0,146 a -0,058) | No |
+| Binomial negativa no ajustada | -0,103 (-0,156 a -0,050) | -0,103 (-0,157 a -0,050) | No |
+| Binomial negativa ajustada | -0,102 (-0,154 a -0,051) | -0,102 (-0,154 a -0,051) | No |
+
+Se muestran las medianas posteriores del coeficiente del grupo de 10--14 años en la escala del predictor lineal. Los priors alternativos fueron moderadamente más amplios y específicos de cada familia, según se describe en Métodos. La máxima diferencia absoluta fue 0,0113 y no hubo cambios de dirección.
