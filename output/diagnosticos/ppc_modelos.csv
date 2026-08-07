@@ -1,0 +1,153 @@
+"modelo","familia","estadistico","observado","pred_mediana","pred_ICr95_inferior","pred_ICr95_superior","observado_fuera_ICr95"
+"Pareja estable","Bernoulli-logit","prevalencia_global",0.554513148542999,0.554299928926795,0.538148542999289,0.571002132196162,FALSE
+"Pareja estable","Bernoulli-logit","prevalencia_15_19",0.558881034742067,0.558580237629719,0.54203263648669,0.575131598736652,FALSE
+"Pareja estable","Bernoulli-logit","prevalencia_10_14",0.479274611398964,0.476683937823834,0.417098445595855,0.544041450777202,FALSE
+"Pareja estable","Bernoulli-logit","varianza_global",0.247063435816571,0.247086635145488,0.244993522173446,0.248580011110619,FALSE
+"Escolaridad cruda: ninguna o primaria","Bernoulli-logit","prevalencia_global",0.178962331201137,0.178678038379531,0.16773276474769,0.189765458422175,FALSE
+"Escolaridad cruda: ninguna o primaria","Bernoulli-logit","prevalencia_15_19",0.15115054895473,0.15115054895473,0.139712738757708,0.163332832004813,FALSE
+"Escolaridad cruda: ninguna o primaria","Bernoulli-logit","prevalencia_10_14",0.658031088082902,0.655440414507772,0.585427461139896,0.720272020725389,FALSE
+"Escolaridad cruda: ninguna o primaria","Bernoulli-logit","varianza_global",0.146955704438125,0.14677306024409,0.139618330622366,0.153776387973613,FALSE
+"Etnia minoritaria","Bernoulli-logit","prevalencia_global",0.0511727078891258,0.0508884150675195,0.04363539445629,0.0585678749111585,FALSE
+"Etnia minoritaria","Bernoulli-logit","prevalencia_15_19",0.0490299293126786,0.0488795307565047,0.0418107986163333,0.0565498571213716,FALSE
+"Etnia minoritaria","Bernoulli-logit","prevalencia_10_14",0.0880829015544041,0.0854922279792746,0.0517487046632124,0.134715025906736,FALSE
+"Etnia minoritaria","Bernoulli-logit","varianza_global",0.0485609646232463,0.0483056507543116,0.0417372791188458,0.0551455171843775,FALSE
+"Gestas previas","Bernoulli-logit","prevalencia_global",0.174129353233831,0.173916133617626,0.162046908315565,0.186499644633973,FALSE
+"Gestas previas","Bernoulli-logit","prevalencia_15_19",0.182583847195067,0.182433448638893,0.169645811400211,0.195518123026019,FALSE
+"Gestas previas","Bernoulli-logit","prevalencia_10_14",0.0284974093264249,0.0310880829015544,0.0103626943005181,0.0569948186528497,FALSE
+"Gestas previas","Bernoulli-logit","varianza_global",0.143828766319101,0.143689732013397,0.135807012300292,0.151739095860718,FALSE
+"Embarazo múltiple","Bernoulli-logit","prevalencia_global",0.0348258706467662,0.0349680170575693,0.0291400142146411,0.0417910447761194,FALSE
+"Embarazo múltiple","Bernoulli-logit","prevalencia_15_19",0.0360956534817266,0.0360956534817266,0.0297789141224244,0.0430177470296285,FALSE
+"Embarazo múltiple","Bernoulli-logit","prevalencia_10_14",0.0129533678756477,0.0129533678756477,0.00259067357512953,0.0362694300518135,FALSE
+"Embarazo múltiple","Bernoulli-logit","varianza_global",0.0336178080312116,0.0337500522894282,0.0282948958040942,0.0400502463514104,FALSE
+"Embarazo planeado","Bernoulli-logit","prevalencia_global",0.224591329068941,0.224449182658138,0.210518834399431,0.238663823738451,FALSE
+"Embarazo planeado","Bernoulli-logit","prevalencia_15_19",0.229357798165138,0.22905700105279,0.215069935328621,0.24410061663408,FALSE
+"Embarazo planeado","Bernoulli-logit","prevalencia_10_14",0.142487046632124,0.142487046632124,0.0958549222797927,0.194300518134715,FALSE
+"Embarazo planeado","Bernoulli-logit","varianza_global",0.17417482230183,0.174096494254023,0.166224282947746,0.181729235135505,FALSE
+"Falla anticonceptiva","Bernoulli-logit","prevalencia_global",0.1681592039801,0.168301350390903,0.156783937455579,0.179957356076759,FALSE
+"Falla anticonceptiva","Bernoulli-logit","prevalencia_15_19",0.173710332380809,0.173559933824635,0.1616784478869,0.185892615430892,FALSE
+"Falla anticonceptiva","Bernoulli-logit","prevalencia_10_14",0.0725388601036269,0.0725388601036269,0.0414507772020725,0.11139896373057,FALSE
+"Falla anticonceptiva","Bernoulli-logit","varianza_global",0.13990157260329,0.139995905763033,0.132221528734733,0.147593685983341,FALSE
+"Infección urinaria","Bernoulli-logit","prevalencia_global",0.521256665225537,0.521544891194697,0.505977086035452,0.53841691886439,FALSE
+"Infección urinaria","Bernoulli-logit","prevalencia_15_19",0.526748971193416,0.527358634354519,0.510131839658589,0.545191281816796,FALSE
+"Infección urinaria","Bernoulli-logit","prevalencia_10_14",0.425925925925926,0.425925925925926,0.357142857142857,0.492063492063492,FALSE
+"Infección urinaria","Bernoulli-logit","varianza_global",0.249584122496286,0.249571784198096,0.248559956506045,0.250000302225991,FALSE
+"Compromiso del bienestar fetal","Bernoulli-logit","prevalencia_global",0.100639658848614,0.100639658848614,0.0912544420753376,0.110589907604833,FALSE
+"Compromiso del bienestar fetal","Bernoulli-logit","prevalencia_15_19",0.103023010979095,0.102947811701008,0.0932471048277937,0.113250112798917,FALSE
+"Compromiso del bienestar fetal","Bernoulli-logit","prevalencia_10_14",0.0595854922279793,0.0569948186528497,0.0310880829015544,0.0959196891191709,FALSE
+"Compromiso del bienestar fetal","Bernoulli-logit","varianza_global",0.0905241856035231,0.0905241856035231,0.0829388578453037,0.0983737634181746,FALSE
+"Trastorno hipertensivo","Bernoulli-logit","prevalencia_global",0.180726378237592,0.180726378237592,0.167848357690638,0.19303646360874,FALSE
+"Trastorno hipertensivo","Bernoulli-logit","prevalencia_15_19",0.182945499081445,0.182945499081445,0.169473361910594,0.195958358848745,FALSE
+"Trastorno hipertensivo","Bernoulli-logit","prevalencia_10_14",0.142480211081794,0.142480211081794,0.0976253298153034,0.195250659630607,FALSE
+"Trastorno hipertensivo","Bernoulli-logit","varianza_global",0.148085781994392,0.148085781994392,0.139695500011412,0.15579592591437,FALSE
+"Parto vaginal","Bernoulli-logit","prevalencia_global",0.603556187766714,0.603271692745377,0.588335704125178,0.619064722617354,FALSE
+"Parto vaginal","Bernoulli-logit","prevalencia_15_19",0.597983142685129,0.597832630945214,0.581268813967489,0.614245936183022,FALSE
+"Parto vaginal","Bernoulli-logit","prevalencia_10_14",0.699481865284974,0.696891191709845,0.629468911917099,0.761658031088083,FALSE
+"Parto vaginal","Bernoulli-logit","varianza_global",0.239310157249371,0.239369007122899,0.235857141426081,0.242231260170474,FALSE
+"Rezago escolar binario","Bernoulli-logit","prevalencia_global",0.175323751245197,0.17518144300555,0.162793510744272,0.188416109292728,FALSE
+"Rezago escolar binario","Bernoulli-logit","prevalencia_15_19",0.165537998495109,0.165537998495109,0.1522949586155,0.178935289691497,FALSE
+"Rezago escolar binario","Bernoulli-logit","prevalencia_10_14",0.345549738219895,0.342931937172775,0.274869109947644,0.411060209424084,FALSE
+"Rezago escolar binario","Bernoulli-logit","varianza_global",0.144605912107304,0.144513470489634,0.136311179833339,0.152937243281587,FALSE
+"Control prenatal adecuado: sí/no","Bernoulli-logit","prevalencia_global",0.611953352769679,0.612099125364431,0.596355685131195,0.627704081632653,FALSE
+"Control prenatal adecuado: sí/no","Bernoulli-logit","prevalencia_15_19",0.616463696624017,0.616617851086789,0.599811160783105,0.632345460151071,FALSE
+"Control prenatal adecuado: sí/no","Bernoulli-logit","prevalencia_10_14",0.533512064343164,0.536193029490617,0.463806970509383,0.605965147453083,FALSE
+"Control prenatal adecuado: sí/no","Bernoulli-logit","varianza_global",0.237501067950559,0.23746840247773,0.233725736269556,0.240750676793742,FALSE
+"Adecuación ordinal del control prenatal","Ordinal cumulative-logit","proporcion_sin_controles",0.0271137026239067,0.0271137026239067,0.0215743440233236,0.0329446064139942,FALSE
+"Adecuación ordinal del control prenatal","Ordinal cumulative-logit","proporcion_inadecuado",0.111370262390671,0.111588921282799,0.100874635568513,0.121140670553936,FALSE
+"Adecuación ordinal del control prenatal","Ordinal cumulative-logit","proporcion_intermedio",0.249562682215743,0.25,0.23527332361516,0.265018221574344,FALSE
+"Adecuación ordinal del control prenatal","Ordinal cumulative-logit","proporcion_adecuado",0.611953352769679,0.611297376093294,0.595612244897959,0.62740889212828,FALSE
+"gaussiano_no_ajustado","Gaussiano","media",5.71353864032539,5.71197495497591,5.62035785895924,5.80139439081064,FALSE
+"gaussiano_no_ajustado","Gaussiano","varianza",7.6630972248615,7.66727629515745,7.31662089775526,8.0347115854478,FALSE
+"gaussiano_no_ajustado","Gaussiano","proporcion_cero",0.0271644392794887,0.0174317257408483,0.0142359093550261,0.020918070889018,TRUE
+"gaussiano_no_ajustado","Gaussiano","proporcion_predicha_negativa",0,0.0195380592678675,0.0158338175479372,0.0232423009877978,TRUE
+"gaussiano_no_ajustado","Gaussiano","minimo",0,-4.51396083827903,-6.61644155204783,-3.36211281613966,TRUE
+"gaussiano_no_ajustado","Gaussiano","maximo",20,15.94420409234,14.7341127047556,17.8942411162641,TRUE
+"gaussiano_no_ajustado","Gaussiano","cuantil_0.01",0,-0.720599986135547,-0.997045760991094,-0.441732162192512,TRUE
+"gaussiano_no_ajustado","Gaussiano","cuantil_0.05",1,1.15934945869302,0.993045568133775,1.31371469959914,FALSE
+"gaussiano_no_ajustado","Gaussiano","cuantil_0.25",4,3.84406003180617,3.73402119709198,3.96263274022644,TRUE
+"gaussiano_no_ajustado","Gaussiano","cuantil_0.5",6,5.71232522447231,5.60184102645057,5.81476033594599,TRUE
+"gaussiano_no_ajustado","Gaussiano","cuantil_0.75",8,7.57710416662571,7.46115933330624,7.69152920579472,TRUE
+"gaussiano_no_ajustado","Gaussiano","cuantil_0.95",10,10.267585014495,10.0951523665331,10.4452823186469,TRUE
+"gaussiano_no_ajustado","Gaussiano","cuantil_0.99",13,12.1408010458157,11.8796419190619,12.4145241990019,TRUE
+"gaussiano_no_ajustado","Gaussiano","frecuencia_valor_5",0.163131900058106,0.138582219639744,0.13058904706566,0.147152818128995,TRUE
+"gaussiano_no_ajustado","Gaussiano","frecuencia_valor_8",0.1178094131319,0.101975595583963,0.094712376525276,0.109674607786171,TRUE
+"gaussiano_no_ajustado","Gaussiano","frecuencia_valor_12",0.0117664148750726,0.0111853573503777,0.00885749564206856,0.0140906449738524,FALSE
+"gaussiano_ajustado","Gaussiano","media",5.71472303206997,5.71473991596953,5.62867672326075,5.80606577173932,FALSE
+"gaussiano_ajustado","Gaussiano","varianza",7.67585843034858,7.68579666806169,7.34817862987099,8.04130304145509,FALSE
+"gaussiano_ajustado","Gaussiano","proporcion_cero",0.0271137026239067,0.0176384839650146,0.0141399416909621,0.0209912536443149,TRUE
+"gaussiano_ajustado","Gaussiano","proporcion_predicha_negativa",0,0.0202623906705539,0.0164723032069971,0.0242018950437318,TRUE
+"gaussiano_ajustado","Gaussiano","minimo",0,-4.86148913245477,-7.03776414548514,-3.55769743019228,TRUE
+"gaussiano_ajustado","Gaussiano","maximo",20,15.899497689491,14.733257422082,17.9265565427802,TRUE
+"gaussiano_ajustado","Gaussiano","cuantil_0.01",0,-0.7826476661664,-1.06748713457694,-0.524391335881977,TRUE
+"gaussiano_ajustado","Gaussiano","cuantil_0.05",1,1.13917326918443,0.951493786240249,1.31701369063174,FALSE
+"gaussiano_ajustado","Gaussiano","cuantil_0.25",4,3.85417476205812,3.74236077446469,3.96500351251201,TRUE
+"gaussiano_ajustado","Gaussiano","cuantil_0.5",6,5.72824200587476,5.63449886638086,5.82702128148963,TRUE
+"gaussiano_ajustado","Gaussiano","cuantil_0.75",8,7.58908074201919,7.47268753245422,7.70120228391651,TRUE
+"gaussiano_ajustado","Gaussiano","cuantil_0.95",10,10.2474537569499,10.0899684671823,10.4182518366254,TRUE
+"gaussiano_ajustado","Gaussiano","cuantil_0.99",13,12.118197353828,11.8436303228202,12.3857649481459,TRUE
+"gaussiano_ajustado","Gaussiano","frecuencia_valor_5",0.163411078717201,0.138192419825073,0.129446064139942,0.146501457725948,TRUE
+"gaussiano_ajustado","Gaussiano","frecuencia_valor_8",0.117930029154519,0.103061224489796,0.0957725947521866,0.111082361516035,TRUE
+"gaussiano_ajustado","Gaussiano","frecuencia_valor_12",0.0118075801749271,0.0110787172011662,0.00845116618075802,0.0135604956268222,FALSE
+"poisson_no_ajustado","Poisson","media",5.71353864032539,5.71346600813481,5.62851902963393,5.79052876234747,FALSE
+"poisson_no_ajustado","Poisson","varianza",7.6630972248615,5.7278210119113,5.50726615420961,5.9300678063656,TRUE
+"poisson_no_ajustado","Poisson","proporcion_cero",0.0271644392794887,0.00334108076699593,0.00203370133643231,0.0046520918070889,TRUE
+"poisson_no_ajustado","Poisson","proporcion_predicha_negativa",0,0,0,0,FALSE
+"poisson_no_ajustado","Poisson","minimo",0,0,0,0,FALSE
+"poisson_no_ajustado","Poisson","maximo",20,17,15,19,TRUE
+"poisson_no_ajustado","Poisson","cuantil_0.01",0,1,1,1,TRUE
+"poisson_no_ajustado","Poisson","cuantil_0.05",1,2,2,2,TRUE
+"poisson_no_ajustado","Poisson","cuantil_0.25",4,4,4,4,FALSE
+"poisson_no_ajustado","Poisson","cuantil_0.5",6,6,5,6,FALSE
+"poisson_no_ajustado","Poisson","cuantil_0.75",8,7,7,7,TRUE
+"poisson_no_ajustado","Poisson","cuantil_0.95",10,10,10,10,FALSE
+"poisson_no_ajustado","Poisson","cuantil_0.99",13,12,12,12,TRUE
+"poisson_no_ajustado","Poisson","frecuencia_valor_5",0.163131900058106,0.167635095874492,0.158915601394538,0.176496223126089,FALSE
+"poisson_no_ajustado","Poisson","frecuencia_valor_8",0.1178094131319,0.0928239395700174,0.0857059848925044,0.0999418942475305,TRUE
+"poisson_no_ajustado","Poisson","frecuencia_valor_12",0.0117664148750726,0.0084253341080767,0.00639163277164439,0.0106042998256827,TRUE
+"poisson_ajustado","Poisson","media",5.71472303206997,5.71217201166181,5.63582725947522,5.79170189504373,FALSE
+"poisson_ajustado","Poisson","varianza",7.67585843034858,6.27594923271206,6.03343331174763,6.54528884821585,TRUE
+"poisson_ajustado","Poisson","proporcion_cero",0.0271137026239067,0.00466472303206997,0.00320699708454811,0.0065597667638484,TRUE
+"poisson_ajustado","Poisson","proporcion_predicha_negativa",0,0,0,0,FALSE
+"poisson_ajustado","Poisson","minimo",0,0,0,0,FALSE
+"poisson_ajustado","Poisson","maximo",20,17,16,20,FALSE
+"poisson_ajustado","Poisson","cuantil_0.01",0,1,1,1,TRUE
+"poisson_ajustado","Poisson","cuantil_0.05",1,2,2,2,TRUE
+"poisson_ajustado","Poisson","cuantil_0.25",4,4,4,4,FALSE
+"poisson_ajustado","Poisson","cuantil_0.5",6,6,5,6,FALSE
+"poisson_ajustado","Poisson","cuantil_0.75",8,7,7,7,TRUE
+"poisson_ajustado","Poisson","cuantil_0.95",10,10,10,10,FALSE
+"poisson_ajustado","Poisson","cuantil_0.99",13,12,12,13,FALSE
+"poisson_ajustado","Poisson","frecuencia_valor_5",0.163411078717201,0.160349854227405,0.151162536443149,0.169682944606414,FALSE
+"poisson_ajustado","Poisson","frecuencia_valor_8",0.117930029154519,0.0916180758017493,0.0845481049562682,0.0988374635568513,TRUE
+"poisson_ajustado","Poisson","frecuencia_valor_12",0.0118075801749271,0.0100583090379009,0.00772594752186589,0.0123943148688047,FALSE
+"negbin_no_ajustado","Binomial negativa","media",5.71353864032539,5.71361127251598,5.62083817547937,5.80450682742592,FALSE
+"negbin_no_ajustado","Binomial negativa","varianza",7.6630972248615,7.9569970790104,7.52397632614793,8.36998375531408,FALSE
+"negbin_no_ajustado","Binomial negativa","proporcion_cero",0.0271644392794887,0.00798954096455549,0.00595583962812318,0.0103137710633353,TRUE
+"negbin_no_ajustado","Binomial negativa","proporcion_predicha_negativa",0,0,0,0,FALSE
+"negbin_no_ajustado","Binomial negativa","minimo",0,0,0,0,FALSE
+"negbin_no_ajustado","Binomial negativa","maximo",20,20,18,24,FALSE
+"negbin_no_ajustado","Binomial negativa","cuantil_0.01",0,1,0,1,FALSE
+"negbin_no_ajustado","Binomial negativa","cuantil_0.05",1,2,2,2,TRUE
+"negbin_no_ajustado","Binomial negativa","cuantil_0.25",4,4,4,4,FALSE
+"negbin_no_ajustado","Binomial negativa","cuantil_0.5",6,5,5,6,FALSE
+"negbin_no_ajustado","Binomial negativa","cuantil_0.75",8,7,7,8,FALSE
+"negbin_no_ajustado","Binomial negativa","cuantil_0.95",10,11,11,11,TRUE
+"negbin_no_ajustado","Binomial negativa","cuantil_0.99",13,13,13,14,FALSE
+"negbin_no_ajustado","Binomial negativa","frecuencia_valor_5",0.163131900058106,0.146281231841952,0.137710633352702,0.15514235909355,TRUE
+"negbin_no_ajustado","Binomial negativa","frecuencia_valor_8",0.1178094131319,0.084253341080767,0.0781522370714701,0.0909355026147589,TRUE
+"negbin_no_ajustado","Binomial negativa","frecuencia_valor_12",0.0117664148750726,0.0149622312608948,0.0120569436374201,0.0180127832655433,TRUE
+"negbin_ajustado","Binomial negativa","media",5.71472303206997,5.71625364431487,5.62998177842566,5.80393950437318,FALSE
+"negbin_ajustado","Binomial negativa","varianza",7.67585843034858,8.00660338802799,7.60323154400785,8.46451563500872,FALSE
+"negbin_ajustado","Binomial negativa","proporcion_cero",0.0271137026239067,0.00830903790087464,0.00612244897959184,0.0106413994169096,TRUE
+"negbin_ajustado","Binomial negativa","proporcion_predicha_negativa",0,0,0,0,FALSE
+"negbin_ajustado","Binomial negativa","minimo",0,0,0,0,FALSE
+"negbin_ajustado","Binomial negativa","maximo",20,20,18,24,FALSE
+"negbin_ajustado","Binomial negativa","cuantil_0.01",0,1,0,1,FALSE
+"negbin_ajustado","Binomial negativa","cuantil_0.05",1,2,2,2,TRUE
+"negbin_ajustado","Binomial negativa","cuantil_0.25",4,4,4,4,FALSE
+"negbin_ajustado","Binomial negativa","cuantil_0.5",6,5,5,6,FALSE
+"negbin_ajustado","Binomial negativa","cuantil_0.75",8,7,7,8,FALSE
+"negbin_ajustado","Binomial negativa","cuantil_0.95",10,11,11,11,TRUE
+"negbin_ajustado","Binomial negativa","cuantil_0.99",13,13.4099999999999,13,14,FALSE
+"negbin_ajustado","Binomial negativa","frecuencia_valor_5",0.163411078717201,0.14533527696793,0.137022594752187,0.153801020408163,TRUE
+"negbin_ajustado","Binomial negativa","frecuencia_valor_8",0.117930029154519,0.0842565597667638,0.0774052478134111,0.0912572886297376,TRUE
+"negbin_ajustado","Binomial negativa","frecuencia_valor_12",0.0118075801749271,0.0151603498542274,0.0122448979591837,0.0180758017492711,TRUE
