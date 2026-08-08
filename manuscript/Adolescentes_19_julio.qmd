@@ -42,7 +42,7 @@ Adolescents aged 10–14 years versus adolescents aged 15–19 years: sociodemog
 
 El embarazo en adolescentes constituye un problema persistente de salud pública, asociado con pobreza, desigualdad y riesgos clínicos y psicosociales.(1–4) La Organización Mundial de la Salud (OMS) define la adolescencia como el período comprendido entre los 10 y 19 años. Para identificar posibles diferencias dentro de este intervalo, resulta relevante analizar por separado los grupos de 10–14 años y 15–19 años.(5) Esta distinción es clínicamente relevante, ya que las adolescentes de 10–14 años pueden estar expuestas a mayores desventajas sociales y reproductivas, trayectorias educativas más interrumpidas, menor autonomía reproductiva y mayor exposición a determinantes estructurales adversos, factores que pueden influir tanto en la ocurrencia del embarazo como en el acceso oportuno a la atención prenatal.(6)
 
-En los países de ingresos bajos y medianos se estimaron aproximadamente 21 millones de embarazos anuales entre adolescentes de 15–19 años.(7,8) América Latina se encuentra entre las regiones con mayor carga de embarazo adolescente, situación asociada a barreras persistentes en el acceso a educación sexual integral, métodos anticonceptivos y servicios de salud sexual y reproductiva.(9) En Ecuador, la tasa específica de fecundidad en adolescentes fue de 36,06 nacimientos por cada 1.000 adolescentes en 2017, mientras que en las niñas de 10–14 años se registraron 2,84 nacimientos por cada 1.000 habitantes del mismo grupo etario.(10) Estas cifras reflejan la magnitud del problema y respaldan la necesidad de analizar de manera diferenciada los distintos subgrupos etarios que conforman la población adolescente.
+En los países de ingresos bajos y medianos se estimaron aproximadamente 21 millones de embarazos anuales entre adolescentes de 15–19 años.(7,8) América Latina se encuentra entre las regiones con mayor carga de embarazo adolescente, situación asociada a barreras persistentes en el acceso a educación sexual integral, métodos anticonceptivos y servicios de salud sexual y reproductiva.(9) En Ecuador se han documentado consecuencias sociales y económicas del embarazo adolescente, lo que respalda la necesidad de analizar de manera diferenciada los distintos subgrupos etarios que conforman la población adolescente.(9)
 
 Aunque existe una amplia literatura sobre el embarazo en adolescentes y sus implicaciones para la salud materna y perinatal,(2,3) gran parte de los estudios considera a las adolescentes como un grupo homogéneo de 10–19 años. Esta aproximación puede ocultar diferencias relevantes entre las adolescentes de 10–14 años y aquellas de 15–19 años, particularmente en dimensiones sociodemográficas, reproductivas y relacionadas con la utilización de servicios de salud.(11) La identificación de estas diferencias resulta relevante para comprender la heterogeneidad del embarazo adolescente y orientar estrategias de atención adaptadas a las necesidades de los distintos grupos etarios.
 
@@ -55,6 +55,8 @@ Se realizó un estudio observacional transversal retrospectivo basado en registr
 La unidad de análisis fue el evento obstétrico materno en adolescentes de 10–19 años. Los 7.202 registros iniciales podían incluir más de una fila materna cuando una gestación múltiple generaba registros neonatales separados. Tras eliminar 15 duplicados exactos quedaron 7.187 registros; posteriormente, se consolidaron 152 registros correspondientes a gestaciones múltiples. La consolidación se realizó a nivel materno mediante una llave compuesta por 13 variables: año de atención, edad materna, escolaridad, pareja estable, etnia, gestas, partos y cesáreas previas, embarazo planeado, uso de anticonceptivos, número de consultas prenatales, tipo de parto y cesárea.
 
 Dentro de cada agrupamiento, una diferencia de edad gestacional de tres semanas o más se consideró indicativa de eventos obstétricos distintos; diferencias menores se conservaron como un único evento. La base analítica final incluyó 7.035 eventos obstétricos: 386 en adolescentes de 10–14 años y 6.649 en adolescentes de 15–19 años. La ausencia de un identificador único de parto o admisión impidió descartar errores residuales de clasificación. En las gestaciones múltiples se conservó una única observación para las variables maternas y obstétricas; los embarazos múltiples se consolidaron mediante una llave de 13 variables maternas más un criterio de edad gestacional, y la descripción neonatal se presentó en una submuestra de 6.790 nacimientos únicos, excluyendo 245 embarazos múltiples, para evitar dependencia intragestacional y decisiones arbitrarias entre hermanos. Esta submuestra neonatal corresponde a 381 nacimientos únicos en adolescentes de 10–14 años y 6.409 nacimientos únicos en adolescentes de 15–19 años.
+
+La llave compuesta se utilizó porque la base no contenía un identificador único de parto o admisión; exigió concordancia en atributos maternos, antecedentes y características de la atención para considerar dos filas como el mismo evento. El umbral de tres semanas toleró pequeñas diferencias de medición o digitación de la edad gestacional entre registros de hermanos, pero separó discrepancias incompatibles con una misma gestación. En el análisis de sensibilidad, los umbrales de 2, 3 y 4 semanas consolidaron 146, 152 y 152 registros, respectivamente, y produjeron 7.041, 7.035 y 7.035 eventos finales (Tabla S13).
 
 Las variables sociodemográficas incluyeron pareja estable, nivel educativo registrado y autoidentificación étnica. El nivel educativo se clasificó como ninguna o primaria frente a secundaria o superior, y la etnia como minoritaria frente a mestiza o blanca, debido a la baja frecuencia de algunas categorías.
 
@@ -148,7 +150,7 @@ La mayor frecuencia de gestas previas en las adolescentes de 15–19 años es co
 
 La menor frecuencia registrada de embarazo planeado en las adolescentes de 10–14 años es consistente con estudios que describen barreras para el acceso a información, consejería y servicios de salud sexual y reproductiva.(25) Sin embargo, esta variable no constituye una medición directa de intención o autonomía reproductiva. De forma similar, la menor frecuencia registrada de falla anticonceptiva puede reflejar menor uso previo, ausencia de uso o subregistro, más que diferencias reales en la efectividad de los métodos. Estas explicaciones no fueron evaluadas directamente.(1)
 
-En el análisis global, las adolescentes de 10–14 años presentaron menor utilización de atención prenatal, tanto en el número de consultas como en su adecuación. No obstante, la diferencia en adecuación fue mayor en 2009–2014 y se aproximó a la nulidad en 2020–junio 2024; los modelos con interacción binario y ordinal no ofrecieron ventaja predictiva frente a los aditivos. Para el conteo de consultas se adoptó la binomial negativa como análisis principal por su mejor desempeño predictivo y se conservaron Poisson y gaussiano como análisis de sensibilidad; las tres familias mostraron una diferencia de dirección y magnitud relativa concordantes. El ajuste por edad gestacional al parto representó la oportunidad acumulada de recibir consultas prenatales y no un control causal de confusión. En estudios latinoamericanos, las adolescentes más jóvenes han presentado menor utilización de atención prenatal, en contextos caracterizados por barreras de acceso y continuidad asistencial.(11) Este hallazgo no permite establecer relaciones con la morbilidad neonatal debido al mecanismo de selección del estudio. Factores no medidos, como reconocimiento tardío del embarazo, estigma, barreras familiares o incorporación tardía a los servicios, podrían contribuir a esta diferencia. Las recomendaciones de la OMS destacan la atención prenatal oportuna como componente esencial para la detección y el manejo temprano de condiciones maternas y perinatales.(15)
+En el análisis global, las adolescentes de 10–14 años presentaron menor utilización de atención prenatal, tanto en el número de consultas como en su adecuación. No obstante, la diferencia en adecuación fue mayor en 2009–2014 y se aproximó a la nulidad en 2020–junio 2024; los modelos con interacción binario y ordinal no ofrecieron ventaja predictiva frente a los aditivos. Para el conteo de consultas se adoptó la binomial negativa como análisis principal por su mejor desempeño predictivo y se conservaron Poisson y gaussiano como análisis de sensibilidad; las tres familias mostraron una diferencia de dirección y magnitud relativa concordantes. El ajuste por edad gestacional al parto representó la oportunidad acumulada de recibir consultas prenatales y no un control causal de confusión. En estudios latinoamericanos, las adolescentes más jóvenes han presentado menor utilización de atención prenatal, en contextos caracterizados por barreras de acceso y continuidad asistencial.(10,11) Este hallazgo no permite establecer relaciones con la morbilidad neonatal debido al mecanismo de selección del estudio. Factores no medidos, como reconocimiento tardío del embarazo, estigma, barreras familiares o incorporación tardía a los servicios, podrían contribuir a esta diferencia. Las recomendaciones de la OMS destacan la atención prenatal oportuna como componente esencial para la detección y el manejo temprano de condiciones maternas y perinatales.(15)
 
 La mayor frecuencia de parto vaginal en las adolescentes de 10–14 años coincide con estudios que documentan menores tasas de cesárea en grupos de menor edad materna.(26,27) Sin embargo, esta diferencia no implica menor riesgo obstétrico, porque la vía de parto depende de indicaciones clínicas, características fetales, edad gestacional y prácticas institucionales no completamente capturadas por el registro.
 
@@ -258,7 +260,7 @@ Los autores declaran que herramientas de inteligencia artificial (ChatGPT, OpenA
 
 **Nota:** la base SIP accesible ya estaba condicionada por admisión neonatal antes de su disponibilidad para el estudio; la población institucional completa y los partos no incluidos no fueron observados. Los factores sociodemográficos, reproductivos/obstétricos y de atención prenatal se muestran como posibles determinantes del mecanismo de selección, no como causas ni efectos causales estimados. Después de eliminar duplicados exactos y consolidar registros de gestaciones múltiples, la muestra final incluyó 7.035 eventos obstétricos maternos; la descripción neonatal se restringió a 6.790 nacimientos únicos. La inferencia se limita a la población seleccionada analizada.
 
-![](media/media/image2.png){width="6.50384186351706in" height="3.4895833333333335in"}
+![](media/media/image2.png){width="6.5in" height="5.160266in"}
 
 **Figura 2.** Flujograma de selección de participantes.
 
@@ -345,6 +347,30 @@ Nota adicional: Control prenatal adecuado compara ≥80 % de los contactos esper
 ^*c*^ *DP: diferencia de prevalencia marginal estandarizada, ICr 95 %.*
 
 # Material Suplementario {#material-suplementario .unnumbered}
+
+## Tabla S13. Reconciliación final del flujo y de los denominadores neonatales {#tabla-s13.-reconciliacion-final .unnumbered}
+
+| **Etapa o variable** | **Total** | **10–14 años** | **15–19 años** |
+|:--|--:|--:|--:|
+| Registros iniciales | 7.202 | 387 | 6.815 |
+| Duplicados exactos eliminados | 15 | 0 | 15 |
+| Registros después de duplicados exactos | 7.187 | 387 | 6.800 |
+| Registros consolidados mediante linkage (umbral principal: 3 semanas) | 152 | 1 | 151 |
+| Eventos obstétricos maternos finales | 7.035 | 386 | 6.649 |
+| Embarazos múltiples excluidos de la descripción neonatal | 245 | 5 | 240 |
+| Nacimientos únicos analizados (máximo neonatal) | 6.790 | 381 | 6.409 |
+| Edad gestacional al parto | 6.765 | 381 | 6.384 |
+| Peso al nacer | 6.789 | 381 | 6.408 |
+| Prematuridad | 6.747 | 376 | 6.371 |
+| Apgar <7 al minuto 1 | 6.665 | 374 | 6.291 |
+| Apgar <7 al minuto 5 | 6.673 | 374 | 6.299 |
+| Pequeño para la edad gestacional | 6.789 | 381 | 6.408 |
+| Macrosomía | 6.790 | 381 | 6.409 |
+| Ictericia neonatal | 6.790 | 381 | 6.409 |
+| Registro de recién nacido vivo al egreso | 6.778 | 381 | 6.397 |
+| Lactancia exclusiva al egreso | 5.809 | 324 | 5.485 |
+
+La resta entre etapas consecutivas reconcilia 7.202 − 15 − 152 = 7.035. La submuestra neonatal excluye los 245 embarazos múltiples: 7.035 − 245 = 6.790. Los denominadores específicos reflejan análisis de casos disponibles. Sensibilidad del linkage: con umbrales de 2, 3 y 4 semanas se consolidaron 146, 152 y 152 registros y quedaron 7.041, 7.035 y 7.035 eventos, respectivamente.
 
 ## Tabla S1. Categorías descriptivas de rezago escolar y de adecuación del control prenatal {#tabla-s1.-categorías-descriptivas-de-rezago-escolar-y-de-adecuación-del-control-prenatal .unnumbered}
 
@@ -480,9 +506,9 @@ Operacionalización acumulativa del esquema OMS de ocho contactos utilizada para
 
 ## Tabla S6. Thresholds y diagnósticos del modelo ordinal de adecuación del control prenatal {#tabla-s6.-thresholds-y-diagnósticos-del-modelo-ordinal-de-adecuación-del-control-prenatal .unnumbered}
 
-| **Threshold** | **Media** | **ICr95 %**      | **R-hat** | **ESS bulk** | **ESS tail** |
+| **Threshold** | **Mediana posterior** | **ICr95 %**      | **R-hat** | **ESS bulk** | **ESS tail** |
 |--------------:|----------:|:-----------------|----------:|-------------:|-------------:|
-| 1             | -3,607    | -3,755 a -3,462 | 1,0009    | 4182         | 5217         |
+| 1             | -3,606    | -3,755 a -3,462 | 1,0009    | 4182         | 5217         |
 | 2             | -1,851    | -1,920 a -1,783 | 1,0000    | 7491         | 8221         |
 | 3             | -0,476    | -0,525 a -0,426 | 1,0004    | 13153        | 8617         |
 

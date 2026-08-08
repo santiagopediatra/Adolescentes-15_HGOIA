@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53f9626871bcc92c4b904b1b4728f68c77d4a588f593541c86de6d6c5492612c
-size 199
+variable,denominador
+Edad gestaciol RN,6765
+Peso al nacer GRAMOS,6789
+PREMATURO CODIGO,6747
+CODIGO Apgar 1 minuto <7,6665
+CODIGO Apgar 5to. < 7,6673
+RCIU,6789
+MACROSÓMICO,6790
+BEBE Ictericia,6790
+RN vivo CODIGO,6778
+Lactancia exclusiva SI NO,5809

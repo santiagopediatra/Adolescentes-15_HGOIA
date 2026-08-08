@@ -34,6 +34,8 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
   2. Dentro de cada grupo, calcular un **cluster de edad gestacional**.
   3. Si la diferencia de edad gestacional entre registros era **≥ 3 semanas**, se consideraban **eventos obstétricos distintos**.
   4. Si la diferencia era **< 3 semanas**, se conservaba un **único evento materno**.
+- La llave se eligió porque no existía un identificador único de parto o admisión y combina atributos maternos, antecedentes y características de la atención que debían coincidir para considerar dos filas como el mismo evento. El umbral de tres semanas tolera diferencias pequeñas de medición o digitación de la edad gestacional entre hermanos, pero separa discrepancias incompatibles con una misma gestación.
+- La sensibilidad con umbrales de 2, 3 y 4 semanas produjo, respectivamente, 146, 152 y 152 registros consolidados (7.041, 7.035 y 7.035 eventos finales). Por tanto, el resultado principal de 152 consolidaciones fue idéntico con cuatro semanas y difirió en seis eventos con la regla más estricta de dos semanas. Los resultados se conservan en `output/reconciliation/sensibilidad_linkage.csv`.
 - Este método asegura que no se sobrecuenten gestaciones múltiples en el análisis materno y que la muestra resultante sea consistente con la unidad de análisis declarada.
 
 ## 3. Descripción neonatal y denominadores
@@ -83,7 +85,7 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 
 **Resultado ordinal secundario:** La OR acumulativa para pertenecer a una categoría de mejor adecuación fue **0,69 (ICr95 %: 0,56–0,84)**; n=6.860.
 
-**Thresholds:** Los tres thresholds del modelo ordinal fueron: **−3,607 (ICr95 %: −3,755 a −3,462)**, **−1,851 (−1,920 a −1,783)** y **−0,476 (−0,525 a −0,426)**. Los diagnósticos fueron adecuados: R-hat máximo=1,0009; ESS bulk mínimo=4.182; ESS tail mínimo=5.184; cero divergencias; profundidad máxima observada=7; y E-BFMI mínimo=0,985.
+**Thresholds:** Los tres thresholds del modelo ordinal, resumidos mediante la mediana posterior, fueron: **−3,606 (ICr95 %: −3,755 a −3,462)**, **−1,851 (−1,920 a −1,783)** y **−0,476 (−0,525 a −0,426)**. Los diagnósticos fueron adecuados: R-hat máximo=1,0009; ESS bulk mínimo=4.182; ESS tail mínimo=5.184; cero divergencias; profundidad máxima observada=7; y E-BFMI mínimo=0,985.
 
 **Evaluación de odds proporcionales:** Se ajustaron tres modelos binarios acumulativos. Los OR fueron **0,67 (ICr95 %: 0,40–1,19)** para sin controles frente a categorías superiores; **0,61 (0,48–0,80)** para sin controles + inadecuado frente a intermedio + adecuado; y **0,71 (0,58–0,88)** para sin controles + inadecuado + intermedio frente a adecuado. Los tres OR fueron cercanos al OR ordinal común y sus intervalos se solaparon con el intervalo del modelo ordinal; por tanto, los resultados fueron compatibles con el supuesto de odds proporcionales.
 
@@ -205,6 +207,8 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 **F1000Research:** Se mantuvo una referencia, ahora número 17. Se verificó que existe como versión 2 revisada y publicada en 2023, con revisión abierta que informa un dictamen aprobado y dos aprobados con reservas. La cita se actualizó para mostrar expresamente ese estado editorial. Las instrucciones públicas para autores de la Revista Brasileira de Saúde Materno Infantil no establecen una prohibición explícita de citar preprints, artículos con revisión abierta o revisión posterior a la publicación. Además, la fuente aporta evidencia poblacional peruana directamente pertinente y no se usa como referencia metodológica; por ello no se sustituyó.
 
 **Reconciliación y enlaces:** Se verificaron los DOI, páginas institucionales y PDF. Los enlaces institucionales finales abren el documento citado, incluida la URL corregida del reglamento. No quedaron referencias duplicadas ni enlaces rotos. La inserción de la nueva referencia 12 desplazó de forma controlada las referencias posteriores hasta el número 27 y restituyó la correspondencia de las citas `(13,14)`, `(15)`, `(6,18–20)`, `(21,22)`, `(23,24)`, `(25)` y `(26,27)`.
+
+**Tasas de fecundidad de Ecuador:** La auditoría final detectó que la referencia 10, correspondiente a un estudio de utilización prenatal en México, no respaldaba las cifras nacionales ecuatorianas de 36,06 y 2,84 incluidas en la Introducción. Al no existir en el paquete una fuente oficial verificable que documentara exactamente ambas cifras, se retiró esa afirmación. La referencia 10 se conservó únicamente donde sí corresponde, en la discusión sobre utilización de atención prenatal en contextos latinoamericanos; la Introducción quedó sustentada por el informe de UNFPA Ecuador de la referencia 9, sin trasladar ni aproximar cifras no verificadas.
 
 **Ubicación exacta de los cambios:** Introducción, afirmación y cita sobre el SAIA desde 1988; lista completa de referencias, números 1–27; y presente sección de la carta. La auditoría trazable se conserva en `output/referencias/auditoria_referencias.csv`.
 
