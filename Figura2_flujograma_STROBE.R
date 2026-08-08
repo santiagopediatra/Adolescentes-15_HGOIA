@@ -108,7 +108,7 @@ b3 <- draw_box(
   cx = 42, y_top = b3_top, w = 78,
   lines = c(
     "MUESTRA ANALÍTICA FINAL",
-    "Unidad de análisis: madre adolescente",
+    "Unidad de análisis: evento obstétrico materno",
     "n = 7.035"
   ),
   cex = 0.74, bold_lines = c(1, 3)
@@ -159,5 +159,13 @@ nota <- paste(
 text(2, caption_y - 4.6, nota, adj = c(0, 1), cex = 0.62, font = 3)
 
 invisible(dev.off())
+
+## Recorta el margen blanco sobrante y deja un borde uniforme pequeño,
+## para que el lienzo no incluya el espacio en blanco no utilizado.
+library(magick)
+im <- image_read(out_path)
+im <- image_trim(im, fuzz = 2)
+im <- image_border(im, "white", "20x20")
+image_write(im, out_path)
 
 cat("Figura 2 regenerada en", out_path, "\n")
