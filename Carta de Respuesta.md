@@ -4,7 +4,17 @@ Estimado/a Editor/a,
 
 Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación presentamos las respuestas y los cambios realizados en el manuscrito.
 
-## 1. Unidad de análisis
+## 1. Unidad de análisis, gestaciones múltiples y descripción neonatal
+
+**Comentario del editor:**
+
+**Problema central:** Los autores declaran que la descripción neonatal se restringió a nacimientos únicos. Sin embargo, los denominadores de las variables neonatales son prácticamente iguales al total de 7.035 eventos obstétricos, pese a que la Tabla 1 informa 245 eventos de embarazo múltiple. Si los nacimientos múltiples hubieran sido excluidos de la descripción neonatal, los denominadores deberían ser sustancialmente menores.
+
+**Por qué importa:** Esta discrepancia indica que las gestaciones múltiples pueden no haber sido excluidas como se afirma, que se pudo haber retenido de forma arbitraria la información de uno de los recién nacidos, o que la nota de la tabla y los Métodos no reflejan el procesamiento real. El punto afecta directamente la credibilidad de la depuración y la interpretación de todas las variables neonatales.
+
+**Revisión obligatoria:** Presentar el número exacto de eventos obstétricos únicos y múltiples por grupo etario; el número exacto de nacimientos únicos incluidos en cada variable neonatal; describir el algoritmo aplicado a las variables neonatales durante la consolidación; regenerar los denominadores; y demostrar mediante código reproducible que ningún recién nacido de una gestación múltiple fue retenido de forma arbitraria.
+
+**Respuesta de los autores:**
 
 - La unidad de análisis principal del estudio es el **evento obstétrico materno** en adolescentes de 10–19 años.
 - La muestra analítica final para variables maternas incluye **7.035 eventos obstétricos**, de los cuales **386** corresponden a adolescentes de 10–14 años y **6.649** a adolescentes de 15–19 años.
@@ -12,7 +22,44 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 - Se eliminaron **15 duplicados exactos**.
 - Después de esta eliminación quedaron **7.187 registros** y se consolidaron **152 registros** mediante el procedimiento de linkage de gestaciones múltiples.
 
-## 2. Gestaciones múltiples
+- La descripción neonatal **se restringió exclusivamente a nacimientos únicos**.
+- Para este propósito se definió la submuestra `Adolescentes_neonatal`, que excluye los registros identificados como embarazos múltiples.
+- En el manuscrito y en el código se aclara que la muestra materna completa de 7.035 eventos y la submuestra neonatal única de 6.790 nacimientos son distintas.
+- Esta submuestra neonatal única corresponde a:
+  - **381 nacimientos únicos** en adolescentes de 10–14 años.
+  - **6.409 nacimientos únicos** en adolescentes de 15–19 años.
+
+Los denominadores de las variables neonatales no son 7.035, porque se calculan en la submuestra de **6.790 nacimientos únicos**. Además, los denominadores específicos dependen de la disponibilidad de datos para cada variable, lo que explica que algunos ítems tengan menos de 6.790 registros válidos.
+
+Ejemplos de denominadores auditados:
+
+- `PREMATURO CODIGO`: 6.747
+- `CODIGO Apgar 1 minuto <7`: 6.665
+- `CODIGO Apgar 5to. < 7`: 6.673
+- `RCIU`: 6.789
+- `MACROSÓMICO`: 6.790
+- `BEBE Ictericia`: 6.790
+- `RN vivo CODIGO`: 6.778
+- `Lactancia exclusiva SI NO`: 5.809
+
+Se creó un script de auditoría independiente: `R/03_auditoria_gestaciones_multiples.R`. Este script genera pruebas reproducibles y guarda resultados en `output/reconciliation/`. Los resultados validados son:
+
+- 7.202 registros iniciales.
+- 15 duplicados exactos eliminados.
+- 152 registros consolidados por gestaciones múltiples.
+- 7.035 eventos obstétricos finales.
+- 245 embarazos múltiples en la muestra final.
+- 6.790 nacimientos únicos en la muestra neonatal.
+
+## 2. Desduplicación y llave compuesta
+
+**Comentario del editor:**
+
+**Problema:** La consolidación mediante una llave de 13 variables y una tolerancia de tres semanas de edad gestacional constituye un procedimiento de linkage y no una simple exclusión de duplicados. La regla puede colapsar eventos distintos o no identificar duplicatas reales.
+
+**Revisión obligatoria:** Justificar el umbral de tres semanas; informar cuántos agrupamientos fueron afectados; presentar la distribución del número de registros por agrupamiento; inspeccionar y describir los agrupamientos ambiguos; y realizar análisis de sensibilidad con llave exacta y tolerancias alternativas de una, dos y tres semanas. Reconciliar los 152 registros consolidados con los 245 eventos clasificados como embarazos múltiples.
+
+**Respuesta de los autores:**
 
 - Se identificaron **245 eventos de embarazo múltiple** en la muestra final de 7.035 eventos obstétricos.
 - Los embarazos múltiples se consolidaron **a nivel materno** con un procedimiento reproducible y explícito.
@@ -38,40 +85,62 @@ Agradecemos la revisión rigurosa y los comentarios recibidos. A continuación p
 - La sensibilidad con umbrales de 2, 3 y 4 semanas produjo, respectivamente, 146, 152 y 152 registros consolidados (7.041, 7.035 y 7.035 eventos finales). Por tanto, el resultado principal de 152 consolidaciones fue idéntico con cuatro semanas y difirió en seis eventos con la regla más estricta de dos semanas. Los resultados se conservan en `output/reconciliation/sensibilidad_linkage.csv`.
 - Este método asegura que no se sobrecuenten gestaciones múltiples en el análisis materno y que la muestra resultante sea consistente con la unidad de análisis declarada.
 
-## 3. Descripción neonatal y denominadores
+## 3. Terminología de la unidad de análisis
 
-- La descripción neonatal **se restringió exclusivamente a nacimientos únicos**.
-- Para este propósito se definió la submuestra `Adolescentes_neonatal`, que excluye los registros identificados como embarazos múltiples.
-- En el manuscrito y en el código se aclara que la muestra materna completa de 7.035 eventos y la submuestra neonatal única de 6.790 nacimientos son distintas.
-- Esta submuestra neonatal única corresponde a:
-  - **381 nacimientos únicos** en adolescentes de 10–14 años.
-  - **6.409 nacimientos únicos** en adolescentes de 15–19 años.
+**Comentario del editor:**
 
-## 4. Denominadores neonatales exactos
+**Problema:** La unidad se define como evento obstétrico materno, pero el flujograma utiliza “madre adolescente” y los Resultados informan “7.035 adolescentes”. Dado que una misma adolescente puede haber contribuido con más de un evento a lo largo del período, estas expresiones no son equivalentes.
 
-- Los denominadores de las variables neonatales no son 7.035, porque se calculan en la submuestra de **6.790 nacimientos únicos**.
-- Además, los denominadores específicos dependen de la disponibilidad de datos para cada variable, lo que explica que algunos ítems tengan menos de 6.790 registros válidos.
-- Ejemplos de denominadores auditados:
-  - `PREMATURO CODIGO`: 6.747
-  - `CODIGO Apgar 1 minuto <7`: 6.665
-  - `CODIGO Apgar 5to. < 7`: 6.673
-  - `RCIU`: 6.789
-  - `MACROSÓMICO`: 6.790
-  - `BEBE Ictericia`: 6.790
-  - `RN vivo CODIGO`: 6.778
-  - `Lactancia exclusiva SI NO`: 5.809
+**Revisión obligatoria:** Usar de forma consistente “7.035 eventos obstétricos de adolescentes” y “unidad de análisis: evento obstétrico materno”. Explicar que no fue posible identificar recurrencias longitudinales de una misma persona y discutir la posible dependencia residual entre observaciones.
 
-## 5. Verificación reproducible
+**Respuesta de los autores:** Agradecemos esta observación. Reconocemos que la versión anterior utilizó de manera inconsistente expresiones referidas a personas y a eventos. La unidad de análisis fue el evento obstétrico materno, no la adolescente individual.
 
-- Se creó un script de auditoría independiente: `R/03_auditoria_gestaciones_multiples.R`.
-- Este script genera pruebas reproducibles y guarda resultados en `output/reconciliation/`.
-- Los resultados validados son:
-  - 7.202 registros iniciales.
-  - 15 duplicados exactos eliminados.
-  - 152 registros consolidados por gestaciones múltiples.
-  - 7.035 eventos obstétricos finales.
-  - 245 embarazos múltiples en la muestra final.
-  - 6.790 nacimientos únicos en la muestra neonatal.
+La formulación previa podía sugerir que los 7.035 registros analíticos equivalían a 7.035 personas únicas. Se corrigió la terminología en el Resumen, los Resultados, Métodos, Limitaciones, el flujograma y las notas de figura para referirse sistemáticamente a eventos obstétricos maternos.
+
+Se adoptó la formulación: “Se analizaron 7.035 eventos obstétricos de adolescentes” y “La unidad de análisis fue el evento obstétrico materno”. No se dispuso de un identificador personal longitudinal que permitiera determinar si una misma adolescente contribuyó con más de un evento obstétrico durante el período 2009–junio de 2024. Por ello, los registros finales se interpretaron como eventos obstétricos y no como 7.035 personas distintas.
+
+En consecuencia, no pudo descartarse una posible dependencia residual entre observaciones correspondientes a eventos recurrentes no identificables de una misma persona. Esta limitación se incorporó en la sección de Limitaciones, sin afirmar que la dependencia se hubiera demostrado ni que se hubiera cuantificado.
+
+## 4. Indicador de rezago escolar
+
+**Comentario del editor:**
+
+**Problema:** El nuevo indicador constituye una mejora importante, pero el manuscrito invierte la dirección del posible error: si el rezago se calcula como años esperados menos años aprobados, subestimar los años esperados reduce —no aumenta— el rezago estimado.
+
+**Revisión obligatoria:** Corregir esta afirmación en Métodos y Limitaciones; presentar una tabla con los años esperados por edad; justificar la regla “edad menos seis”; realizar sensibilidad con una regla alternativa plausible; describir el impacto de la reforma educativa; y reconocer que la escolaridad registrada en el parto puede haber sido afectada por interrupción escolar durante la propia gestación.
+
+**Respuesta de los autores:** Agradecemos la observación. Corregimos la dirección del posible error: como el rezago se define como años esperados menos años aprobados, subestimar los años esperados disminuye el rezago calculado y puede subestimar el verdadero rezago. Documentamos la regla principal exactamente como se ejecuta: `min(max(edad materna − 6, 0), 12)`. Esta regla es una aproximación operacional de ingreso regular alrededor de los seis años, no una reconstrucción de la trayectoria educativa individual.
+
+Presentamos los años esperados para cada edad de 10 a 19 años y realizamos una sensibilidad predefinida con `min(max(edad materna − 5, 0), 12)`, manteniendo el mismo cálculo de años aprobados, tope, datos faltantes, definición binaria y modelo Bernoulli-logit con estandarización posterior. También incorporamos las limitaciones derivadas de los cambios educativos durante 2009–2024 y de que la escolaridad registrada al parto puede reflejar interrupciones ocurridas durante la gestación; por ello, el rezago no se interpreta necesariamente como completamente anterior al embarazo.
+
+**Resultados de sensibilidad:** El análisis principal se reprodujo con n=7.027, prevalencias de 34,6 % en 10–14 años y 16,6 % en 15–19 años, y RP=2,07 (ICr95 %: 1,78–2,41). Con edad menos cinco y tope de 12 años, las prevalencias fueron 41,6 % y 18,2 %, respectivamente, y la RP fue 2,28 (ICr95 %: 1,99–2,59). La dirección se mantuvo y la magnitud relativa aumentó moderadamente. Los diagnósticos de la sensibilidad fueron adecuados: R-hat máximo=1,0008; ESS bulk mínimo=5.791; ESS tail mínimo=5.665; cero divergencias; profundidad máxima observada=4; ninguna iteración alcanzó el máximo configurado de 15; E-BFMI mínimo=0,947; y 0/3 estadísticas PPC fuera del ICr95 %.
+
+**Ubicación exacta de los cambios:**
+
+- **Métodos:** fórmula, tope, justificación operacional y regla alternativa.
+- **Resultados:** reproducción del resultado principal y sensibilidad.
+- **Discusión/Limitaciones:** dirección del posible error, reforma educativa y temporalidad de la escolaridad registrada.
+- **Tabla S14:** años esperados por edad y comparación principal-sensibilidad.
+- **Código:** `R/08_punto4_sensibilidad_rezago_escolar.R`.
+- **Outputs:** `output/rezago_escolar/`.
+
+## 5. Inconsistencia sobre el modelo ordinal de rezago escolar
+
+**Comentario del editor:**
+
+**Problema:** Los Métodos afirman que el rezago escolar fue analizado mediante modelo ordinal, pero el rezago aparece como variable binaria, la Tabla S1 muestra solo dos categorías y no se presenta ningún resultado ordinal correspondiente.
+
+**Revisión obligatoria:** Retirar la afirmación de modelo ordinal para rezago escolar o presentar de forma completa las categorías ordinales, puntos de corte, parámetros, diagnósticos y resultados del modelo. El texto, las tablas y el material suplementario deben concordar.
+
+**Respuesta de los autores:** Agradecemos la observación. Se retiró la afirmación de que el rezago escolar fue analizado mediante un modelo ordinal. El indicador de rezago escolar se mantuvo como variable binaria, definida como ausente (0–1 año) o presente (≥2 años), y fue analizado únicamente mediante un modelo Bernoulli-logit, en concordancia con la Tabla 2 y la Tabla S1.
+
+El modelo ordinal se reservó exclusivamente para la adecuación del control prenatal, que sí se definió mediante cuatro categorías ordenadas. No se modificaron las estimaciones del rezago escolar, porque el análisis presentado en el manuscrito y en las tablas ya correspondía al modelo binario Bernoulli-logit.
+
+**Ubicación exacta de los cambios:**
+
+- **Métodos:** se eliminó la referencia al modelo ordinal para el rezago escolar y se aclaró que se analizó únicamente como variable binaria mediante un modelo Bernoulli-logit.
+- **Material suplementario:** se mantuvo la Tabla S1 con las dos categorías del indicador binario, sin añadir categorías ordinales inexistentes.
+- **Resultados y Tabla 2:** se conservaron las estimaciones previamente presentadas, porque ya correspondían al análisis binario.
 
 ## 6. Adecuación de la atención prenatal
 
