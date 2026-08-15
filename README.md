@@ -32,13 +32,13 @@ No existe `renv.lock` y no se creó ni migró un entorno automáticamente. Las v
 - Base fuente requerida: `Adolescentes.csv`, 7.202 registros y 202 variables, UTF-8. No está incluida en este repositorio; su acceso requiere autorización previa del HGOIA. SHA-256 esperado de la copia utilizada: `159de79ef8311d1e5725dcbb55e4faff2281c8f3216dd87619be537111fe1609`.
 - Base analítica: objeto `df` dentro de `resultados_RBSMI_DEFINITIVO_CORREGIDO.rds`, 7.035 eventos obstétricos maternos.
 - Submuestra neonatal: `df_neonatal`, creada por el pipeline, 6.790 nacimientos únicos.
-- Registro de datos: [Mendeley Data, “Embarazo adolescente”, versión 1](https://doi.org/10.17632/jbbp5vb6fy.1). Su configuración pública se encuentra en proceso de corrección para reflejar las condiciones institucionales de acceso.
+- Registro de datos: [Mendeley Data, “Embarazo adolescente”, versión 2](https://10.17632/jbbp5vb6fy.2). En la descripcion se aclara: La base de datos individual no es de acceso público debido a restricciones institucionales y de confidencialidad. Los datos anonimizados podrán estar disponibles previa solicitud y autorización de la Unidad de Docencia e Investigación del Hospital Gineco-Obstétrico Isidro Ayora (HGOIA), conforme a los procedimientos institucionales vigentes. Los autores no tienen autoridad para conceder de forma independiente el acceso a la base.
 
 La base está anonimizada, pero no se distribuye con el código. Una vez obtenida con autorización institucional, colóquela en la raíz con el nombre exacto `Adolescentes.csv` y verifique el checksum anterior. El archivo está ignorado por Git y no debe añadirse ni redistribuirse.
 
 ## Diccionario de datos
 
-El borrador está en `data/DICCIONARIO_DATOS.csv` y se regenera con `Rscript R/01_generate_data_dictionary.R`. Las definiciones no verificables están marcadas `REVISION_MANUAL`; no se inventaron etiquetas ni códigos. Consulte además `data/README_DATA.md`.
+El borrador está en `data/DICCIONARIO_DATOS.csv` y se regenera con `Rscript R/01_generate_data_dictionary.R`.Consulte además `data/README_DATA.md`.
 
 ## Restricciones de uso
 
@@ -98,16 +98,14 @@ Una comprobación estructural sin recalcular Stan se ejecuta con `REPRO_VALIDATE
 
 ## Código y datos publicados
 
-- Registro de datos (acceso sujeto a autorización del HGOIA): <https://doi.org/10.17632/jbbp5vb6fy.1>
-- Código V1.0: <https://doi.org/10.5281/zenodo.21445981>
+- Registro de datos: <https://doi.org/10.17632/jbbp5vb6fy.1>
+- Código V2.0: <https://doi.org/10.5281/zenodo.21445981>
 - GitHub declarado por Zenodo: <https://github.com/santiagopediatra/Adolescentes_HGOIA>
-
-Zenodo V1.0 resuelve, pero su ZIP contiene solo cuatro artefactos analíticos/visuales y no satisface por sí solo la solicitud R2. Se recomienda publicar `v2.0-R2` después de validación humana y actualizar el manuscrito/carta con el DOI específico de esa release.
 
 ## Licencia del código
 
-El código y la documentación se publican bajo [CC BY 4.0](LICENSE), en continuidad con la licencia registrada para el software V1.0 en Zenodo. Esta licencia no se extiende a la base clínica individual, cuyo acceso permanece sujeto a autorización previa del HGOIA.
+El código y la documentación se publican bajo [CC BY 4.0](LICENSE), en continuidad con la licencia registrada para el software V2.0 en Zenodo. Esta licencia no se extiende a la base clínica individual, cuyo acceso permanece sujeto a autorización previa del HGOIA.
 
 ## Contacto
 
-Santiago Vasco-Morales, Hospital Gineco Obstétrico Isidro Ayora. No se encontró un correo verificable en los archivos del proyecto.
+Santiago Vasco-Morales. Pediatra,PhD.  Hospital Gineco Obstétrico Isidro Ayora. correo: snvasco@uce.edu.ec < santiago.vasco@hgoia.gob.ec.
