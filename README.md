@@ -1,61 +1,113 @@
-# Adolescentes-15_HGOIA
+# Diferencias sociodemográficas, reproductivas y obstétricas entre adolescentes de 10–14 y 15–19 años
 
-Paquete reproducible del manuscrito sobre eventos obstétricos maternos en adolescentes atendidas en el HGOIA. Versión auditada: **R2, 2026-08-07**, correspondiente al commit base `5db11b9` más los ajustes finales no comprometidos descritos por `git diff`.
+## Objetivo del repositorio
 
-## Datos y objetos analíticos
+Este repositorio contiene el código necesario para reproducir el flujo observado de depuración y selección analítica, la eliminación de duplicados exactos, la consolidación de gestaciones múltiples, las tablas, los modelos principales, las sensibilidades, los diagnósticos y las figuras disponibles del estudio hospitalario del HGOIA.
 
-- Base fuente local: `Adolescentes.csv` (7.202 registros; anonimizada; no versionada por `.gitignore`).
-- Base analítica: objeto `df` de `resultados_RBSMI_DEFINITIVO_CORREGIDO.rds` (7.035 eventos obstétricos maternos).
-- Submuestra neonatal descriptiva: `df_neonatal`, construida por `ANALISIS_ADOLESCENTES_CORREGIDO_v3.R` al excluir 245 embarazos múltiples (6.790 nacimientos únicos).
-- Resultados tabulares principales: `resultados_RBSMI_DEFINITIVO_CORREGIDO.xlsx` y `resultados_RBSMI_DEFINITIVO_CORREGIDO.rds`.
+La base accesible ya estaba restringida a madres cuyos recién nacidos fueron admitidos en Neonatología. El repositorio no contiene todos los partos adolescentes institucionales ni un script que pueda reproducir esa selección previa.
 
-La base publicada se cita en el manuscrito mediante Mendeley Data (versión 1, DOI `10.17632/jbbp5vb6fy.1`). Antes del reenvío debe comprobarse que esa versión coincide byte a byte o mediante una suma de verificación con la base utilizada localmente.
+## Estructura
 
-El depósito asociado en Zenodo se identifica con el DOI `10.5281/zenodo.21445981`. La correspondencia de los depósitos de Mendeley Data y Zenodo con la versión final es **PENDIENTE DE VERIFICACIÓN EXTERNA**; no puede establecerse únicamente desde este repositorio.
+- `R/`: configuración, diccionario, auditorías, análisis editoriales, sensibilidades, diagnósticos y script maestro.
+- `data/`: README de datos y borrador reproducible del diccionario; no contiene una copia adicional de la base clínica.
+- `output/`: resultados tabulares por componente, diagnósticos y logs.
+- `manuscript/`: fuente Quarto, documentos y figuras incorporadas.
+- `entrega_R2_final/`: documentos editoriales preparados antes de esta auditoría.
+- `ANALISIS_ADOLESCENTES_CORREGIDO_v3.R`: pipeline estadístico principal validado.
+- `AUDITORIA_REPOSITORIO_REPRODUCIBILIDAD.md`: inventario y estado de cada artefacto.
+- `ORDEN_EJECUCION.md`: dependencias y orden canónico detallado.
+- `VALIDACION_REPRODUCIBILIDAD_REPOSITORIO.md`: alcance y resultado de las pruebas realizadas.
 
-### Disponibilidad local auditada para R2
+## Requisitos
 
-- `Adolescentes.csv`: **disponible localmente**; 7.202 registros iniciales; SHA-256 `159de79ef8311d1e5725dcbb55e4faff2281c8f3216dd87619be537111fe1609`.
-- `resultados_RBSMI_DEFINITIVO_CORREGIDO.rds`: **ausente**; debe contener el objeto `df` con 7.035 eventos obstétricos maternos.
-- `resultados_RBSMI_DEFINITIVO_CORREGIDO.xlsx`: **ausente**.
-- Submuestra neonatal esperada: 6.790 nacimientos únicos.
+- R 4.5.0 (versión del entorno auditado).
+- Paquetes enumerados, sin instalación automática, en `R/requirements_packages.R`.
+- Stan mediante `brms`/`rstan` y una cadena de compilación C++ funcional.
+- Quarto para renderizar el manuscrito; las tablas del QMD son estáticas y deben cotejarse con los outputs.
 
-## Scripts, tablas, figuras y outputs
+No existe `renv.lock` y no se creó ni migró un entorno automáticamente. Las versiones auditadas se encuentran en `sessionInfo_R2.txt`. Para instalar dependencias en un entorno controlado, revise `required_packages` y use su mecanismo institucional habitual; no se instalan paquetes desde el pipeline.
 
-| Script | Producto |
-|:--|:--|
-| `ANALISIS_ADOLESCENTES_CORREGIDO_v3.R` | Depuración, desduplicación, Tabla 1, Tabla 2, Tablas S1–S4 y objetos/modelos base; genera el XLSX y RDS definitivos. |
-| `R/03_auditoria_gestaciones_multiples.R` | Reconciliación del flujo, conteos etarios, denominadores neonatales por variable/grupo y sensibilidad del linkage; genera `output/reconciliation/`. |
-| `R/04_punto6_atencion_prenatal.R` | Regla de contactos, análisis binario/ordinal, thresholds y odds proporcionales; genera Tablas S5–S7 y `output/prenatal/`. |
-| `R/05_punto7_consultas_prenatales.R` | Comparación gaussiana, Poisson y binomial negativa, PPC y LOO; genera Tabla S8 y `output/consultas_prenatales/`. |
-| `R/06_punto8_diagnosticos_priors.R` | Diagnósticos, parámetros posteriores, PPC y sensibilidad a priors; genera Tablas S9–S11 y `output/diagnosticos/`. |
-| `R/07_punto9_heterogeneidad_temporal.R` | Interacciones grupo × período y LOO; genera Tabla S12 y `output/heterogeneidad_temporal/`. |
-| `R/08_punto4_sensibilidad_rezago_escolar.R` | Reproduce el indicador principal de rezago y ejecuta la sensibilidad edad − 5 con tope 12; genera la Tabla S14 y `output/rezago_escolar/`. |
-| `Figura1_marco_conceptual.R` | `Figura1_diagrama_conceptual_seleccion.png`, incorporada como Figura 1. |
-| `Grafico_años .R` | Figura anual; el archivo final incorporado en el manuscrito es `manuscript/media/media/image3.jpeg`. |
-| Quarto | `manuscript/Adolescentes_19_julio.qmd` genera `manuscript/Adolescentes_19_julio.docx`. Las Figuras 1–3 incorporadas son `image1.png`, `image2.png` e `image3.jpeg`. |
+## Datos
 
-`output/referencias/auditoria_referencias.csv` documenta la revisión bibliográfica. Los CSV versionados con Git LFS deben estar materializados y no ser simples punteros antes de distribuir el paquete.
+- Base fuente requerida: `Adolescentes.csv`, 7.202 registros y 202 variables, UTF-8. No está incluida en este repositorio; su acceso requiere autorización previa del HGOIA. SHA-256 esperado de la copia utilizada: `159de79ef8311d1e5725dcbb55e4faff2281c8f3216dd87619be537111fe1609`.
+- Base analítica: objeto `df` dentro de `resultados_RBSMI_DEFINITIVO_CORREGIDO.rds`, 7.035 eventos obstétricos maternos.
+- Submuestra neonatal: `df_neonatal`, creada por el pipeline, 6.790 nacimientos únicos.
+- Registro de datos: [Mendeley Data, “Embarazo adolescente”, versión 1](https://doi.org/10.17632/jbbp5vb6fy.1). Su configuración pública se encuentra en proceso de corrección para reflejar las condiciones institucionales de acceso.
 
-## Software principal
+La base está anonimizada, pero no se distribuye con el código. Una vez obtenida con autorización institucional, colóquela en la raíz con el nombre exacto `Adolescentes.csv` y verifique el checksum anterior. El archivo está ignorado por Git y no debe añadirse ni redistribuirse.
 
-R con `dplyr`, `tidyr`, `purrr`, `stringr`, `janitor`, `readr`, `openxlsx`, `brms`, `posterior`, `BayesFactor`, `loo` y `bayesplot`; CmdStan/Stan como backend de los modelos bayesianos; y Quarto para generar el DOCX. Las versiones exactas no están fijadas en un archivo `renv.lock`, por lo que deben registrarse con `sessionInfo()` antes del depósito final.
+## Diccionario de datos
 
-## Orden reproducible
+El borrador está en `data/DICCIONARIO_DATOS.csv` y se regenera con `Rscript R/01_generate_data_dictionary.R`. Las definiciones no verificables están marcadas `REVISION_MANUAL`; no se inventaron etiquetas ni códigos. Consulte además `data/README_DATA.md`.
 
-Desde la raíz del repositorio y con `Adolescentes.csv` disponible:
+## Restricciones de uso
 
-1. `Rscript ANALISIS_ADOLESCENTES_CORREGIDO_v3.R`
-2. `Rscript R/03_auditoria_gestaciones_multiples.R`
-3. `Rscript R/04_punto6_atencion_prenatal.R`
-4. `Rscript R/05_punto7_consultas_prenatales.R`
-5. `Rscript R/06_punto8_diagnosticos_priors.R`
-6. `Rscript R/07_punto9_heterogeneidad_temporal.R`
-7. `Rscript R/08_punto4_sensibilidad_rezago_escolar.R`
-8. Generar o verificar las figuras con sus scripts fuente.
-9. `quarto render manuscript/Adolescentes_19_julio.qmd`
-10. Verificar `git diff --check` y cotejar el DOCX, las tablas del QMD y todos los CSV contra los outputs anteriores.
+Los datos anonimizados utilizados en este estudio no se distribuyen mediante el repositorio de código. Su acceso requiere solicitud y autorización previa de la Unidad de Docencia e Investigación del Hospital Gineco-Obstétrico Isidro Ayora (HGOIA), conforme a los procedimientos y condiciones institucionales vigentes. Los autores no pueden conceder acceso de forma independiente. Debe mantenerse la anonimización y están prohibidos los intentos de reidentificación.
 
-Los scripts 04–07 reutilizan `resultados_RBSMI_DEFINITIVO_CORREGIDO.rds`; por ello el script principal debe ejecutarse primero. Los valores publicados en el QMD son tablas estáticas y deben cotejarse contra los outputs: no se insertan dinámicamente durante el render.
+## Reproducibilidad
 
-En la auditoría local R2 se encontraron los scripts `ANALISIS_ADOLESCENTES_CORREGIDO_v3.R`, `R/03_auditoria_gestaciones_multiples.R`, `R/04_punto6_atencion_prenatal.R`, `R/05_punto7_consultas_prenatales.R`, `R/06_punto8_diagnosticos_priors.R`, `R/07_punto9_heterogeneidad_temporal.R` y `Figura2_flujograma_STROBE.R`. No se encontraron localmente `Figura1_marco_conceptual.R` ni `Grafico_años .R`; no se recrearon.
+Desde la raíz: `Rscript R/99_run_all.R`.
+
+1. `ANALISIS_ADOLESCENTES_CORREGIDO_v3.R`
+2. `R/03_auditoria_gestaciones_multiples.R`
+3. `R/09_sensibilidad_linkage_corregida.R`
+4. `R/04_punto6_atencion_prenatal.R`
+5. `R/05_punto7_consultas_prenatales.R`
+6. `R/06_punto8_diagnosticos_priors.R`
+7. `R/07_punto9_heterogeneidad_temporal.R`
+8. `R/08_punto4_sensibilidad_rezago_escolar.R`
+9. scripts de figuras y render/cotejo del manuscrito.
+
+Una comprobación estructural sin recalcular Stan se ejecuta con `REPRO_VALIDATE_ONLY=true Rscript R/99_run_all.R`. El orden completo, entradas y productos están en `ORDEN_EJECUCION.md`.
+
+## Semillas
+
+- Análisis principal, Bernoulli, ordinal y sensibilidad de rezago: `1234`.
+- Modelos de consultas prenatales: `1707`.
+- Diagnósticos/sensibilidad a priors: base `1808`, con semillas derivadas dentro del script.
+- Heterogeneidad temporal: base `1909`, con `1909 + i`, `2009 + i`, `2109` y `2110`.
+
+`R/00_config.R` registra estas semillas sin reemplazar las especificaciones históricas de los modelos.
+
+## Resultados esperados
+
+- Libro y objeto principales: `resultados_RBSMI_DEFINITIVO_CORREGIDO.xlsx` y `.rds`; el maestro también copia ambos a `output/main/`.
+- Desduplicación: `output/reconciliation/`.
+- Atención prenatal: `output/prenatal/` y `output/consultas_prenatales/`.
+- Diagnósticos: `output/diagnosticos/`.
+- Subperíodos: `output/heterogeneidad_temporal/`.
+- Sensibilidad de rezago: `output/rezago_escolar/`.
+- Figuras incorporadas: `manuscript/media/media/`.
+
+## Correspondencia manuscrito–código
+
+| Elemento del manuscrito | Script | Archivo generado |
+|---|---|---|
+| Flujo 7.202 → 7.035 y Tabla S13 | `R/03_auditoria_gestaciones_multiples.R`, `R/09_sensibilidad_linkage_corregida.R` | `output/reconciliation/*` |
+| Tabla 1 | `ANALISIS_ADOLESCENTES_CORREGIDO_v3.R` | XLSX: `Tabla1_binaria`, `Tabla1_continua`, categorías; RDS principal |
+| Tabla 2 / modelos Bernoulli | `ANALISIS_ADOLESCENTES_CORREGIDO_v3.R` | XLSX: `Tabla2_RP_marginal`; RDS: `tabla2`, `modelos_principales` |
+| Tablas S1–S4 | `ANALISIS_ADOLESCENTES_CORREGIDO_v3.R` | Hojas del XLSX y objetos del RDS |
+| Tablas S5–S7 | `R/04_punto6_atencion_prenatal.R` | `output/prenatal/*` |
+| Tabla S8 / consultas | `R/05_punto7_consultas_prenatales.R` | `output/consultas_prenatales/*` |
+| Tablas S9–S11 / diagnósticos y priors | `R/06_punto8_diagnosticos_priors.R` | `output/diagnosticos/*` |
+| Tabla S12 / subperíodos | `R/07_punto9_heterogeneidad_temporal.R` | `output/heterogeneidad_temporal/*` |
+| Tabla S14 / rezago | `R/08_punto4_sensibilidad_rezago_escolar.R` | `output/rezago_escolar/*` |
+| Figura 1 | Fuente histórica localizada en Zenodo V1.0, no presente en el commit local auditado | `image1.png` existente; recuperación/reconciliación pendiente |
+| Figura 2 | `Figura2_flujograma_STROBE.R` | `manuscript/media/media/image2.png` |
+| Figura 3 | Fuente histórica localizada en Zenodo V1.0, no presente en el commit local auditado | `image3.jpeg` existente; recuperación/reconciliación pendiente |
+
+## Código y datos publicados
+
+- Registro de datos (acceso sujeto a autorización del HGOIA): <https://doi.org/10.17632/jbbp5vb6fy.1>
+- Código V1.0: <https://doi.org/10.5281/zenodo.21445981>
+- GitHub declarado por Zenodo: <https://github.com/santiagopediatra/Adolescentes_HGOIA>
+
+Zenodo V1.0 resuelve, pero su ZIP contiene solo cuatro artefactos analíticos/visuales y no satisface por sí solo la solicitud R2. Se recomienda publicar `v2.0-R2` después de validación humana y actualizar el manuscrito/carta con el DOI específico de esa release.
+
+## Licencia del código
+
+El código y la documentación se publican bajo [CC BY 4.0](LICENSE), en continuidad con la licencia registrada para el software V1.0 en Zenodo. Esta licencia no se extiende a la base clínica individual, cuyo acceso permanece sujeto a autorización previa del HGOIA.
+
+## Contacto
+
+Santiago Vasco-Morales, Hospital Gineco Obstétrico Isidro Ayora. No se encontró un correo verificable en los archivos del proyecto.

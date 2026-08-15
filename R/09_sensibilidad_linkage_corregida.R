@@ -130,10 +130,10 @@ lineas_log <- c(
   lineas_escenarios,
   "",
   "Archivos generados:",
-  paste0("- ", normalizePath(salida, mustWork = TRUE)),
-  paste0("- ", file.path(normalizePath(getwd()), archivo_log)),
-  paste0("- ", normalizePath("resultados_RBSMI_DEFINITIVO_CORREGIDO.xlsx", mustWork = TRUE)),
-  paste0("- ", normalizePath("resultados_RBSMI_DEFINITIVO_CORREGIDO.rds", mustWork = TRUE))
+  paste0("- ", salida),
+  paste0("- ", archivo_log),
+  "- resultados_RBSMI_DEFINITIVO_CORREGIDO.xlsx",
+  "- resultados_RBSMI_DEFINITIVO_CORREGIDO.rds"
 )
 writeLines(lineas_log, archivo_log, useBytes = TRUE)
 

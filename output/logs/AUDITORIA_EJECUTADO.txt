@@ -1,5 +1,5 @@
 AUDITORÍA DE SENSIBILIDAD DE LINKAGE — EJECUTADO
-Timestamp: 2026-08-10 03:48:33 -05
+Timestamp: 2026-08-15 05:06:16 -05
 
 Escenarios verificados:
 - A_llave_exacta: eventos_maternos_finales=7048; registros_consolidados=139; embarazos_multiples=258; nacimientos_unicos=6790
@@ -8,7 +8,7 @@ Escenarios verificados:
 - D_llave_3_semanas_PRINCIPAL: eventos_maternos_finales=7035; registros_consolidados=152; embarazos_multiples=245; nacimientos_unicos=6790
 
 Archivos generados:
-- /home/debian/Proyectos/Adolescentes-15_HGOIA/output/reconciliation/sensibilidad_linkage_CORREGIDA.csv
-- /home/debian/Proyectos/Adolescentes-15_HGOIA/output/logs/AUDITORIA_EJECUTADO.txt
-- /home/debian/Proyectos/Adolescentes-15_HGOIA/resultados_RBSMI_DEFINITIVO_CORREGIDO.xlsx
-- /home/debian/Proyectos/Adolescentes-15_HGOIA/resultados_RBSMI_DEFINITIVO_CORREGIDO.rds
+- output/reconciliation/sensibilidad_linkage_CORREGIDA.csv
+- output/logs/AUDITORIA_EJECUTADO.txt
+- resultados_RBSMI_DEFINITIVO_CORREGIDO.xlsx
+- resultados_RBSMI_DEFINITIVO_CORREGIDO.rds

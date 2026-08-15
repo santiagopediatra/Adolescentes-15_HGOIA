@@ -192,7 +192,7 @@ Los autores declaran que la investigación se llevó a cabo en ausencia de relac
 
 **Disponibilidad de datos y código**
 
-La base de datos anonimizada que sustenta los resultados de este estudio se encuentra disponible en Mendeley Data: [**https://doi.org/10.17632/jbbp5vb6fy.1**](https://doi.org/10.17632/jbbp5vb6fy.1). Los scripts de R utilizados para la depuración y desduplicación de los registros, los análisis estadísticos bayesianos, los análisis de sensibilidad y la generación de tablas y figuras están disponibles en Zenodo: [**https://doi.org/10.5281/zenodo.21445981.**]{.underline}
+Los datos anonimizados utilizados en este estudio no se distribuyen mediante el repositorio de código. Su acceso requiere solicitud y autorización previa de la Unidad de Docencia e Investigación del Hospital Gineco-Obstétrico Isidro Ayora (HGOIA), conforme a los procedimientos y condiciones institucionales vigentes. Los autores no pueden conceder acceso de forma independiente. El registro del conjunto de datos se identifica mediante el DOI [**https://doi.org/10.17632/jbbp5vb6fy.1**](https://doi.org/10.17632/jbbp5vb6fy.1). Los scripts de R utilizados para la depuración y desduplicación de los registros, los análisis estadísticos bayesianos, los análisis de sensibilidad y la generación de tablas y figuras están disponibles en Zenodo: [**https://doi.org/10.5281/zenodo.21445981**](https://doi.org/10.5281/zenodo.21445981).
 
 **Declaración sobre inteligencia artificial**
 
