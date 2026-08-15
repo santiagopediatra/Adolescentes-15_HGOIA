@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Si utiliza este repositorio, cite el software y el artículo asociado."
+title: "Código reproducible: diferencias sociodemográficas, reproductivas y obstétricas entre adolescentes de 10–14 y 15–19 años"
+type: software
+authors:
+  - given-names: Santiago
+    family-names: Vasco-Morales
+repository-code: "https://github.com/santiagopediatra/Adolescentes_HGOIA"
+license: CC-BY-4.0
