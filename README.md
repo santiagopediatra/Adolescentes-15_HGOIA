@@ -98,7 +98,7 @@ Una comprobación estructural sin recalcular Stan se ejecuta con `REPRO_VALIDATE
 
 ## Código y datos publicados
 
-- Registro de datos: <https://doi.org/10.17632/jbbp5vb6fy.1>
+- Registro de datos: <https://doi.org/10.17632/jbbp5vb6fy.2>
 - Código V2.0: <https://doi.org/10.5281/zenodo.21445981>
 - GitHub declarado por Zenodo: <https://github.com/santiagopediatra/Adolescentes_HGOIA>
 
