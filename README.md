@@ -32,7 +32,7 @@ No existe `renv.lock` y no se creó ni migró un entorno automáticamente. Las v
 - Base fuente requerida: `Adolescentes.csv`, 7.202 registros y 202 variables, UTF-8. No está incluida en este repositorio; su acceso requiere autorización previa del HGOIA. SHA-256 esperado de la copia utilizada: `159de79ef8311d1e5725dcbb55e4faff2281c8f3216dd87619be537111fe1609`.
 - Base analítica: objeto `df` dentro de `resultados_RBSMI_DEFINITIVO_CORREGIDO.rds`, 7.035 eventos obstétricos maternos.
 - Submuestra neonatal: `df_neonatal`, creada por el pipeline, 6.790 nacimientos únicos.
-- Registro de datos: Mendeley Data, “Embarazo adolescente”, versión 2] Doi: 10.17632/jbbp5vb6fy.2.   En la descripcion se aclara: La base de datos individual no es de acceso público debido a restricciones institucionales y de confidencialidad. Los datos anonimizados podrán estar disponibles previa solicitud y autorización de la Unidad de Docencia e Investigación del Hospital Gineco-Obstétrico Isidro Ayora (HGOIA), conforme a los procedimientos institucionales vigentes. Los autores no tienen autoridad para conceder de forma independiente el acceso a la base.
+- Registro de datos: Mendeley Data, “Embarazo adolescente”, versión 2. Doi: 10.17632/jbbp5vb6fy.2.   En la descripcion se aclara: La base de datos individual no es de acceso público debido a restricciones institucionales y de confidencialidad. Los datos anonimizados podrán estar disponibles previa solicitud y autorización de la Unidad de Docencia e Investigación del Hospital Gineco-Obstétrico Isidro Ayora (HGOIA), conforme a los procedimientos institucionales vigentes. Los autores no tienen autoridad para conceder de forma independiente el acceso a la base.
 
 La base está anonimizada, pero no se distribuye con el código. Una vez obtenida con autorización institucional, colóquela en la raíz con el nombre exacto `Adolescentes.csv` y verifique el checksum anterior. El archivo está ignorado por Git y no debe añadirse ni redistribuirse.
 
@@ -95,12 +95,6 @@ Una comprobación estructural sin recalcular Stan se ejecuta con `REPRO_VALIDATE
 | Figura 1 | Fuente histórica localizada en Zenodo V1.0, no presente en el commit local auditado | `image1.png` existente; recuperación/reconciliación pendiente |
 | Figura 2 | `Figura2_flujograma_STROBE.R` | `manuscript/media/media/image2.png` |
 | Figura 3 | Fuente histórica localizada en Zenodo V1.0, no presente en el commit local auditado | `image3.jpeg` existente; recuperación/reconciliación pendiente |
-
-## Código y datos publicados
-
-- Registro de datos: <https://doi.org/10.17632/jbbp5vb6fy.2>
-- Código V2.0: <https://doi.org/10.5281/zenodo.21445981>
-- GitHub declarado por Zenodo: <https://github.com/santiagopediatra/Adolescentes_HGOIA>
 
 ## Licencia del código
 
