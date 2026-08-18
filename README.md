@@ -53,7 +53,7 @@ El inventario completo, incluidas las dependencias transitivas, BLAS, LAPACK, pl
 
 ## Datos
 
-- Base fuente requerida: `Adolescentes.csv`, 7.202 registros y 202 variables, UTF-8. La base de datos anonimizada utilizada en el estudio está disponible en Mendeley Data, DOI [10.17632/jbbp5vb6fy.1](https://doi.org/10.17632/jbbp5vb6fy.1), bajo licencia CC BY 4.0. SHA-256 esperado de la copia utilizada: `159de79ef8311d1e5725dcbb55e4faff2281c8f3216dd87619be537111fe1609`.
+- Base fuente requerida: `Adolescentes.csv`, 7.202 registros y 202 variables, UTF-8. La base de datos anonimizada utilizada en el estudio está disponible en Mendeley Data, DOI [10.17632/jbbp5vb6fy.2](https://doi.org/10.17632/jbbp5vb6fy.2), bajo licencia CC BY 4.0. SHA-256 esperado de la copia utilizada: `159de79ef8311d1e5725dcbb55e4faff2281c8f3216dd87619be537111fe1609`.
 - Base analítica: objeto `df` dentro de `resultados_RBSMI_DEFINITIVO_CORREGIDO.rds`, 7.035 eventos obstétricos maternos.
 - Submuestra neonatal: `df_neonatal`, creada por el pipeline, 6.790 nacimientos únicos.
 La base no se duplica en el repositorio de código. Descárguela desde Mendeley Data, colóquela en la raíz con el nombre exacto `Adolescentes.csv` y verifique el checksum anterior. El archivo está ignorado por Git para evitar mantener copias divergentes del depósito de datos oficial.
@@ -65,6 +65,8 @@ El borrador está en `data/DICCIONARIO_DATOS.csv` y se regenera con `Rscript R/0
 ## Uso de los datos
 
 La base pública está anonimizada y se distribuye bajo las condiciones de la licencia CC BY 4.0 indicada en Mendeley Data. Debe preservarse la anonimización y no deben realizarse intentos de reidentificación.
+
+Nota:La base de datos individual no es de acceso público debido a restricciones institucionales y de confidencialidad. Los datos anonimizados podrán ser utilizados previa solicitud y autorización de la Unidad de Docencia e Investigación del Hospital Gineco-Obstétrico Isidro Ayora (HGOIA), conforme a los procedimientos institucionales vigentes. Los autores no tienen autoridad para conceder de forma independiente el acceso a la base.
 
 ## Reproducibilidad
 
