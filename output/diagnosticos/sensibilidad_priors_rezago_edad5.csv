@@ -1,0 +1,3 @@
+"modelo","tipo_prior","estimacion","ICr95_inferior","ICr95_superior","Rhat","ESS_bulk","ESS_tail","cambio_direccion"
+"Rezago escolar binario — modelo principal edad−5","Prior principal",1.15896571146058,0.944765226306846,1.37185771171762,1.00005480342359,5942.34192318461,5740.21942560967,FALSE
+"Rezago escolar binario — modelo principal edad−5","Prior alternativo",1.16190395167365,0.946972414642933,1.37921127616129,0.999879940962649,4814.15209286515,3933.78069560783,FALSE

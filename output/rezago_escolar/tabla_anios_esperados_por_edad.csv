@@ -1,11 +1,11 @@
 edad,regla_principal,tope_anios,anios_esperados_principal,regla_alternativa,anios_esperados_alternativa
-10,"min(max(edad - 6, 0), 12)",12,4,"min(max(edad - 5, 0), 12)",5
-11,"min(max(edad - 6, 0), 12)",12,5,"min(max(edad - 5, 0), 12)",6
-12,"min(max(edad - 6, 0), 12)",12,6,"min(max(edad - 5, 0), 12)",7
-13,"min(max(edad - 6, 0), 12)",12,7,"min(max(edad - 5, 0), 12)",8
-14,"min(max(edad - 6, 0), 12)",12,8,"min(max(edad - 5, 0), 12)",9
-15,"min(max(edad - 6, 0), 12)",12,9,"min(max(edad - 5, 0), 12)",10
-16,"min(max(edad - 6, 0), 12)",12,10,"min(max(edad - 5, 0), 12)",11
-17,"min(max(edad - 6, 0), 12)",12,11,"min(max(edad - 5, 0), 12)",12
-18,"min(max(edad - 6, 0), 12)",12,12,"min(max(edad - 5, 0), 12)",12
-19,"min(max(edad - 6, 0), 12)",12,12,"min(max(edad - 5, 0), 12)",12
+10,"min(max(edad - 5, 0), 12)",12,5,"min(max(edad - 6, 0), 12)",4
+11,"min(max(edad - 5, 0), 12)",12,6,"min(max(edad - 6, 0), 12)",5
+12,"min(max(edad - 5, 0), 12)",12,7,"min(max(edad - 6, 0), 12)",6
+13,"min(max(edad - 5, 0), 12)",12,8,"min(max(edad - 6, 0), 12)",7
+14,"min(max(edad - 5, 0), 12)",12,9,"min(max(edad - 6, 0), 12)",8
+15,"min(max(edad - 5, 0), 12)",12,10,"min(max(edad - 6, 0), 12)",9
+16,"min(max(edad - 5, 0), 12)",12,11,"min(max(edad - 6, 0), 12)",10
+17,"min(max(edad - 5, 0), 12)",12,12,"min(max(edad - 6, 0), 12)",11
+18,"min(max(edad - 5, 0), 12)",12,12,"min(max(edad - 6, 0), 12)",12
+19,"min(max(edad - 5, 0), 12)",12,12,"min(max(edad - 6, 0), 12)",12

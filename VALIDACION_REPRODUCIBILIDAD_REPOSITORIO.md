@@ -37,7 +37,7 @@ Tampoco se renderizó el DOCX porque el usuario solicitó revisar primero el pla
 
 1. Los scripts históricos `Figura1_marco_conceptual.R` y `Grafico_años .R` existen en Zenodo V1.0/GitHub, pero no estaban en el commit local auditado. Además, su contenido público no refleja todas las aclaraciones descritas para las figuras R2, por lo que no se incorporó como si fuera la fuente vigente. Las Figuras 1 y 3 actuales no son plenamente reproducibles hasta recuperar la versión exacta que las generó.
 2. `readr` informó problemas de parseo al leer la base en `R/03_...`; los conteos y resultados esperados se reprodujeron. Conviene guardar y revisar `problems()` en una futura mejora sin cambiar el análisis validado.
-3. No se verificó byte a byte el archivo de Mendeley frente a la copia local. Además, DataCite aún muestra acceso abierto/CC BY 4.0 mientras se tramita la corrección a acceso controlado por el HGOIA.
+3. No se verificó byte a byte el archivo de Mendeley frente a la copia local. El depósito público corresponde a la versión 1, DOI `10.17632/jbbp5vb6fy.1`, y declara licencia CC BY 4.0; el README documenta el checksum esperado para la verificación local.
 4. No existe `renv.lock`; la sesión está documentada, pero el entorno no está congelado.
 5. Zenodo V1.0 contiene solo el pipeline antiguo, dos scripts históricos de figuras y el PPTX; no satisface la solicitud editorial R2. Debe crearse una release nueva tras revisión.
 6. Después de completar las pruebas, `Adolescentes.csv` fue eliminado localmente por solicitud expresa del usuario. Para una nueva ejecución debe obtenerse con autorización del HGOIA, guardarse temporalmente en la raíz y coincidir con el SHA-256 documentado.

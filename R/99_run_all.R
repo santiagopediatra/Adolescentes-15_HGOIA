@@ -46,6 +46,7 @@ required_files <- c(
   file.path("R", "07_punto9_heterogeneidad_temporal.R"),
   file.path("R", "08_punto4_sensibilidad_rezago_escolar.R"),
   file.path("R", "09_sensibilidad_linkage_corregida.R"),
+  file.path("R", "10_sensibilidad_priors_rezago_edad5.R"),
   "Figura2_flujograma_STROBE.R"
 )
 
@@ -100,6 +101,7 @@ if (!validate_only) {
   run_script(file.path("R", "04_punto6_atencion_prenatal.R"))
   run_script(file.path("R", "05_punto7_consultas_prenatales.R"))
   run_script(file.path("R", "06_punto8_diagnosticos_priors.R"))
+  run_script(file.path("R", "10_sensibilidad_priors_rezago_edad5.R"))
   run_script(file.path("R", "07_punto9_heterogeneidad_temporal.R"))
   run_script(file.path("R", "08_punto4_sensibilidad_rezago_escolar.R"))
   run_script("Figura2_flujograma_STROBE.R")

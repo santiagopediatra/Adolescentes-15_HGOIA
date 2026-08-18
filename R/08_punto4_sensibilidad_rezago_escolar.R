@@ -114,10 +114,10 @@ df <- bind_rows(
       TRUE ~ NA_real_
     ),
     anios_esperados_principal = pmin(
-      pmax(`Edad materna` - 6, 0), tope_anios_escolaridad
+      pmax(`Edad materna` - 5, 0), tope_anios_escolaridad
     ),
     anios_esperados_alternativa = pmin(
-      pmax(`Edad materna` - 5, 0), tope_anios_escolaridad
+      pmax(`Edad materna` - 6, 0), tope_anios_escolaridad
     ),
     rezago_principal_anios = anios_esperados_principal - anios_aprobados,
     rezago_alternativa_anios = anios_esperados_alternativa - anios_aprobados,
@@ -140,11 +140,11 @@ if (nrow(df) != 7035L || sum(df$menor15 == 1L) != 386L ||
 
 tabla_anios <- tibble(edad = 10:19) %>%
   mutate(
-    regla_principal = "min(max(edad - 6, 0), 12)",
+    regla_principal = "min(max(edad - 5, 0), 12)",
     tope_anios = tope_anios_escolaridad,
-    anios_esperados_principal = pmin(pmax(edad - 6, 0), tope_anios_escolaridad),
-    regla_alternativa = "min(max(edad - 5, 0), 12)",
-    anios_esperados_alternativa = pmin(pmax(edad - 5, 0), tope_anios_escolaridad)
+    anios_esperados_principal = pmin(pmax(edad - 5, 0), tope_anios_escolaridad),
+    regla_alternativa = "min(max(edad - 6, 0), 12)",
+    anios_esperados_alternativa = pmin(pmax(edad - 6, 0), tope_anios_escolaridad)
   )
 write_csv(tabla_anios, file.path(directorio_salida, "tabla_anios_esperados_por_edad.csv"))
 
@@ -260,25 +260,25 @@ resumen_modelo <- function(fit, datos, regla) {
 
 cat("Ajustando modelo principal para reproducibilidad...\n")
 fit_principal <- ajustar(d_principal)
-principal <- resumen_modelo(fit_principal, d_principal, "Principal: edad - 6; tope 12")
+principal <- resumen_modelo(fit_principal, d_principal, "Principal: edad - 5; tope 12")
 
 rp_redondeada <- round(principal$resumen$RP, 2)
 icr_inf_redondeado <- round(principal$resumen$ICr95_inf, 2)
 icr_sup_redondeado <- round(principal$resumen$ICr95_sup, 2)
-if (rp_redondeada != 2.07 || icr_inf_redondeado != 1.78 || icr_sup_redondeado != 2.41) {
+if (rp_redondeada != 2.28 || icr_inf_redondeado != 1.99 || icr_sup_redondeado != 2.59) {
   write_csv(principal$resumen, file.path(directorio_salida, "resultado_principal_discrepante.csv"))
   stop(
-    "El modelo principal no reprodujo RP=2,07 (ICr95% 1,78–2,41): obtuvo ",
+    "El modelo principal no reprodujo RP=2,28 (ICr95% 1,99–2,59): obtuvo ",
     sprintf("%.3f (%.3f–%.3f)", principal$resumen$RP,
             principal$resumen$ICr95_inf, principal$resumen$ICr95_sup)
   )
 }
 write_csv(principal$resumen, file.path(directorio_salida, "resultado_principal_reproducido.csv"))
 
-cat("Ajustando sensibilidad edad - 5 con tope 12...\n")
+cat("Ajustando sensibilidad edad - 6 con tope 12...\n")
 fit_alternativa <- ajustar(d_alternativa, fit_principal)
 alternativa <- resumen_modelo(
-  fit_alternativa, d_alternativa, "Sensibilidad: edad - 5; tope 12"
+  fit_alternativa, d_alternativa, "Sensibilidad: edad - 6; tope 12"
 )
 write_csv(alternativa$resumen, file.path(directorio_salida, "sensibilidad_rezago_escolar.csv"))
 
@@ -295,8 +295,8 @@ write_csv(
 )
 
 comparacion <- bind_rows(
-  principal$resumen %>% mutate(Regla = "Principal: edad - 6; tope 12"),
-  alternativa$resumen %>% mutate(Regla = "Sensibilidad: edad - 5; tope 12")
+  principal$resumen %>% mutate(Regla = "Principal: edad - 5; tope 12"),
+  alternativa$resumen %>% mutate(Regla = "Sensibilidad: edad - 6; tope 12")
 ) %>%
   select(Regla, n_total, n_10_14, n_15_19, prevalencia_10_14,
          prevalencia_15_19, RP, ICr95_inf, ICr95_sup) %>%
@@ -320,12 +320,12 @@ write_csv(comparacion, file.path(directorio_salida, "comparacion_reglas_rezago.c
 formato_decimal <- function(x, digitos) {
   sub("\\.", ",", sprintf(paste0("%.", digitos, "f"), x), fixed = FALSE)
 }
-tabla_s14 <- c(
-  "## Tabla S14. Regla de años esperados y sensibilidad del indicador de rezago escolar {#tabla-s14.-sensibilidad-rezago-escolar .unnumbered}",
+resumen_sensibilidad <- c(
+  "## Sensibilidad del indicador de rezago escolar",
   "",
   "**Panel A. Años esperados según edad**",
   "",
-  "| **Edad (años)** | **Regla principal: edad − 6, tope 12** | **Regla alternativa: edad − 5, tope 12** |",
+  "| **Edad (años)** | **Regla principal: edad − 5, tope 12** | **Regla alternativa: edad − 6, tope 12** |",
   "|---:|---:|---:|",
   paste0("| ", tabla_anios$edad, " | ", tabla_anios$anios_esperados_principal,
          " | ", tabla_anios$anios_esperados_alternativa, " |"),
@@ -335,7 +335,7 @@ tabla_s14 <- c(
   "| **Regla** | **n total** | **Prevalencia 10–14** | **Prevalencia 15–19** | **RP (ICr95 %)** | **R-hat máx.** | **ESS bulk mín.** | **ESS tail mín.** | **Divergencias** | **E-BFMI mín.** | **PPC fuera del ICr95 %** |",
   "|:--|--:|--:|--:|:--|--:|--:|--:|--:|--:|--:|",
   paste0(
-    "| Principal: edad − 6; tope 12 | 7.027 | ",
+    "| Principal: edad − 5; tope 12 | 7.027 | ",
     formato_decimal(100 * principal$resumen$prevalencia_10_14, 1), " % | ",
     formato_decimal(100 * principal$resumen$prevalencia_15_19, 1), " % | ",
     formato_decimal(principal$resumen$RP, 2), " (",
@@ -347,7 +347,7 @@ tabla_s14 <- c(
     formato_decimal(principal$resumen$E_BFMI_min, 3), " | 0/3 |"
   ),
   paste0(
-    "| Sensibilidad: edad − 5; tope 12 | 7.027 | ",
+    "| Sensibilidad: edad − 6; tope 12 | 7.027 | ",
     formato_decimal(100 * alternativa$resumen$prevalencia_10_14, 1), " % | ",
     formato_decimal(100 * alternativa$resumen$prevalencia_15_19, 1), " % | ",
     formato_decimal(alternativa$resumen$RP, 2), " (",
@@ -362,7 +362,11 @@ tabla_s14 <- c(
   "Ambas reglas utilizaron el mismo cálculo de años aprobados, tope de 12 años, tratamiento de datos faltantes, definición binaria (rezago ≥2 años) y modelo bayesiano Bernoulli-logit con estandarización posterior. En ambos ajustes la profundidad máxima observada fue 4, ninguna iteración alcanzó el máximo configurado de 15 y los PPC de las prevalencias global y por grupo quedaron dentro del ICr95 % predictivo. Fuente reproducible: `R/08_punto4_sensibilidad_rezago_escolar.R` y `output/rezago_escolar/`.",
   ""
 )
-writeLines(tabla_s14, file.path(directorio_salida, "tabla_s14.md"), useBytes = TRUE)
+writeLines(
+  resumen_sensibilidad,
+  file.path(directorio_salida, "resumen_sensibilidad_rezago.md"),
+  useBytes = TRUE
+)
 
 if (any(diagnosticos$Rhat_max > 1.01) ||
     any(diagnosticos$ESS_bulk_min < 400) ||
