@@ -256,21 +256,21 @@ Los autores declaran que herramientas de inteligencia artificial (ChatGPT, OpenA
 
 ![](media/media/image1.png){width="6.53125in" height="5.2590625in"}
 
-**Figura 1.** Marco de selección y muestras analíticas del estudio.
+**Figure 1.** Study selection framework and analytic samples.
 
-**Nota:** la base SIP accesible ya estaba condicionada por admisión neonatal antes de su disponibilidad para el estudio; la población institucional completa y los partos no incluidos no fueron observados. Los factores sociodemográficos, reproductivos/obstétricos y de atención prenatal se muestran como posibles determinantes del mecanismo de selección, no como causas ni efectos causales estimados. Después de eliminar duplicados exactos y consolidar registros de gestaciones múltiples, la muestra final incluyó 7.035 eventos obstétricos maternos; la descripción neonatal se restringió a 6.790 nacimientos únicos. La inferencia se limita a la población seleccionada analizada.
+**Note:** The available SIP data set had already been conditioned on neonatal admission before it became available for this study; the complete institutional population and nonincluded deliveries were not observed. Sociodemographic, reproductive/obstetric, and prenatal care factors are shown as potential determinants of selection, not as estimated causes or causal effects. After exact duplicates were removed and multiple-gestation records were consolidated, the final sample comprised 7,035 maternal obstetric events; the neonatal description was restricted to 6,790 singleton births. Inference is limited to the selected population analyzed.
 
 ![](media/media/image2.png){width="6.5in" height="5.160266in"}
 
-**Figura 2.** Flujograma de selección de participantes.
+**Figure 2.** Participant selection flow diagram.
 
-*La población fuente estuvo constituida por registros madre–recién nacido de adolescentes de 10–19 años cuyos recién nacidos fueron admitidos en Neonatología durante enero de 2009–junio de 2024. No se identificaron registros de madres menores de 10 años. Los registros sin edad materna consignada no fueron elegibles para la clasificación etaria y no se incluyeron en la base inicial de 7.202 registros. Los óbitos fetales y las pérdidas gestacionales no formaron parte de esta población fuente.*
+*The source population comprised mother–newborn records for adolescents aged 10–19 years whose newborns were admitted to the neonatal unit between January 2009 and June 2024. No records were identified for mothers younger than 10 years. Records with missing maternal age were ineligible for age-group classification and were not included among the 7,202 initial records. Stillbirths and pregnancy losses were not part of this source population.*
 
 ![](media/media/image3.jpeg){width="6.521527777777778in" height="3.872157986111111in"}
 
-**Figura 3.** Distribución anual de eventos obstétricos maternos según grupo etario, enero de 2009–junio de 2024.
+**Figure 3.** Annual distribution of maternal obstetric events by age group, January 2009–June 2024.
 
-**Nota:** las barras muestran proporciones dentro de la base SIP ya seleccionada por admisión neonatal; el número sobre cada barra corresponde al total anual de eventos obstétricos maternos y el número dentro del segmento oscuro a los eventos de adolescentes de 10–14 años. El dato de 2024 incluye exclusivamente enero–junio, se presenta separado y rotulado como período parcial, no se anualizó ni se comparó directamente con los años completos de 2009–2023.
+**Note:** Bars show proportions within the SIP data set already selected on neonatal admission. The number above each bar is the annual total of maternal obstetric events, and the number within the dark segment is the number of events among adolescents aged 10–14 years. Data for 2024 include January–June only and are displayed separately as a partial-year period; they were neither annualized nor directly compared with the complete calendar years from 2009 through 2023.
 
 # **Tabla 1. Características sociodemográficas, reproductivas y obstétricas** {#tabla-1.-características-sociodemográficas-reproductivas-y-obstétricas .text-3}
 

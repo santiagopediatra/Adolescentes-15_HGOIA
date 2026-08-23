@@ -1,5 +1,5 @@
-## Regenera manuscript/media/media/image2.png: diagrama de flujo STROBE
-## del proceso de seleccion de participantes (Figura 2 del manuscrito).
+## Regenerates manuscript/media/media/image2.png: STROBE participant
+## selection flow diagram (Figure 2 of the manuscript), in academic English.
 ## Corrige el defecto donde el borde superior del primer recuadro
 ## atravesaba la primera linea de texto: la altura de cada recuadro se
 ## calcula a partir del numero real de lineas de su contenido, con
@@ -52,10 +52,10 @@ draw_arrow <- function(x0, y0, x1, y1) {
 b1 <- draw_box(
   cx = 42, y_top = 93, w = 78,
   lines = c(
-    "Registros madre–recién nacido, Hospital Gineco-Obstétrico",
-    "Isidro Ayora (SIP-CLAP/OPS), enero 2009–junio 2024",
-    "Adolescentes de 10–19 años",
-    "n = 7.202"
+    "Mother–newborn records, Hospital Gineco-Obstétrico",
+    "Isidro Ayora (HGOIA) (SIP-CLAP/PAHO), January 2009–June 2024",
+    "Adolescents aged 10–19 years",
+    "n = 7,202"
   ),
   cex = 0.72,
   bold_lines = 4
@@ -66,9 +66,9 @@ b1 <- draw_box(
 e1 <- draw_box(
   cx = 122, y_top = b1$top - 2, w = 68,
   lines = c(
-    "Excluidos:",
-    "- 15 registros completamente duplicados en la",
-    "  base cruda."
+    "Excluded:",
+    "- 15 exact duplicate records in the",
+    "  raw data set."
   ),
   cex = 0.68, lty = "dashed", fill = "grey88",
   bold_lines = 1
@@ -80,8 +80,8 @@ b2_top <- b1$bottom - 10
 b2 <- draw_box(
   cx = 42, y_top = b2_top, w = 78,
   lines = c(
-    "Registros restantes tras exclusión de duplicaciones",
-    "n = 7.187"
+    "Records remaining after removal of exact duplicates",
+    "n = 7,187"
   ),
   cex = 0.72, bold_lines = 2
 )
@@ -91,11 +91,10 @@ b2 <- draw_box(
 e2 <- draw_box(
   cx = 122, y_top = b2$top - 1, w = 68,
   lines = c(
-    "Excluidos: 152 registros",
-    "- Deduplicación de embarazos múltiples",
-    "  mediante clave compuesta de 13 variables.",
-    "- Aplicación de umbral de 3 semanas de edad",
-    "  gestacional."
+    "Excluded: 152 records",
+    "- Multiple-gestation records consolidated using",
+    "  a 13-variable composite linkage key.",
+    "- A 3-week gestational-age threshold was applied."
   ),
   cex = 0.68, lty = "dashed", fill = "grey88",
   bold_lines = 1
@@ -107,9 +106,9 @@ b3_top <- b2$bottom - 10
 b3 <- draw_box(
   cx = 42, y_top = b3_top, w = 78,
   lines = c(
-    "MUESTRA ANALÍTICA FINAL",
-    "Unidad de análisis: evento obstétrico materno",
-    "n = 7.035"
+    "FINAL ANALYTIC SAMPLE",
+    "Unit of analysis: maternal obstetric event",
+    "n = 7,035"
   ),
   cex = 0.74, bold_lines = c(1, 3)
 )
@@ -119,12 +118,12 @@ b3 <- draw_box(
 b4_top <- b3$bottom - 10
 b4a <- draw_box(
   cx = 20, y_top = b4_top, w = 36,
-  lines = c("Adolescentes de 10–14", "años, n = 386 (5,5%)"),
+  lines = c("Adolescents aged 10–14 years", "n = 386 (5.5%)"),
   cex = 0.70
 )
 b4b <- draw_box(
   cx = 64, y_top = b4_top, w = 36,
-  lines = c("Adolescentes de 15–19", "años, n = 6.649 (94,5%)"),
+  lines = c("Adolescents aged 15–19 years", "n = 6,649 (94.5%)"),
   cex = 0.70
 )
 
@@ -133,8 +132,11 @@ b4b <- draw_box(
 draw_arrow(b1$cx, b1$bottom, b2$cx, b2$top)
 draw_arrow(b2$cx, b2$bottom, b3$cx, b3$top)
 
-draw_arrow(b1$cx, b1$cy, e1$left, b1$cy)
-draw_arrow(b2$cx, b2$cy, e2$left, b2$cy)
+## Horizontal exclusion arrows connect the actual rectangle boundaries.
+## Starting at $right prevents any line segment from appearing inside the
+## source boxes; ending at $left places each arrow tip on the target border.
+draw_arrow(b1$right, b1$cy, e1$left, b1$cy)
+draw_arrow(b2$right, b2$cy, e2$left, b2$cy)
 
 ## bifurcacion final: linea vertical corta desde b3, luego a cada caja
 mid_y <- b3$bottom - 5
@@ -146,14 +148,14 @@ draw_arrow(b4b$cx, mid_y, b4b$cx, b4b$top)
 ## ---- pie de figura -------------------------------------------------------
 
 caption_y <- b4a$bottom - 5.5
-text(2, caption_y, "Figura 2. Diagrama de flujo STROBE del proceso de selección de participantes.",
+text(2, caption_y, "Figure 2. STROBE flow diagram of participant selection.",
      adj = c(0, 1), cex = 0.78, font = 2)
 
 nota <- paste(
-  "Los 15 registros duplicados corresponden a filas completamente idénticas en la base cruda.",
-  "El umbral de 3 semanas para la deduplicación de embarazos múltiples se seleccionó por",
-  "criterio clínico (incompatibilidad de un mismo evento de parto) y se evaluó su estabilidad en",
-  "análisis de sensibilidad no incluido en esta figura.",
+  "The 15 duplicate records were rows that were identical across all fields in the raw data set.",
+  "The 3-week threshold used to consolidate multiple-gestation records was selected on clinical",
+  "grounds (records could not represent the same delivery event); its robustness was assessed in",
+  "a sensitivity analysis not shown in this figure.",
   sep = "\n"
 )
 text(2, caption_y - 4.6, nota, adj = c(0, 1), cex = 0.62, font = 3)
@@ -168,4 +170,4 @@ im <- image_trim(im, fuzz = 2)
 im <- image_border(im, "white", "20x20")
 image_write(im, out_path)
 
-cat("Figura 2 regenerada en", out_path, "\n")
+cat("Figure 2 regenerated at", out_path, "\n")
