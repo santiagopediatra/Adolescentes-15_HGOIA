@@ -33,7 +33,7 @@ orange <- "#E65300"
 segments((x[15]+x[16])/2, 0, (x[15]+x[16])/2, 1.05,
          col=orange, lty=2, lwd=2)
 rect(x[16]-.36,0,x[16]+.36,1,border=orange,lwd=2)
-legend(max(x)+1.15,.82, legend=c("Ages 15–19 years","Ages 10–14 years"),
+legend(max(x)+1.15,.82, legend=c("Aged 15–19 years old","Aged 10–14 years old"),
        fill=c("#B7BBC0","#4A5661"), border=NA, bty="n", cex=.92)
 text(max(x)+1.15,.59,"2024: January–June\npartial-year count;\nnot directly comparable\nwith full calendar years",
      adj=c(0,1), col="#A9330A", font=2, cex=.8)

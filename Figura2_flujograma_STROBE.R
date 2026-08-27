@@ -54,7 +54,7 @@ b1 <- draw_box(
   lines = c(
     "Mother–newborn records, Hospital Gineco-Obstétrico",
     "Isidro Ayora (HGOIA) (SIP-CLAP/PAHO), January 2009–June 2024",
-    "Adolescents aged 10–19 years",
+    "Aged 10–19 years old",
     "n = 7,202"
   ),
   cex = 0.72,
@@ -118,12 +118,12 @@ b3 <- draw_box(
 b4_top <- b3$bottom - 10
 b4a <- draw_box(
   cx = 20, y_top = b4_top, w = 36,
-  lines = c("Adolescents aged 10–14 years", "n = 386 (5.5%)"),
+  lines = c("Aged 10–14 years old", "n = 386 (5.5%)"),
   cex = 0.70
 )
 b4b <- draw_box(
   cx = 64, y_top = b4_top, w = 36,
-  lines = c("Adolescents aged 15–19 years", "n = 6,649 (94.5%)"),
+  lines = c("Aged 15–19 years old", "n = 6,649 (94.5%)"),
   cex = 0.70
 )
 
