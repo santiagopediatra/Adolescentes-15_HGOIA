@@ -1,0 +1,27 @@
+"tipo","valor","n","proporcion","frecuencia_vecinos","razon_sobre_vecinos","criterio","posible_heaping"
+"acumulacion",0,187,0.0271644392794887,NA,NA,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",NA
+"acumulacion",1,225,0.0326844857640906,302.5,0.743801652892562,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",2,418,0.0607205113306217,420.5,0.994054696789536,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",3,616,0.0894828588030215,593,1.03878583473862,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",4,768,0.111563044741429,869.5,0.883266244968373,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",5,1123,0.163131900058106,878,1.27904328018223,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",TRUE
+"acumulacion",6,988,0.143521208599651,962,1.02702702702703,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",7,801,0.116356769320163,899.5,0.890494719288494,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",8,811,0.1178094131319,615.5,1.31762794476036,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",TRUE
+"acumulacion",9,430,0.0624636839047066,540.5,0.795559666975023,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",10,270,0.0392213829169088,256,1.0546875,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",11,82,0.0119116792562464,175.5,0.467236467236467,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",12,81,0.0117664148750726,51,1.58823529411765,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",TRUE
+"acumulacion",13,20,0.00290528762347472,46,0.434782608695652,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",14,11,0.0015979081929111,28,0.392857142857143,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",15,36,0.0052295177222545,8,4.5,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",16,5,0.000726321905868681,18.5,0.27027027027027,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",17,1,0.000145264381173736,3,0.333333333333333,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",18,1,0.000145264381173736,0.5,2,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",19,0,0,5.5,0,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"acumulacion",20,10,0.00145264381173736,NA,NA,"razón frecuencia/promedio de vecinos; posible heaping si >=1,25 y n>=1%",FALSE
+"extremo_superior_Tukey",15,36,0.0052295177222545,NA,NA,"valor > Q3 + 1,5*RIC = 14",NA
+"extremo_superior_Tukey",16,5,0.000726321905868681,NA,NA,"valor > Q3 + 1,5*RIC = 14",NA
+"extremo_superior_Tukey",17,1,0.000145264381173736,NA,NA,"valor > Q3 + 1,5*RIC = 14",NA
+"extremo_superior_Tukey",18,1,0.000145264381173736,NA,NA,"valor > Q3 + 1,5*RIC = 14",NA
+"extremo_superior_Tukey",20,10,0.00145264381173736,NA,NA,"valor > Q3 + 1,5*RIC = 14",NA

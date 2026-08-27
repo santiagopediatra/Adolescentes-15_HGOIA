@@ -1,0 +1,45 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Archivos temporales de LibreOffice
+.~lock.*#
+.~
+
+# Base clínica local
+Adolescentes.csv
+
+# Objetos locales pesados o regenerables (reglas explícitas para no ocultar
+# accidentalmente otros RDS necesarios para reproducibilidad)
+resultados_RBSMI_DEFINITIVO_CORREGIDO.rds
+checkpoint_*.rds
+output/**/*.rds
+*.RData
+
+# Temporales y cachés
+.~lock.*#
+.~
+.Rhistory
+.Rproj.user/
+.quarto/
+*_cache/
+
+# Logs fechados del orquestador (se conserva la documentación de validación)
+output/logs/run_all_*.log
+
+# Archivos del sistema/editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Documentos editoriales y copias de entrega: se conservan localmente,
+# pero el repositorio público distribuye la fuente QMD y el código.
+*.docx
+R2_para_compartir/
+entrega_R2_final/
+carpeta_repositorio_publico_R2/
+
+# Paquetes locales listos para carga manual en Zenodo
+release/

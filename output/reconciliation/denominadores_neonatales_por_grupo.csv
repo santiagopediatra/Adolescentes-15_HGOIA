@@ -1,0 +1,21 @@
+grupo_edad,variable,denominador
+10-14,Edad gestaciol RN,381
+15-19,Edad gestaciol RN,6384
+10-14,Peso al nacer GRAMOS,381
+15-19,Peso al nacer GRAMOS,6408
+10-14,PREMATURO CODIGO,376
+15-19,PREMATURO CODIGO,6371
+10-14,CODIGO Apgar 1 minuto <7,374
+15-19,CODIGO Apgar 1 minuto <7,6291
+10-14,CODIGO Apgar 5to. < 7,374
+15-19,CODIGO Apgar 5to. < 7,6299
+10-14,RCIU,381
+15-19,RCIU,6408
+10-14,MACROSÓMICO,381
+15-19,MACROSÓMICO,6409
+10-14,BEBE Ictericia,381
+15-19,BEBE Ictericia,6409
+10-14,RN vivo CODIGO,381
+15-19,RN vivo CODIGO,6397
+10-14,Lactancia exclusiva SI NO,324
+15-19,Lactancia exclusiva SI NO,5485

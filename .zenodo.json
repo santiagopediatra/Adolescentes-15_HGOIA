@@ -1,0 +1,35 @@
+{
+  "title": "Código reproducible: diferencias sociodemográficas, reproductivas y obstétricas entre adolescentes de 10–14 y 15–19 años",
+  "description": "Código, documentación, resultados tabulares y figuras reproducibles de un estudio transversal retrospectivo basado en registros del Sistema de Información Perinatal del Hospital Gineco-Obstétrico Isidro Ayora, Quito, Ecuador. La población disponible estaba seleccionada previamente por admisión neonatal. El depósito no incluye datos clínicos individuales.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Vasco-Morales, Santiago",
+      "affiliation": "Hospital Gineco-Obstétrico Isidro Ayora"
+    }
+  ],
+  "version": "R2",
+  "publication_date": "2026-08-23",
+  "license": "cc-by-4.0",
+  "language": "spa",
+  "keywords": [
+    "adolescent pregnancy",
+    "maternal health",
+    "neonatal admission",
+    "Bayesian analysis",
+    "reproducible research",
+    "Ecuador"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.17632/jbbp5vb6fy.2",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.21445981",
+      "relation": "isNewVersionOf",
+      "scheme": "doi"
+    }
+  ]
+}

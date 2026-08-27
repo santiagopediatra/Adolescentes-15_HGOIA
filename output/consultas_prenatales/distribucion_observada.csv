@@ -1,0 +1,47 @@
+"tipo","estadistico","valor","n","proporcion"
+"resumen","n_total_materno",7035,NA,NA
+"resumen","n_valido",6884,NA,NA
+"resumen","n_faltante",151,NA,NA
+"resumen","proporcion_faltante",0.0214641080312722,NA,NA
+"resumen","minimo",0,NA,NA
+"resumen","maximo",20,NA,NA
+"resumen","media",5.71353864032539,NA,NA
+"resumen","mediana",6,NA,NA
+"resumen","varianza",7.6630972248615,NA,NA
+"resumen","desviacion_estandar",2.768229980486,NA,NA
+"resumen","varianza_sobre_media",1.34121736234991,NA,NA
+"resumen","asimetria_muestral",0.441562255967684,NA,NA
+"percentil","p0",0,NA,NA
+"percentil","p    1",0,NA,NA
+"percentil","p  2.5",0,NA,NA
+"percentil","p    5",1,NA,NA
+"percentil","p   10",2,NA,NA
+"percentil","p   25",4,NA,NA
+"percentil","p   50",6,NA,NA
+"percentil","p   75",8,NA,NA
+"percentil","p   90",9,NA,NA
+"percentil","p   95",10,NA,NA
+"percentil","p 97.5",11,NA,NA
+"percentil","p   99",13,NA,NA
+"percentil","p  100",20,NA,NA
+"frecuencia","valor_0",0,187,0.0271644392794887
+"frecuencia","valor_1",1,225,0.0326844857640906
+"frecuencia","valor_2",2,418,0.0607205113306217
+"frecuencia","valor_3",3,616,0.0894828588030215
+"frecuencia","valor_4",4,768,0.111563044741429
+"frecuencia","valor_5",5,1123,0.163131900058106
+"frecuencia","valor_6",6,988,0.143521208599651
+"frecuencia","valor_7",7,801,0.116356769320163
+"frecuencia","valor_8",8,811,0.1178094131319
+"frecuencia","valor_9",9,430,0.0624636839047066
+"frecuencia","valor_10",10,270,0.0392213829169088
+"frecuencia","valor_11",11,82,0.0119116792562464
+"frecuencia","valor_12",12,81,0.0117664148750726
+"frecuencia","valor_13",13,20,0.00290528762347472
+"frecuencia","valor_14",14,11,0.0015979081929111
+"frecuencia","valor_15",15,36,0.0052295177222545
+"frecuencia","valor_16",16,5,0.000726321905868681
+"frecuencia","valor_17",17,1,0.000145264381173736
+"frecuencia","valor_18",18,1,0.000145264381173736
+"frecuencia","valor_19",19,0,0
+"frecuencia","valor_20",20,10,0.00145264381173736

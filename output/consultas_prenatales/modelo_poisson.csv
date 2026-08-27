@@ -1,0 +1,3 @@
+"modelo","familia","ajuste","n","estimando","estimacion","ICr95_inferior","ICr95_superior","coeficiente","coeficiente_ICr95_inferior","coeficiente_ICr95_superior","shape_mediana","shape_ICr95_inferior","shape_ICr95_superior"
+"poisson_no_ajustado","poisson","ninguno",6884,"razon_de_medias",0.901554748066258,0.86047244815272,0.942836653345549,-0.103634508216177,-0.150273682282858,-0.0588622315593081,NA,NA,NA
+"poisson_ajustado","poisson","oportunidad_acumulada",6860,"razon_de_medias",0.902872059300004,0.863217849443342,0.944551739985618,-0.102174419657159,-0.147088187110223,-0.0570448132969843,NA,NA,NA

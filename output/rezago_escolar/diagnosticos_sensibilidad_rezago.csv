@@ -1,0 +1,3 @@
+regla,Rhat_max,ESS_bulk_min,ESS_tail_min,divergencias,treedepth_max_observado,iteraciones_treedepth_15,E_BFMI_min,PPC_fuera_ICr95,PPC_total
+Principal: edad - 5; tope 12,1.0008234106971996,5790.551814758075,5665.089897702601,0,4,0,0.9470039090244363,0,3
+Sensibilidad: edad - 6; tope 12,1.0002021921278348,6149.950012273297,5698.063683061604,0,4,0,0.9611180929899343,0,3

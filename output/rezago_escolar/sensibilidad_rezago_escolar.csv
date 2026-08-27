@@ -1,0 +1,2 @@
+regla,n_total,n_10_14,n_15_19,eventos_10_14,eventos_15_19,prevalencia_10_14,prevalencia_15_19,RP,ICr95_inf,ICr95_sup,Rhat_max,ESS_bulk_min,ESS_tail_min,divergencias,treedepth_max_observado,iteraciones_treedepth_15,E_BFMI_min,PPC_fuera_ICr95,PPC_total
+Sensibilidad: edad - 6; tope 12,7027,382,6645,132,1100,0.34554973821989526,0.1655379984951091,2.074471116522578,1.7772360968975263,2.406675575022174,1.0002021921278348,6149.950012273297,5698.063683061604,0,4,0,0.9611180929899343,0,3
