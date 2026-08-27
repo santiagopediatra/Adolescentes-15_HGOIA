@@ -19,7 +19,7 @@ arr <- function(x0,y0,x1,y1,lty=1) arrows(x0,y0,x1,y1,length=.14,lwd=2.5,col=edg
 txt(90, 141, "Selection Framework and Analytic Samples", 1.55, 2, navy)
 box(42, 122, 138, 137, "#F8FAFC", 2)
 txt(90, 133, "Institutional context not directly observed", 1.12, 2, navy)
-txt(90, 129, "All deliveries among adolescents 10–19 years old at HGOIA", .98)
+txt(90, 129, "All deliveries among adolescents aged 10–19 years old at HGOIA", .98)
 txt(90, 125.5, "The study lacked the institutional denominator and data on nonincluded deliveries", .85, 3, muted)
 
 box(7, 72, 62, 116, "#FFF9F2")
@@ -42,7 +42,7 @@ arr(62,98,68,107,2)
 arr(101,100,106,93)
 box(65,76,157,93,"#DCEBFA")
 txt(111, 88.8, "SIP DATA SET AVAILABLE FOR THIS STUDY", 1.04, 2, navy)
-txt(111, 84.8, "Records of adolescents 10–19 years old whose newborns", .91)
+txt(111, 84.8, "Records of adolescents aged 10–19 years old whose newborns", .91)
 txt(111, 81.4, "had been admitted to the neonatal unit (January 2009–June 2024)", .91)
 txt(111, 78.2, "7,202 initial mother–newborn records", 1.02, 2, navy)
 
